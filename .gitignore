@@ -9,7 +9,7 @@
 # It contains a serial number and references to the file structure
 # on your computer.
 # comment the following line if you want to have your project file included.
-eagle.epf
+# eagle.epf
 
 # CAM files
 *.$$$
@@ -36,4 +36,8 @@ eagle.epf
 *.eps
 
 */gerber/*
+*/*/gerber/*
+*/*/*/gerber/*
 */gerber.zip
+*/*/gerber.zip
+*/*/*/gerber.zip
