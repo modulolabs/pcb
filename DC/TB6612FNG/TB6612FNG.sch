@@ -2392,7 +2392,7 @@ Source: www.kingbright.com</description>
 <wire x1="5.08" y1="12.954" x2="5.08" y2="19.304" width="0.127" layer="22"/>
 <wire x1="7.62" y1="12.954" x2="7.62" y2="19.304" width="0.127" layer="22"/>
 <wire x1="10.16" y1="12.954" x2="10.16" y2="19.304" width="0.127" layer="22"/>
-<hole x="22.225" y="22.225" drill="3.81"/>
+<hole x="22.225" y="22.225" drill="3.556"/>
 <wire x1="22.225" y1="19.05" x2="25.4" y2="19.05" width="0.127" layer="22"/>
 <wire x1="19.05" y1="22.225" x2="19.05" y2="25.4" width="0.127" layer="22"/>
 <wire x1="22.225" y1="19.05" x2="19.05" y2="22.225" width="0.127" layer="22" curve="-90"/>
@@ -2401,7 +2401,7 @@ Source: www.kingbright.com</description>
 <wire x1="6.35" y1="3.175" x2="3.175" y2="6.35" width="0.127" layer="22" curve="90"/>
 <wire x1="6.35" y1="0" x2="6.35" y2="3.175" width="0.127" layer="22"/>
 <wire x1="0" y1="6.35" x2="3.175" y2="6.35" width="0.127" layer="22"/>
-<hole x="3.175" y="3.175" drill="3.81"/>
+<hole x="3.175" y="3.175" drill="3.556"/>
 <polygon width="0.127" layer="41">
 <vertex x="0" y="22.86"/>
 <vertex x="2.54" y="25.4"/>
@@ -2550,6 +2550,111 @@ Source: www.kingbright.com</description>
 <smd name="P$2" x="2.54" y="0" dx="1.778" dy="3.5052" layer="1"/>
 <wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.127" layer="22"/>
 <wire x1="-1.27" y1="1.905" x2="1.27" y2="1.905" width="0.127" layer="22"/>
+</package>
+<package name="FOOTPRINT-DOUBLE-NODIMENSION">
+<wire x1="55.88" y1="0" x2="58.42" y2="2.54" width="0.127" layer="22"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="22"/>
+<wire x1="2.54" y1="25.4" x2="0" y2="22.86" width="0.127" layer="22"/>
+<smd name="P$1" x="2.54" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
+<smd name="P$2" x="5.08" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
+<smd name="P$3" x="7.62" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
+<smd name="P$4" x="10.16" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
+<wire x1="1.27" y1="10.414" x2="11.43" y2="10.414" width="0.127" layer="22"/>
+<wire x1="11.43" y1="10.414" x2="11.43" y2="12.954" width="0.127" layer="22"/>
+<wire x1="11.43" y1="12.954" x2="10.16" y2="12.954" width="0.127" layer="22"/>
+<wire x1="10.16" y1="12.954" x2="7.62" y2="12.954" width="0.127" layer="22"/>
+<wire x1="7.62" y1="12.954" x2="5.08" y2="12.954" width="0.127" layer="22"/>
+<wire x1="5.08" y1="12.954" x2="2.54" y2="12.954" width="0.127" layer="22"/>
+<wire x1="2.54" y1="12.954" x2="1.27" y2="12.954" width="0.127" layer="22"/>
+<wire x1="1.27" y1="12.954" x2="1.27" y2="10.414" width="0.127" layer="22"/>
+<wire x1="2.54" y1="12.954" x2="2.54" y2="19.304" width="0.127" layer="22"/>
+<wire x1="5.08" y1="12.954" x2="5.08" y2="19.304" width="0.127" layer="22"/>
+<wire x1="7.62" y1="12.954" x2="7.62" y2="19.304" width="0.127" layer="22"/>
+<wire x1="10.16" y1="12.954" x2="10.16" y2="19.304" width="0.127" layer="22"/>
+<hole x="55.245" y="22.225" drill="3.81"/>
+<wire x1="55.245" y1="19.05" x2="58.42" y2="19.05" width="0.127" layer="22"/>
+<wire x1="52.07" y1="22.225" x2="52.07" y2="25.4" width="0.127" layer="22"/>
+<wire x1="55.245" y1="19.05" x2="52.07" y2="22.225" width="0.127" layer="22" curve="-90"/>
+<smd name="RESET" x="12.7" y="22.86" dx="1.27" dy="1.27" layer="16"/>
+<smd name="MISO" x="15.24" y="22.86" dx="1.27" dy="1.27" layer="16"/>
+<wire x1="6.35" y1="3.175" x2="3.175" y2="6.35" width="0.127" layer="22" curve="90"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="3.175" width="0.127" layer="22"/>
+<wire x1="0" y1="6.35" x2="3.175" y2="6.35" width="0.127" layer="22"/>
+<hole x="3.175" y="3.175" drill="3.81"/>
+<polygon width="0.127" layer="41">
+<vertex x="0" y="22.86"/>
+<vertex x="2.54" y="25.4"/>
+<vertex x="0" y="25.4"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="52.07" y="25.4"/>
+<vertex x="52.07" y="22.225" curve="90"/>
+<vertex x="55.245" y="19.05"/>
+<vertex x="58.42" y="19.05"/>
+<vertex x="58.42" y="25.4"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="0" y="6.35"/>
+<vertex x="3.175" y="6.35" curve="-90"/>
+<vertex x="6.35" y="3.175"/>
+<vertex x="6.35" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="55.88" y="0"/>
+<vertex x="58.42" y="2.54"/>
+<vertex x="58.42" y="0"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="6.35" y="0"/>
+<vertex x="6.35" y="3.175" curve="90"/>
+<vertex x="3.175" y="6.35"/>
+<vertex x="0" y="6.35"/>
+<vertex x="0" y="0"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="58.42" y="25.4"/>
+<vertex x="52.07" y="25.4"/>
+<vertex x="52.07" y="22.225" curve="90"/>
+<vertex x="55.245" y="19.05"/>
+<vertex x="58.42" y="19.05"/>
+</polygon>
+</package>
+<package name="FOOTPRINT2">
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.127" layer="20"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="29.845" width="0.127" layer="20"/>
+<wire x1="1.27" y1="29.845" x2="15.24" y2="29.845" width="0.127" layer="20"/>
+<wire x1="24.13" y1="29.845" x2="34.29" y2="29.845" width="0.127" layer="20"/>
+<wire x1="34.29" y1="29.845" x2="34.29" y2="5.08" width="0.127" layer="20"/>
+<wire x1="34.29" y1="5.08" x2="35.56" y2="5.08" width="0.127" layer="20"/>
+<wire x1="35.56" y1="5.08" x2="35.56" y2="0" width="0.127" layer="20"/>
+<wire x1="35.56" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+<smd name="SCL" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
+<rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
+<rectangle x1="7.239" y1="10.16" x2="8.001" y2="12.192" layer="30"/>
+<rectangle x1="9.779" y1="10.16" x2="10.541" y2="12.192" layer="30"/>
+<smd name="GND" x="5.08" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="SDA" x="7.62" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="VCC" x="10.16" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="40"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="40"/>
+<smd name="MISO" x="30.48" y="27.94" dx="1.27" dy="2.54" layer="16"/>
+<smd name="RESET" x="27.94" y="27.94" dx="1.27" dy="2.54" layer="16"/>
+<rectangle x1="26.035" y1="22.86" x2="32.385" y2="29.845" layer="40"/>
+<rectangle x1="3.556" y1="12.7" x2="13.97" y2="29.845" layer="40"/>
+<pad name="P$1" x="2.54" y="2.54" drill="2.2225" diameter="3.81"/>
+<pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
+<wire x1="15.24" y1="29.845" x2="15.24" y2="27.305" width="0.127" layer="20"/>
+<wire x1="15.24" y1="27.305" x2="24.13" y2="27.305" width="0.127" layer="20"/>
+<wire x1="24.13" y1="27.305" x2="24.13" y2="29.845" width="0.127" layer="20"/>
+<rectangle x1="15.24" y1="26.035" x2="24.13" y2="27.305" layer="39"/>
+<rectangle x1="15.24" y1="26.035" x2="24.13" y2="27.305" layer="40"/>
+<circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
+<circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2710,6 +2815,32 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="SCL" pad="P$4"/>
 <connect gate="G$1" pin="SDA" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOUBLE-NODIM" package="FOOTPRINT-DOUBLE-NODIMENSION">
+<connects>
+<connect gate="G$1" pin="+5V" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCL" pad="P$4"/>
+<connect gate="G$1" pin="SDA" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FOOTPRINT-2" package="FOOTPRINT2">
+<connects>
+<connect gate="G$1" pin="+5V" pad="VCC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3459,7 +3590,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="680"/>
 <part name="LED" library="led" deviceset="LED" device="CHIPLED_1206" value="blue"/>
 <part name="U$3" library="IntegerLabs" deviceset="TINY841" device=""/>
-<part name="U$4" library="IntegerLabs" deviceset="FOOTPRINT" device=""/>
+<part name="U$4" library="IntegerLabs" deviceset="FOOTPRINT" device="FOOTPRINT-2" value="FOOTPRINTFOOTPRINT-2"/>
 <part name="U$1" library="IntegerLabs" deviceset="TB6612FNG" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M07" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
