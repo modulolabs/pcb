@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -4975,7 +4975,7 @@ Production Part - 8199
 <wire x1="236.22" y1="55.88" x2="222.25" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TEMP1" class="0">
+<net name="TEMPB" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT"/>
 <pinref part="C6" gate="G$1" pin="1"/>
@@ -4998,7 +4998,7 @@ Production Part - 8199
 <label x="187.96" y="57.15" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TEMP2" class="0">
+<net name="TEMPA" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="OUT"/>
 <pinref part="C12" gate="G$1" pin="1"/>
