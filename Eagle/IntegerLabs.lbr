@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -41,10 +41,10 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -867,16 +867,16 @@
 <package name="FOOTPRINT2">
 <rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
 <rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.127" layer="20"/>
-<wire x1="0" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.635" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
 <wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
 <wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
 <wire x1="2.54" y1="29.845" x2="33.02" y2="29.845" width="0.127" layer="20"/>
 <wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
 <wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
-<wire x1="34.29" y1="5.08" x2="35.56" y2="5.08" width="0.127" layer="20"/>
-<wire x1="35.56" y1="5.08" x2="35.56" y2="0" width="0.127" layer="20"/>
-<wire x1="35.56" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+<wire x1="34.29" y1="5.08" x2="36.195" y2="5.08" width="0.127" layer="20"/>
+<wire x1="36.195" y1="5.08" x2="36.195" y2="0" width="0.127" layer="20"/>
+<wire x1="36.195" y1="0" x2="-0.635" y2="0" width="0.127" layer="20"/>
 <smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
 <rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
 <rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
@@ -1166,8 +1166,8 @@
 <smd name="P1" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
 <smd name="N1" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
 <smd name="N2" x="2" y="-0.8" dx="1" dy="1" layer="1"/>
-<wire x1="-2.1" y1="-1.4" x2="2.1" y2="-1.4" width="0.127" layer="23"/>
-<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="23"/>
+<wire x1="-2.1" y1="-1.4" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="21"/>
 </package>
 <package name="DC-POWER-JACK">
 <pad name="P2" x="0" y="0" drill="3.197859375"/>
@@ -1360,31 +1360,23 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <wire x1="2" y1="12.095" x2="-4.365" y2="12.095" width="0.127" layer="21"/>
 <wire x1="-4.365" y1="12.095" x2="-4.365" y2="-3.73" width="0.127" layer="21"/>
 </package>
-<package name="FOOTPRINT3">
-<wire x1="-10.16" y1="-13.97" x2="10.16" y2="-13.97" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-13.97" x2="10.16" y2="13.97" width="0.127" layer="21"/>
-<wire x1="10.16" y1="13.97" x2="-10.16" y2="13.97" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="13.97" x2="-10.16" y2="-13.97" width="0.127" layer="21"/>
-<pad name="P$1" x="7.62" y="0" drill="0.8"/>
-<pad name="P$2" x="7.62" y="5.08" drill="0.8"/>
-<pad name="P$4" x="7.62" y="-5.08" drill="0.8"/>
-<pad name="P$5" x="-7.62" y="11.43" drill="2.54"/>
-<pad name="P$6" x="7.62" y="11.43" drill="2.54"/>
-<pad name="P$10" x="-7.62" y="-5.08" drill="0.8"/>
-<pad name="P$3" x="-7.62" y="-11.43" drill="2.54"/>
-<pad name="P$7" x="7.62" y="-11.43" drill="2.54"/>
-<pad name="P$8" x="-7.62" y="5.08" drill="0.8"/>
-<pad name="P$9" x="-7.62" y="0" drill="0.8"/>
-<pad name="P$11" x="-7.62" y="-2.54" drill="0.8"/>
-<pad name="P$12" x="7.62" y="2.54" drill="0.8"/>
-<text x="5.08" y="-0.635" size="1.27" layer="21">+</text>
-<text x="5.08" y="-5.715" size="1.27" layer="21">-</text>
-<text x="3.175" y="4.445" size="1.27" layer="21">sda</text>
-<text x="-5.715" y="-3.175" size="1.27" layer="21">scl</text>
-<text x="6.35" y="3.175" size="1.27" layer="21" rot="R180">scl</text>
-<text x="-5.715" y="-5.715" size="1.27" layer="21">sda</text>
-<text x="-5.715" y="4.445" size="1.27" layer="21">-</text>
-<text x="-5.715" y="-0.635" size="1.27" layer="21">+</text>
+<package name="FOOTPRINT3-2U">
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.127" layer="21"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="27.94" width="0.127" layer="21"/>
+<wire x1="25.4" y1="27.94" x2="0" y2="27.94" width="0.127" layer="21"/>
+<wire x1="0" y1="27.94" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$5" x="3.81" y="24.13" drill="3.197859375"/>
+<pad name="P$6" x="21.59" y="24.13" drill="3.197859375"/>
+<pad name="P$3" x="3.81" y="3.81" drill="3.197859375"/>
+<pad name="P$7" x="21.59" y="3.81" drill="3.197859375"/>
+<pad name="GNDL" x="2.2225" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAL" x="1.9685" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCL" x="2.0955" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLL" x="1.9685" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="GNDR" x="23.4315" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAR" x="23.1775" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCR" x="23.4315" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLR" x="23.1775" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
 </package>
 <package name="TO92-CBE">
 <description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
@@ -1437,6 +1429,125 @@ grid 5.08 mm</description>
 <wire x1="-5.08" y1="1.905" x2="5.08" y2="1.905" width="0.127" layer="21"/>
 <wire x1="5.08" y1="1.905" x2="5.08" y2="3.175" width="0.127" layer="21"/>
 <pad name="P$6" x="6.35" y="-0.127" drill="1.016" diameter="1.778"/>
+</package>
+<package name="FOOTPRINT3-3U">
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.127" layer="21"/>
+<wire x1="38.1" y1="0" x2="38.1" y2="27.94" width="0.127" layer="21"/>
+<wire x1="38.1" y1="27.94" x2="0" y2="27.94" width="0.127" layer="21"/>
+<wire x1="0" y1="27.94" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$5" x="3.81" y="24.13" drill="3.197859375"/>
+<pad name="P$6" x="34.29" y="24.13" drill="3.197859375"/>
+<pad name="P$3" x="3.81" y="3.81" drill="3.197859375"/>
+<pad name="P$7" x="34.29" y="3.81" drill="3.197859375"/>
+<pad name="GNDL" x="2.2225" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAL" x="1.9685" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCL" x="2.2225" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLL" x="1.9685" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="GNDR" x="36.1315" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAR" x="35.8775" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCR" x="36.1315" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLR" x="35.8775" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+</package>
+<package name="FOOTPRINT3-1U">
+<wire x1="0" y1="0" x2="19.05" y2="0" width="0.127" layer="21"/>
+<wire x1="19.05" y1="0" x2="19.05" y2="27.94" width="0.127" layer="21"/>
+<wire x1="19.05" y1="27.94" x2="0" y2="27.94" width="0.127" layer="21"/>
+<wire x1="0" y1="27.94" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$5" x="3.81" y="24.13" drill="3.197859375"/>
+<pad name="P$6" x="15.24" y="24.13" drill="3.197859375"/>
+<pad name="P$3" x="3.81" y="3.81" drill="3.197859375"/>
+<pad name="P$7" x="15.24" y="3.81" drill="3.197859375"/>
+<pad name="GNDL" x="2.2225" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAL" x="1.9685" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCL" x="2.2225" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLL" x="1.9685" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="GNDR" x="17.0815" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAR" x="16.8275" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCR" x="17.0815" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLR" x="16.8275" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+</package>
+<package name="FOOTPRINT3-4U">
+<wire x1="0" y1="25.94" x2="0" y2="2" width="0.127" layer="21"/>
+<wire x1="0" y1="2" x2="2" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="2" y1="0" x2="48.8" y2="0" width="0.127" layer="21"/>
+<wire x1="48.8" y1="0" x2="50.8" y2="2" width="0.127" layer="21" curve="90"/>
+<wire x1="50.8" y1="2" x2="50.8" y2="25.94" width="0.127" layer="21"/>
+<wire x1="50.8" y1="25.94" x2="48.8" y2="27.94" width="0.127" layer="21" curve="90"/>
+<wire x1="48.8" y1="27.94" x2="2" y2="27.94" width="0.127" layer="21"/>
+<wire x1="2" y1="27.94" x2="0" y2="25.94" width="0.127" layer="21" curve="90"/>
+<pad name="P$5" x="3.81" y="24.13" drill="3.197859375"/>
+<pad name="P$6" x="46.99" y="24.13" drill="3.197859375"/>
+<pad name="P$3" x="3.81" y="3.81" drill="3.197859375"/>
+<pad name="P$7" x="46.99" y="3.81" drill="3.197859375"/>
+<pad name="GNDL" x="2.2225" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAL" x="1.9685" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCL" x="2.2225" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLL" x="1.9685" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="GNDR" x="48.8315" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAR" x="48.5775" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCR" x="48.8315" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLR" x="48.5775" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+</package>
+<package name="MODULO-EDGE-CONNECTOR">
+<wire x1="-4" y1="1.5" x2="-0.3" y2="1.5" width="0.127" layer="20"/>
+<wire x1="0.3" y1="1.5" x2="4" y2="1.5" width="0.127" layer="20"/>
+<wire x1="0.3" y1="1.5" x2="0.3" y2="4.34" width="0.127" layer="20"/>
+<wire x1="0.3" y1="4.34" x2="-0.3" y2="4.34" width="0.127" layer="20"/>
+<wire x1="-0.3" y1="4.34" x2="-0.3" y2="1.5" width="0.127" layer="20"/>
+<smd name="B4" x="3" y="3.75" dx="1" dy="4" layer="16" rot="R180"/>
+<smd name="B3" x="1" y="4.25" dx="1" dy="3" layer="16" rot="R180"/>
+<smd name="B2" x="-1" y="4.25" dx="1" dy="3" layer="16" rot="R180"/>
+<smd name="B1" x="-3" y="3.75" dx="1" dy="4" layer="16" rot="R180"/>
+<wire x1="-4" y1="1.5" x2="-4" y2="0" width="0.127" layer="20"/>
+<wire x1="4" y1="1.5" x2="4" y2="0" width="0.127" layer="20"/>
+<wire x1="-4" y1="0" x2="-5.08" y2="0" width="0.127" layer="20"/>
+<wire x1="4" y1="0" x2="5.08" y2="0" width="0.127" layer="20"/>
+<wire x1="-4" y1="2" x2="-4" y2="6" width="0.127" layer="21"/>
+<wire x1="-4" y1="6" x2="4" y2="6" width="0.127" layer="21"/>
+<wire x1="4" y1="6" x2="4" y2="2" width="0.127" layer="21"/>
+<smd name="T2" x="-1" y="3.75" dx="1" dy="4" layer="1"/>
+<smd name="T1" x="-3" y="4.25" dx="1" dy="3" layer="1"/>
+<smd name="T4" x="3" y="4.25" dx="1" dy="3" layer="1"/>
+<smd name="T3" x="1" y="3.75" dx="1" dy="4" layer="1"/>
+</package>
+<package name="CRYSTAL-9H">
+<smd name="P1" x="-3.15" y="0.45" dx="1.2" dy="0.6" layer="1"/>
+<smd name="P2" x="-3.15" y="-0.45" dx="1.2" dy="0.6" layer="1"/>
+<smd name="NC1" x="3.15" y="0.45" dx="1.2" dy="0.6" layer="1"/>
+<smd name="NC2" x="3.15" y="-0.45" dx="1.2" dy="0.6" layer="1"/>
+<wire x1="-3" y1="1" x2="-2" y2="1" width="0.127" layer="21"/>
+<wire x1="-2" y1="1" x2="3" y2="1" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1" x2="-2" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1" x2="3" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2" y1="1" x2="-2" y2="-1" width="0.127" layer="21"/>
+</package>
+<package name="ATTINY20">
+</package>
+<package name="CRYSTAL-ABS25">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.905" layer="1"/>
+<smd name="P$2" x="5.588" y="0" dx="1.27" dy="1.905" layer="1"/>
+<smd name="P$3" x="5.588" y="3.175" dx="1.27" dy="1.905" layer="1"/>
+<smd name="P$4" x="0" y="3.175" dx="1.27" dy="1.905" layer="1"/>
+<wire x1="-1.905" y1="-0.635" x2="7.366" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="7.366" y1="-0.635" x2="7.366" y2="3.81" width="0.127" layer="21"/>
+<wire x1="7.366" y1="3.81" x2="-1.905" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="3.81" x2="-1.905" y2="-0.635" width="0.127" layer="21"/>
+</package>
+<package name="THERMOCOUPLE-JACK">
+<pad name="POS1" x="0" y="0" drill="2.032"/>
+<pad name="NEG2" x="8.89" y="0" drill="2.794"/>
+<pad name="NEG1" x="8.89" y="10.16" drill="2.032"/>
+<pad name="POS2" x="0" y="10.16" drill="2.032"/>
+<wire x1="5.715" y1="0" x2="5.715" y2="10.16" width="0.127" layer="21"/>
+<wire x1="12.065" y1="10.16" x2="12.065" y2="0" width="0.127" layer="21"/>
+<wire x1="12.065" y1="0" x2="11.43" y2="0" width="0.127" layer="21"/>
+<wire x1="5.715" y1="0" x2="6.35" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="10.16" width="0.127" layer="21"/>
+<wire x1="1.905" y1="10.16" x2="1.905" y2="0" width="0.127" layer="21"/>
+<wire x1="5.715" y1="10.16" x2="6.985" y2="10.16" width="0.127" layer="21"/>
+<wire x1="12.065" y1="10.16" x2="10.795" y2="10.16" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2242,6 +2353,77 @@ grid 5.08 mm</description>
 <wire x1="5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
 <pin name="P6" x="-7.62" y="-7.62" visible="pin" length="middle"/>
 </symbol>
+<symbol name="FOOTPRINT3">
+<pin name="GND" x="0" y="0" length="middle"/>
+<pin name="SDA" x="0" y="-2.54" length="middle"/>
+<pin name="VCC" x="0" y="-5.08" length="middle"/>
+<pin name="SCL" x="0" y="-7.62" length="middle"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MODULO-EDGE-CONNECTOR">
+<pin name="GND" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="DATA" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="PWR" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<pin name="CLOCK" x="-5.08" y="-5.08" visible="pin" length="middle"/>
+<wire x1="0" y1="5.08" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="6.35" size="1.27" layer="95">Modulo
+Edge Connector</text>
+<text x="0" y="-10.16" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="CRYSTAL">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="-5.08" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-4.826" y="-4.318" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ATTINY20">
+<pin name="VCC" x="-60.96" y="5.08" length="middle"/>
+<pin name="GND" x="-60.96" y="20.32" length="middle"/>
+<pin name="PA0" x="-60.96" y="17.78" length="middle"/>
+<pin name="PA1" x="-60.96" y="15.24" length="middle"/>
+<pin name="PA2" x="-60.96" y="12.7" length="middle"/>
+<pin name="PA3" x="-60.96" y="10.16" length="middle"/>
+<pin name="PA4" x="-60.96" y="-15.24" length="middle"/>
+<pin name="PA5" x="-60.96" y="-10.16" length="middle"/>
+<pin name="PA6" x="-60.96" y="-17.78" length="middle"/>
+<pin name="PA7" x="-60.96" y="-5.08" length="middle"/>
+<pin name="PB0" x="-60.96" y="2.54" length="middle"/>
+<pin name="PB1" x="-60.96" y="0" length="middle"/>
+<pin name="PB2" x="-60.96" y="-2.54" length="middle"/>
+<pin name="PB3" x="-60.96" y="-12.7" length="middle"/>
+<wire x1="-55.88" y1="-20.32" x2="-55.88" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-55.88" y1="22.86" x2="43.18" y2="22.86" width="0.254" layer="94"/>
+<wire x1="43.18" y1="22.86" x2="43.18" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-20.32" x2="-55.88" y2="-20.32" width="0.254" layer="94"/>
+<text x="-48.26" y="17.78" size="1.27" layer="97" align="center-left">PCINT0/ADC0</text>
+<text x="-48.26" y="15.24" size="1.27" layer="97" align="center-left">PCINT1/ADC1/AIN0</text>
+<text x="-48.26" y="12.7" size="1.27" layer="97" align="center-left">PCINT2/ADC2/AIN1</text>
+<text x="-48.26" y="10.16" size="1.27" layer="97" align="center-left">PCINT3/ADC3</text>
+<text x="-48.26" y="-15.24" size="1.27" layer="97" align="center-left">PCIN4/ADC4</text>
+<text x="-48.26" y="-10.16" size="1.27" layer="97" align="center-left">PCINT5/ADC5</text>
+<text x="-48.26" y="-17.78" size="1.27" layer="97" align="center-left">PCINT6/SS/ADC6</text>
+<text x="-48.26" y="-5.08" size="1.27" layer="97" align="center-left">PCINT7/SCL/SCK/T1/ICP1/OC0B/ADC7</text>
+<text x="-48.26" y="2.54" size="1.27" layer="97" align="center-left">PCINT8/TPICLK/T0/CLKI</text>
+<text x="-48.26" y="0" size="1.27" layer="97" align="center-left">PCINT9/TPIDATA/MOSI/SDA/OC1A</text>
+<text x="-48.26" y="-2.54" size="1.27" layer="97" align="center-left">PCINT10/INT0/MISO/OC1B/OC0A/CKOUT</text>
+<text x="-48.26" y="-12.7" size="1.27" layer="97" align="center-left">PCINT11/RESET</text>
+</symbol>
+<symbol name="THERMOCOUPLE-JACK">
+<pin name="POS" x="0" y="2.54" length="middle"/>
+<pin name="NEG" x="0" y="0" length="middle"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC4411">
@@ -2340,6 +2522,17 @@ grid 5.08 mm</description>
 <connect gate="G$1" pin="SDA" pad="BUS1"/>
 <connect gate="G$1" pin="VCC" pad="BUS2"/>
 <connect gate="G$1" pin="VPROG" pad="PROG0"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FOOTPRINT3" package="FOOTPRINT3-2U">
+<connects>
+<connect gate="G$1" pin="GND" pad="GNDL GNDR"/>
+<connect gate="G$1" pin="SCL" pad="SCLL SCLR"/>
+<connect gate="G$1" pin="SDA" pad="SDAL SDAR"/>
+<connect gate="G$1" pin="VCC" pad="VCCL VCCR"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3464,7 +3657,123 @@ Source: BAS70_1PS7XSB70_SER_8.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FOOTPRINT3">
+<gates>
+<gate name="G$1" symbol="FOOTPRINT3" x="-10.16" y="5.08"/>
+</gates>
+<devices>
+<device name="-2U" package="FOOTPRINT3-2U">
+<connects>
+<connect gate="G$1" pin="GND" pad="GNDL GNDR"/>
+<connect gate="G$1" pin="SCL" pad="SCLL SCLR"/>
+<connect gate="G$1" pin="SDA" pad="SDAL SDAR"/>
+<connect gate="G$1" pin="VCC" pad="VCCL VCCR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1U" package="FOOTPRINT3-1U">
+<connects>
+<connect gate="G$1" pin="GND" pad="GNDL GNDR"/>
+<connect gate="G$1" pin="SCL" pad="SCLL SCLR"/>
+<connect gate="G$1" pin="SDA" pad="SDAL SDAR"/>
+<connect gate="G$1" pin="VCC" pad="VCCL VCCR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3U" package="FOOTPRINT3-3U">
+<connects>
+<connect gate="G$1" pin="GND" pad="GNDL GNDR"/>
+<connect gate="G$1" pin="SCL" pad="SCLL SCLR"/>
+<connect gate="G$1" pin="SDA" pad="SDAL SDAR"/>
+<connect gate="G$1" pin="VCC" pad="VCCL VCCR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-4U" package="FOOTPRINT3-4U">
+<connects>
+<connect gate="G$1" pin="GND" pad="GNDL GNDR"/>
+<connect gate="G$1" pin="SCL" pad="SCLL SCLR"/>
+<connect gate="G$1" pin="SDA" pad="SDAL SDAR"/>
+<connect gate="G$1" pin="VCC" pad="VCCL VCCR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MODULO-EDGE-CONNECTOR">
+<gates>
+<gate name="G$1" symbol="MODULO-EDGE-CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MODULO-EDGE-CONNECTOR">
+<connects>
+<connect gate="G$1" pin="CLOCK" pad="B2 B3"/>
+<connect gate="G$1" pin="DATA" pad="T1 T4"/>
+<connect gate="G$1" pin="GND" pad="B1 B4"/>
+<connect gate="G$1" pin="PWR" pad="T2 T3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL">
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYSTAL-9H">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P1"/>
+<connect gate="G$1" pin="P$2" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ABS25" package="CRYSTAL-ABS25">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="THERMOCOUPLE-JACK">
+<gates>
+<gate name="G$1" symbol="THERMOCOUPLE-JACK" x="-7.62" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="THERMOCOUPLE-JACK">
+<connects>
+<connect gate="G$1" pin="NEG" pad="NEG1 NEG2"/>
+<connect gate="G$1" pin="POS" pad="POS1 POS2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
