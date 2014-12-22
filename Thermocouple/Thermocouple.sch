@@ -3881,7 +3881,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value=".47uF"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="680"/>
 <part name="U$2" library="IntegerLabs" deviceset="FOOTPRINT" device="FOOTPRINT-2" value="FOOTPRINTFOOTPRINT-2"/>
-<part name="LED1" library="adafruit" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1"/>
 <part name="U$1" library="IntegerLabs" deviceset="AD8495" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="24k"/>

@@ -344,16 +344,16 @@
 <package name="FOOTPRINT2">
 <rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
 <rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.127" layer="20"/>
-<wire x1="0" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.635" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
 <wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
 <wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
 <wire x1="2.54" y1="29.845" x2="33.02" y2="29.845" width="0.127" layer="20"/>
 <wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
 <wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
-<wire x1="34.29" y1="5.08" x2="35.56" y2="5.08" width="0.127" layer="20"/>
-<wire x1="35.56" y1="5.08" x2="35.56" y2="0" width="0.127" layer="20"/>
-<wire x1="35.56" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+<wire x1="34.29" y1="5.08" x2="36.195" y2="5.08" width="0.127" layer="20"/>
+<wire x1="36.195" y1="5.08" x2="36.195" y2="0" width="0.127" layer="20"/>
+<wire x1="36.195" y1="0" x2="-0.635" y2="0" width="0.127" layer="20"/>
 <smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
 <rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
 <rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
@@ -425,6 +425,24 @@
 <smd name="P$18" x="1.8" y="3.15" dx="0.22" dy="0.4" layer="1"/>
 <smd name="P$19" x="1.35" y="3.15" dx="0.22" dy="0.4" layer="1"/>
 <smd name="P$20" x="0.9" y="3.15" dx="0.22" dy="0.4" layer="1"/>
+</package>
+<package name="FOOTPRINT3-2U">
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.127" layer="21"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="27.94" width="0.127" layer="21"/>
+<wire x1="25.4" y1="27.94" x2="0" y2="27.94" width="0.127" layer="21"/>
+<wire x1="0" y1="27.94" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$5" x="3.81" y="24.13" drill="3.197859375"/>
+<pad name="P$6" x="21.59" y="24.13" drill="3.197859375"/>
+<pad name="P$3" x="3.81" y="3.81" drill="3.197859375"/>
+<pad name="P$7" x="21.59" y="3.81" drill="3.197859375"/>
+<pad name="GNDL" x="2.2225" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAL" x="1.9685" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCL" x="2.0955" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLL" x="1.9685" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="GNDR" x="23.4315" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
+<pad name="SDAR" x="23.1775" y="15.24" drill="1.016" diameter="1.778"/>
+<pad name="VCCR" x="23.4315" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
+<pad name="SCLR" x="23.1775" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -532,6 +550,17 @@
 <connect gate="G$1" pin="SDA" pad="BUS1"/>
 <connect gate="G$1" pin="VCC" pad="BUS2"/>
 <connect gate="G$1" pin="VPROG" pad="PROG0"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FOOTPRINT3" package="FOOTPRINT3-2U">
+<connects>
+<connect gate="G$1" pin="GND" pad="GNDL GNDR"/>
+<connect gate="G$1" pin="SCL" pad="SCLL SCLR"/>
+<connect gate="G$1" pin="SDA" pad="SDAL SDAR"/>
+<connect gate="G$1" pin="VCC" pad="VCCL VCCR"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2994,6 +3023,11 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <wire x1="91.44" y1="10.16" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
 <label x="73.66" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="SDA"/>
+<wire x1="43.18" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<label x="30.48" y="33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -3005,13 +3039,6 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <pinref part="U$1" gate="G$1" pin="PA5"/>
 <wire x1="91.44" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
 <label x="81.28" y="17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="SDA"/>
-<wire x1="43.18" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
-<label x="35.56" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL/SCK" class="0">
