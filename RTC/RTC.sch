@@ -4716,7 +4716,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$4" library="IntegerLabs" deviceset="FOOTPRINT" device="FOOTPRINT-2" value="FOOTPRINTFOOTPRINT-2"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="T1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="therm"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="20MM_4LEGS" value="20mm coincell"/>
 <part name="U$2" library="IntegerLabs" deviceset="PCF8523" device=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
