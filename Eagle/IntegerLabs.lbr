@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="4" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1928,6 +1928,69 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <smd name="P3" x="1.4986" y="0" dx="0.7112" dy="4.0894" layer="1"/>
 <smd name="P2" x="0" y="0" dx="0.9906" dy="4.0894" layer="1"/>
 </package>
+<package name="RASPI-HAT">
+<wire x1="0" y1="53.5" x2="0" y2="36.5" width="0.127" layer="20"/>
+<wire x1="0" y1="19.5" x2="0" y2="3" width="0.127" layer="20"/>
+<wire x1="0" y1="3" x2="3" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="3" y1="0" x2="44" y2="0" width="0.127" layer="20"/>
+<wire x1="46" y1="0" x2="62" y2="0" width="0.127" layer="20"/>
+<wire x1="62" y1="0" x2="65" y2="3" width="0.127" layer="20" curve="90"/>
+<wire x1="65" y1="3" x2="65" y2="53.5" width="0.127" layer="20"/>
+<wire x1="65" y1="53.5" x2="62" y2="56.5" width="0.127" layer="20" curve="90"/>
+<wire x1="62" y1="56.5" x2="3" y2="56.5" width="0.127" layer="20"/>
+<wire x1="3" y1="56.5" x2="0" y2="53.5" width="0.127" layer="20" curve="90"/>
+<hole x="3.5" y="3.5" drill="2.75"/>
+<hole x="61.5" y="3.5" drill="2.75"/>
+<hole x="61.5" y="53" drill="2.75"/>
+<hole x="3.5" y="53" drill="2.75"/>
+<wire x1="0" y1="19.5" x2="5" y2="19.5" width="0.127" layer="20"/>
+<wire x1="5" y1="19.5" x2="5" y2="36.5" width="0.127" layer="20"/>
+<wire x1="5" y1="36.5" x2="0" y2="36.5" width="0.127" layer="20"/>
+<wire x1="44" y1="0" x2="44" y2="28.5" width="0.127" layer="20"/>
+<wire x1="44" y1="28.5" x2="46" y2="28.5" width="0.127" layer="20"/>
+<wire x1="46" y1="28.5" x2="46" y2="0" width="0.127" layer="20"/>
+<pad name="P$2" x="8.37" y="51.23" drill="0.762"/>
+<pad name="P$3" x="8.37" y="53.77" drill="0.762"/>
+<pad name="P$4" x="10.91" y="51.23" drill="0.762"/>
+<pad name="P$5" x="10.91" y="53.77" drill="0.762"/>
+<pad name="P$6" x="13.45" y="51.23" drill="0.762"/>
+<pad name="P$7" x="13.45" y="53.77" drill="0.762"/>
+<pad name="P$8" x="15.99" y="51.23" drill="0.762"/>
+<pad name="P$9" x="15.99" y="53.77" drill="0.762"/>
+<pad name="P$10" x="18.53" y="51.23" drill="0.762"/>
+<pad name="P$11" x="18.53" y="53.77" drill="0.762"/>
+<pad name="P$12" x="21.07" y="51.23" drill="0.762"/>
+<pad name="P$13" x="21.07" y="53.77" drill="0.762"/>
+<pad name="P$14" x="23.61" y="51.23" drill="0.762"/>
+<pad name="P$15" x="23.61" y="53.77" drill="0.762"/>
+<pad name="P$16" x="26.15" y="51.23" drill="0.762"/>
+<pad name="P$17" x="26.15" y="53.77" drill="0.762"/>
+<pad name="P$18" x="28.69" y="51.23" drill="0.762"/>
+<pad name="P$19" x="28.69" y="53.77" drill="0.762"/>
+<pad name="P$20" x="31.23" y="51.23" drill="0.762"/>
+<pad name="P$21" x="31.23" y="53.77" drill="0.762"/>
+<pad name="P$22" x="33.77" y="51.23" drill="0.762"/>
+<pad name="P$23" x="33.77" y="53.77" drill="0.762"/>
+<pad name="P$24" x="36.31" y="51.23" drill="0.762"/>
+<pad name="P$25" x="36.31" y="53.77" drill="0.762"/>
+<pad name="P$26" x="38.85" y="51.23" drill="0.762"/>
+<pad name="P$27" x="38.85" y="53.77" drill="0.762"/>
+<pad name="P$28" x="41.39" y="51.23" drill="0.762"/>
+<pad name="P$29" x="41.39" y="53.77" drill="0.762"/>
+<pad name="P$30" x="43.93" y="51.23" drill="0.762"/>
+<pad name="P$31" x="43.93" y="53.77" drill="0.762"/>
+<pad name="P$32" x="46.47" y="51.23" drill="0.762"/>
+<pad name="P$33" x="46.47" y="53.77" drill="0.762"/>
+<pad name="P$34" x="49.01" y="51.23" drill="0.762"/>
+<pad name="P$35" x="49.01" y="53.77" drill="0.762"/>
+<pad name="P$36" x="51.55" y="51.23" drill="0.762"/>
+<pad name="P$37" x="51.55" y="53.77" drill="0.762"/>
+<pad name="P$38" x="54.09" y="51.23" drill="0.762"/>
+<pad name="P$39" x="54.09" y="53.77" drill="0.762"/>
+<pad name="P$40" x="56.63" y="51.23" drill="0.762"/>
+<pad name="P$41" x="56.63" y="53.77" drill="0.762"/>
+<wire x1="85.5" y1="55.88" x2="85.5" y2="1.27" width="0.127" layer="49"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4411">
@@ -2864,6 +2927,12 @@ Edge Connector</text>
 <wire x1="10.16" y1="2.54" x2="10.16" y2="1.27" width="0.254" layer="94"/>
 <wire x1="5.334" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
 <wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RASPI-HAT">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4502,6 +4571,18 @@ SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 <connect gate="G$1" pin="IN" pad="P1"/>
 <connect gate="G$1" pin="OUT" pad="P3"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RASPI-HAT">
+<gates>
+<gate name="G$1" symbol="RASPI-HAT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RASPI-HAT">
 <technologies>
 <technology name=""/>
 </technologies>

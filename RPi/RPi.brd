@@ -132,11 +132,11 @@
 <text x="17.515" y="15.24" size="1.016" layer="21" font="vector" ratio="10" rot="R180" align="center-left">-</text>
 <wire x1="-0.254" y1="17.78" x2="17.78" y2="17.78" width="0.254" layer="20"/>
 <wire x1="17.78" y1="17.78" x2="17.78" y2="13.97" width="0.254" layer="20"/>
-<wire x1="17.78" y1="13.97" x2="33.655" y2="13.97" width="0.254" layer="20"/>
+<wire x1="17.78" y1="13.97" x2="33.274" y2="13.97" width="0.254" layer="20"/>
 <wire x1="-0.254" y1="-0.254" x2="-0.254" y2="17.78" width="0.254" layer="20"/>
-<wire x1="-0.254" y1="-0.254" x2="33.655" y2="-0.254" width="0.254" layer="20"/>
+<wire x1="-0.254" y1="-0.254" x2="33.274" y2="-0.254" width="0.254" layer="20"/>
 <text x="17.4625" y="7.62" size="1.016" layer="21" font="vector" ratio="10" rot="R180" align="center-left">c</text>
-<wire x1="33.655" y1="13.97" x2="33.655" y2="-0.254" width="0.254" layer="20"/>
+<wire x1="33.274" y1="13.97" x2="33.274" y2="-0.254" width="0.254" layer="20"/>
 <text x="33.02" y="7.62" size="1.016" layer="21" font="vector" rot="SR0" align="center-right">Integer Labs</text>
 <text x="18.7325" y="7.62" size="1.016" layer="21" font="vector" rot="R180" align="center-right">v1</text>
 </plain>
@@ -592,7 +592,6 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="MPN" value="" x="9.8425" y="11.43" size="1.778" layer="27" font="vector" ratio="10" rot="R270" display="off"/>
 <attribute name="MF" value="" x="9.8425" y="11.43" size="1.778" layer="27" font="vector" ratio="10" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="9.8425" y="11.43" size="1.778" layer="27" font="vector" ratio="10" rot="R270" display="off"/>
-<attribute name="NAME" x="4.1275" y="18.0975" size="1.016" layer="25" ratio="10"/>
 </element>
 </elements>
 <signals>
