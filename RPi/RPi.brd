@@ -586,7 +586,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <element name="R1" library="SparkFun-Resistors" package="0805" value="" x="22.86" y="12.065" rot="MR180"/>
 <element name="R2" library="SparkFun-Resistors" package="0805" value="" x="22.86" y="6.985" rot="MR180"/>
 <element name="U$2" library="SparkFun-Connectors" package="2X13" value="M13X22X13" x="31.75" y="3.81" smashed="yes" rot="R180"/>
-<element name="F1" library="SparkFun-Resistors" package="0805" value="" x="22.86" y="9.525" rot="MR180"/>
+<element name="F1" library="SparkFun-Resistors" package="0805" value="MF-PSMF010X-2" x="22.86" y="9.525" rot="MR180"/>
 <element name="X1" library="con-molex" package="70553-04" value="C-GRID-04-70553" x="9.8425" y="11.43" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="9.8425" y="11.43" size="1.778" layer="27" font="vector" ratio="10" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="9.8425" y="11.43" size="1.778" layer="27" font="vector" ratio="10" rot="R270" display="off"/>

@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -351,16 +355,16 @@
 <package name="FOOTPRINT2">
 <rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
 <rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="5.08" width="0.127" layer="20"/>
-<wire x1="-0.635" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
 <wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
 <wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
 <wire x1="2.54" y1="29.845" x2="33.02" y2="29.845" width="0.127" layer="20"/>
 <wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
 <wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
-<wire x1="34.29" y1="5.08" x2="36.195" y2="5.08" width="0.127" layer="20"/>
-<wire x1="36.195" y1="5.08" x2="36.195" y2="0" width="0.127" layer="20"/>
-<wire x1="36.195" y1="0" x2="-0.635" y2="0" width="0.127" layer="20"/>
+<wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
+<wire x1="35.941" y1="5.08" x2="35.941" y2="0" width="0.127" layer="20"/>
+<wire x1="35.941" y1="0" x2="-0.381" y2="0" width="0.127" layer="20"/>
 <smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
 <rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
 <rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
@@ -385,6 +389,10 @@
 <smd name="PROG1" x="17.78" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
 <smd name="PROG0" x="15.24" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
 <rectangle x1="21.59" y1="22.86" x2="26.67" y2="29.845" layer="40"/>
+<text x="33.655" y="5.334" size="1.778" layer="21" ratio="15" rot="R90">&gt;BOARD</text>
+<text x="3.175" y="5.3975" size="1.778" layer="21" ratio="15" rot="R90">Modulo</text>
+<text x="3.175" y="16.637" size="1.27" layer="21" ratio="15" rot="SR90">Integer Labs</text>
+<text x="33.655" y="29.21" size="1.27" layer="21" ratio="12" rot="SR90" align="bottom-right">&gt;VERSION</text>
 </package>
 <package name="MSOP-8">
 <smd name="8" x="-0.975" y="1.975" dx="0.45" dy="1.35" layer="1"/>
@@ -498,6 +506,9 @@
 <pin name="SCK" x="-10.16" y="-2.54" visible="pin" length="middle"/>
 <pin name="RESET" x="-10.16" y="0" visible="pin" length="middle"/>
 <pin name="VPROG" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<text x="7.62" y="10.16" size="1.27" layer="97">&gt;VERSION</text>
+<text x="7.62" y="12.954" size="1.27" layer="97">&gt;BOARD</text>
+<text x="7.62" y="15.494" size="1.27" layer="97">Modulo Footprint</text>
 </symbol>
 <symbol name="AD8495">
 <pin name="IN-" x="-12.7" y="2.54" length="middle"/>
@@ -566,6 +577,7 @@
 </devices>
 </deviceset>
 <deviceset name="FOOTPRINT">
+<description>Modulo Footprint</description>
 <gates>
 <gate name="G$1" symbol="FOOTPRINT" x="0" y="0"/>
 </gates>
@@ -622,7 +634,10 @@
 <connect gate="G$1" pin="VPROG" pad="PROG0"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="BOARD" value="Board" constant="no"/>
+<attribute name="VERSION" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="FOOTPRINT3" package="FOOTPRINT3-2U">
@@ -3880,7 +3895,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <parts>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value=".47uF"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="680"/>
-<part name="U$2" library="IntegerLabs" deviceset="FOOTPRINT" device="FOOTPRINT-2" value="FOOTPRINTFOOTPRINT-2"/>
+<part name="U$2" library="IntegerLabs" deviceset="FOOTPRINT" device="FOOTPRINT-2" value="FOOTPRINTFOOTPRINT-2">
+<attribute name="BOARD" value="Thermocouple"/>
+<attribute name="VERSION" value="v5"/>
+</part>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1"/>
 <part name="U$1" library="IntegerLabs" deviceset="AD8495" device=""/>

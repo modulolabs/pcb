@@ -618,47 +618,32 @@ LETTER landscape</description>
 <text x="-1.016" y="-2.3495" size="0.635" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="0.635" y1="0.3" x2="-0.635" y2="0.3" width="0.127" layer="21"/>
 </package>
-<package name="DEVICE-PCB">
-<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
-<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
-<wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
-<wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
-<wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
-<wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
-<wire x1="2.54" y1="29.845" x2="33.02" y2="29.845" width="0.127" layer="20"/>
-<wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
-<wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
-<wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
-<wire x1="35.941" y1="5.08" x2="35.941" y2="0" width="0.127" layer="20"/>
-<wire x1="35.941" y1="0" x2="-0.381" y2="0" width="0.127" layer="20"/>
-<smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
-<rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
-<rectangle x1="7.239" y1="10.16" x2="8.001" y2="12.192" layer="30"/>
-<rectangle x1="9.779" y1="10.16" x2="10.541" y2="12.192" layer="30"/>
-<smd name="BUS0" x="5.08" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<smd name="BUS1" x="7.62" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<smd name="BUS2" x="10.16" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="40"/>
-<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="40"/>
-<smd name="PROG2" x="20.32" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG3" x="22.86" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<rectangle x1="13.97" y1="22.86" x2="21.59" y2="29.845" layer="40"/>
-<rectangle x1="3.556" y1="12.7" x2="13.97" y2="29.845" layer="40"/>
-<pad name="P$1" x="2.54" y="2.54" drill="2.2225" diameter="3.81"/>
-<pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
-<circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
-<circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
-<pad name="P$3" x="29.21" y="27.305" drill="2.2225" diameter="3.81"/>
-<circle x="29.21" y="27.305" radius="2.3749" width="0.127" layer="21"/>
-<smd name="PROG4" x="25.4" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG1" x="17.78" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG0" x="15.24" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<rectangle x1="21.59" y1="22.86" x2="26.67" y2="29.845" layer="40"/>
-<text x="33.655" y="5.334" size="1.778" layer="21" ratio="15" rot="R90">&gt;BOARD</text>
-<text x="3.175" y="5.3975" size="1.778" layer="21" ratio="15" rot="R90">Modulo</text>
-<text x="3.175" y="16.637" size="1.27" layer="21" ratio="15" rot="SR90">Integer Labs</text>
-<text x="33.655" y="29.21" size="1.27" layer="21" ratio="12" rot="SR90" align="bottom-right">&gt;VERSION</text>
+<package name="MAGDEVICE">
+<wire x1="0" y1="0" x2="0" y2="33.02" width="0.127" layer="20"/>
+<wire x1="0" y1="33.02" x2="30.48" y2="33.02" width="0.127" layer="20"/>
+<wire x1="30.48" y1="33.02" x2="30.48" y2="0" width="0.127" layer="20"/>
+<wire x1="0" y1="0" x2="30.48" y2="0" width="0.127" layer="20"/>
+<pad name="H3" x="27.94" y="30.48" drill="2.2225"/>
+<pad name="H1" x="2.54" y="30.48" drill="2.2225"/>
+<pad name="H4" x="27.94" y="2.54" drill="2.2225"/>
+<pad name="H2" x="2.54" y="2.54" drill="2.2225"/>
+<pad name="SDAA" x="1.905" y="5.715" drill="1.016"/>
+<pad name="SCLA" x="28.575" y="5.715" drill="1.016"/>
+<pad name="VCCB" x="28.575" y="24.765" drill="1.016"/>
+<pad name="GNDB" x="8.255" y="31.115" drill="1.016"/>
+<circle x="2.54" y="21.59" radius="1.5875" width="0.127" layer="22"/>
+<circle x="27.94" y="11.43" radius="1.5875" width="0.127" layer="22"/>
+<pad name="SDAB" x="1.905" y="8.255" drill="1.016"/>
+<pad name="SCLB" x="28.575" y="8.255" drill="1.016"/>
+<pad name="VCCA" x="28.575" y="27.305" drill="1.016"/>
+<pad name="GNDA" x="5.715" y="31.115" drill="1.016"/>
+<circle x="2.54" y="16.51" radius="1.5875" width="0.127" layer="22"/>
+<circle x="2.54" y="11.43" radius="1.5875" width="0.127" layer="22"/>
+<circle x="27.94" y="16.51" radius="1.5875" width="0.127" layer="22"/>
+<circle x="27.94" y="21.59" radius="1.5875" width="0.127" layer="22"/>
+<smd name="MISO" x="6.985" y="26.67" dx="1.5875" dy="1.5875" layer="16" roundness="100"/>
+<smd name="VPROG" x="1.905" y="26.67" dx="1.5875" dy="1.5875" layer="16" roundness="100"/>
+<smd name="RESET" x="4.445" y="26.67" dx="1.5875" dy="1.5875" layer="16" roundness="100"/>
 </package>
 </packages>
 <symbols>
@@ -712,26 +697,25 @@ LETTER landscape</description>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
-<symbol name="DEVICE-PCB">
-<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle"/>
-<pin name="SCL" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="SDA" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="middle"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<pin name="MISO" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="MOSI" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="SCK" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="RESET" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VPROG" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<text x="-7.62" y="8.636" size="1.27" layer="97">&gt;VERSION</text>
-<text x="-7.62" y="10.922" size="1.27" layer="97">&gt;BOARD</text>
+<symbol name="MAGDEVICE">
+<pin name="GND" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="SDA/MOSI" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="MISO" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL/SCK" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VPROG" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<text x="10.16" y="-10.16" size="1.27" layer="97" align="bottom-right">&gt;VERSION</text>
+<text x="-10.16" y="-10.16" size="1.27" layer="97">&gt;BOARD</text>
+<text x="-10.16" y="11.43" size="1.27" layer="96">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CAPACITOR">
+<deviceset name="CAPACITOR" prefix="C">
 <description>Capacitor</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -785,23 +769,20 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="DEVICE-PCB" prefix="PCB">
-<description>Modulo Footprint</description>
+<deviceset name="MAGDEVICE" prefix="PCB">
 <gates>
-<gate name="G$1" symbol="DEVICE-PCB" x="0" y="0"/>
+<gate name="G$1" symbol="MAGDEVICE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DEVICE-PCB">
+<device name="" package="MAGDEVICE">
 <connects>
-<connect gate="G$1" pin="GND" pad="BUS0"/>
-<connect gate="G$1" pin="MISO" pad="PROG3"/>
-<connect gate="G$1" pin="MOSI" pad="PROG4"/>
-<connect gate="G$1" pin="RESET" pad="PROG1"/>
-<connect gate="G$1" pin="SCK" pad="PROG2"/>
-<connect gate="G$1" pin="SCL" pad="BUS3"/>
-<connect gate="G$1" pin="SDA" pad="BUS1"/>
-<connect gate="G$1" pin="VCC" pad="BUS2"/>
-<connect gate="G$1" pin="VPROG" pad="PROG0"/>
+<connect gate="G$1" pin="GND" pad="GNDA GNDB"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCL/SCK" pad="SCLA SCLB"/>
+<connect gate="G$1" pin="SDA/MOSI" pad="SDAA SDAB"/>
+<connect gate="G$1" pin="VCC" pad="VCCA VCCB"/>
+<connect gate="G$1" pin="VPROG" pad="VPROG"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -874,9 +855,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </classes>
 <parts>
 <part name="R2" library="Modulo" deviceset="RESISTOR" device="" value="680"/>
-<part name="U2" library="Modulo" deviceset="DEVICE-PCB" device="" value="EXCLUDE">
-<attribute name="NOBOM" value="1"/>
-</part>
 <part name="LED1" library="Modulo" deviceset="LED" device="-0805-BLUE" value="LTST-C171TBKT"/>
 <part name="SW1" library="SparkFun-Electromechanical" deviceset="ENCODER_RGB_CA" device="" value="TopUp EC12PLRGBSDVBF-D"/>
 <part name="R1" library="Modulo" deviceset="RESISTOR" device="" value="130"/>
@@ -889,6 +867,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="C2" library="Modulo" deviceset="CAPACITOR" device="" value=".47uF"/>
+<part name="PCB1" library="Modulo" deviceset="MAGDEVICE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -896,9 +875,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </plain>
 <instances>
 <instance part="R2" gate="G$1" x="190.5" y="71.12" rot="R180"/>
-<instance part="U2" gate="G$1" x="71.12" y="83.82">
-<attribute name="NOBOM" x="71.12" y="83.82" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="LED1" gate="G$1" x="200.66" y="71.12" rot="R90"/>
 <instance part="SW1" gate="G$1" x="193.04" y="99.06"/>
 <instance part="R1" gate="G$1" x="220.98" y="104.14" smashed="yes">
@@ -929,16 +905,17 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="NAME" x="72.898" y="112.141" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="72.898" y="109.347" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="PCB1" gate="G$1" x="73.66" y="81.28"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="58.42" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="55.88" y1="73.66" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="GND"/>
+<wire x1="55.88" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -966,38 +943,29 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="RESET" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB3"/>
-<pinref part="U2" gate="G$1" pin="RESET"/>
 <wire x1="99.06" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="RESET"/>
 </segment>
 </net>
 <net name="SDA/MOSI" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="SDA"/>
 <pinref part="U1" gate="G$1" pin="PA6"/>
-<wire x1="99.06" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="81.28" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="MOSI"/>
-<wire x1="96.52" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="76.2" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="SDA/MOSI"/>
+<wire x1="99.06" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA5"/>
-<pinref part="U2" gate="G$1" pin="MISO"/>
 <wire x1="99.06" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="MISO"/>
 </segment>
 </net>
 <net name="SCL/SCK" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="SCL"/>
-<wire x1="88.9" y1="81.28" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PA4"/>
-<pinref part="U2" gate="G$1" pin="SCK"/>
-<wire x1="99.06" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="81.28" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="SCL/SCK"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -1021,13 +989,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VPROG"/>
-<pinref part="U2" gate="G$1" pin="VCC"/>
-<wire x1="55.88" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="86.36" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="55.88" y1="86.36" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="VPROG"/>
 <wire x1="55.88" y1="88.9" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="VCC"/>
+<wire x1="58.42" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SW1" gate="G$1" pin="+"/>

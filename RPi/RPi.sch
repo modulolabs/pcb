@@ -1132,7 +1132,7 @@ wire to board 2.54 mm (0.100") pitch header</description>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="U$2" library="SparkFun-Connectors" deviceset="M13X2" device="2X13"/>
-<part name="F1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
+<part name="F1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="MF-PSMF010X-2"/>
 <part name="X1" library="con-molex" deviceset="C-GRID-04" device="-70553"/>
 </parts>
 <sheets>

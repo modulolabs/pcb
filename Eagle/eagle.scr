@@ -1,0 +1,71 @@
+# Configuration Script
+#
+# This file can be used to configure the editor windows.
+#
+# Uncomment this if you want a set of useful default shortcuts!
+#SCRIPT default-assign.scr;
+#
+
+BRD:
+#MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
+#     '[pcb-service.png] PCB Service : Run pcb-service.ulp;';
+
+MENU 'Bar { Foo : Grid inch 0.001; | Coarse : Grid inch 0.1; }';
+
+# system("open /Users/ekt/integer-labs/pcb/32u4/32u4.pdf")
+
+menu    'Layers {\
+    Top : display NONE top torigins tKeepout tRestrict borigins pads vias dimension unrouted; | \
+    Bottom : display NONE bottom borigins bKeepout bRestrict torigins pads vias dimension unrouted; | \
+    All : display NONE top bottom pads vias dimension unrouted tplace \
+          torigins tnames tvalues bnames bvalues tkeepout bplace borigins bkeepout; | \
+    ShowNames : display tnames tvalues bnames bvalues; | \
+    HideNames : display -tnames -tvalues -bnames -bvalues; | \
+    ShowDoc:  display tdocu bdocu; | \
+    HideDoc : display -tdocu -bdocu; | \
+    SilkScreen: display NONE tplace -tnames -tvalues -tdocu dimension top; | \
+    }' \
+    'TogScreen : run toglays 21 22 25 26 27 28 51 52;' \
+    'DrawOn {\
+            Top : change layer top; | \
+            Bottom : change layer bottom; | \
+            tPlace : change layer tPlace; | \
+            Dim : change layer Dimension; | \
+            History: change layer History; \
+     }' \
+     'Grid {\
+            Toggle : run gridhalf 1 t ; info | \
+            Smaller : run gridhalf 0.5; move | \
+            Bigger : run gridhalf 2; move   | \
+            OnOff : grid; move \
+    }' \
+    'Circle : run circle;' \
+        'Count : run count;' \
+    'DrlAid : run drill-aid;' \
+        'RipPoly : ripup @;' \
+            ;
+
+SCH:
+Grid Default;
+Change Width 0.006in;
+#MENU '[designlink22.png] Search and order {\
+#          General : Run designlink-order.ulp -general; |\
+#          Schematic : Run designlink-order.ulp; \
+#          }'\
+;
+
+LBR:
+#MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
+;
+
+DEV:
+Grid Default;
+
+SYM:
+Grid Default On;
+Change Width 0.010in;
+
+PAC:
+Grid Default On;
+Change Width 0.005in;
+Change Size 0.050in;
