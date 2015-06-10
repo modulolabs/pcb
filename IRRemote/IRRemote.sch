@@ -1770,281 +1770,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <smd name="P$19" x="1.35" y="3.15" dx="0.22" dy="0.4" layer="1"/>
 <smd name="P$20" x="0.9" y="3.15" dx="0.22" dy="0.4" layer="1"/>
 </package>
-<package name="FOOTPRINT">
-<wire x1="25.4" y1="25.4" x2="25.4" y2="0" width="0.127" layer="20"/>
-<wire x1="25.4" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="25.4" width="0.127" layer="20"/>
-<wire x1="0" y1="25.4" x2="25.4" y2="25.4" width="0.127" layer="20"/>
-<wire x1="22.86" y1="0" x2="25.4" y2="2.54" width="0.127" layer="22"/>
-<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="22"/>
-<wire x1="2.54" y1="25.4" x2="0" y2="22.86" width="0.127" layer="22"/>
-<smd name="P$1" x="2.54" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$2" x="5.08" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$3" x="7.62" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$4" x="10.16" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<wire x1="1.27" y1="10.414" x2="11.43" y2="10.414" width="0.127" layer="22"/>
-<wire x1="11.43" y1="10.414" x2="11.43" y2="12.954" width="0.127" layer="22"/>
-<wire x1="11.43" y1="12.954" x2="10.16" y2="12.954" width="0.127" layer="22"/>
-<wire x1="10.16" y1="12.954" x2="7.62" y2="12.954" width="0.127" layer="22"/>
-<wire x1="7.62" y1="12.954" x2="5.08" y2="12.954" width="0.127" layer="22"/>
-<wire x1="5.08" y1="12.954" x2="2.54" y2="12.954" width="0.127" layer="22"/>
-<wire x1="2.54" y1="12.954" x2="1.27" y2="12.954" width="0.127" layer="22"/>
-<wire x1="1.27" y1="12.954" x2="1.27" y2="10.414" width="0.127" layer="22"/>
-<wire x1="2.54" y1="12.954" x2="2.54" y2="19.304" width="0.127" layer="22"/>
-<wire x1="5.08" y1="12.954" x2="5.08" y2="19.304" width="0.127" layer="22"/>
-<wire x1="7.62" y1="12.954" x2="7.62" y2="19.304" width="0.127" layer="22"/>
-<wire x1="10.16" y1="12.954" x2="10.16" y2="19.304" width="0.127" layer="22"/>
-<hole x="22.225" y="22.225" drill="3.556"/>
-<wire x1="22.225" y1="19.05" x2="25.4" y2="19.05" width="0.127" layer="22"/>
-<wire x1="19.05" y1="22.225" x2="19.05" y2="25.4" width="0.127" layer="22"/>
-<wire x1="22.225" y1="19.05" x2="19.05" y2="22.225" width="0.127" layer="22" curve="-90"/>
-<smd name="RESET" x="12.7" y="22.86" dx="1.27" dy="1.27" layer="16"/>
-<smd name="MISO" x="15.24" y="22.86" dx="1.27" dy="1.27" layer="16"/>
-<wire x1="6.35" y1="3.175" x2="3.175" y2="6.35" width="0.127" layer="22" curve="90"/>
-<wire x1="6.35" y1="0" x2="6.35" y2="3.175" width="0.127" layer="22"/>
-<wire x1="0" y1="6.35" x2="3.175" y2="6.35" width="0.127" layer="22"/>
-<hole x="3.175" y="3.175" drill="3.556"/>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="22.86"/>
-<vertex x="2.54" y="25.4"/>
-<vertex x="0" y="25.4"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="19.05" y="25.4"/>
-<vertex x="19.05" y="22.225" curve="90"/>
-<vertex x="22.225" y="19.05"/>
-<vertex x="25.4" y="19.05"/>
-<vertex x="25.4" y="25.4"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="6.35"/>
-<vertex x="3.175" y="6.35" curve="-90"/>
-<vertex x="6.35" y="3.175"/>
-<vertex x="6.35" y="0"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="22.86" y="0"/>
-<vertex x="25.4" y="2.54"/>
-<vertex x="25.4" y="0"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="6.35" y="0"/>
-<vertex x="6.35" y="3.175" curve="90"/>
-<vertex x="3.175" y="6.35"/>
-<vertex x="0" y="6.35"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="25.4" y="25.4"/>
-<vertex x="19.05" y="25.4"/>
-<vertex x="19.05" y="22.225" curve="90"/>
-<vertex x="22.225" y="19.05"/>
-<vertex x="25.4" y="19.05"/>
-</polygon>
-</package>
-<package name="FOOTPRINT-DOUBLE">
-<wire x1="58.42" y1="25.4" x2="58.42" y2="0" width="0.127" layer="20"/>
-<wire x1="58.42" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="25.4" width="0.127" layer="20"/>
-<wire x1="0" y1="25.4" x2="58.42" y2="25.4" width="0.127" layer="20"/>
-<wire x1="55.88" y1="0" x2="58.42" y2="2.54" width="0.127" layer="22"/>
-<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="22"/>
-<wire x1="2.54" y1="25.4" x2="0" y2="22.86" width="0.127" layer="22"/>
-<smd name="P$1" x="2.54" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$2" x="5.08" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$3" x="7.62" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$4" x="10.16" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<wire x1="1.27" y1="10.414" x2="11.43" y2="10.414" width="0.127" layer="22"/>
-<wire x1="11.43" y1="10.414" x2="11.43" y2="12.954" width="0.127" layer="22"/>
-<wire x1="11.43" y1="12.954" x2="10.16" y2="12.954" width="0.127" layer="22"/>
-<wire x1="10.16" y1="12.954" x2="7.62" y2="12.954" width="0.127" layer="22"/>
-<wire x1="7.62" y1="12.954" x2="5.08" y2="12.954" width="0.127" layer="22"/>
-<wire x1="5.08" y1="12.954" x2="2.54" y2="12.954" width="0.127" layer="22"/>
-<wire x1="2.54" y1="12.954" x2="1.27" y2="12.954" width="0.127" layer="22"/>
-<wire x1="1.27" y1="12.954" x2="1.27" y2="10.414" width="0.127" layer="22"/>
-<wire x1="2.54" y1="12.954" x2="2.54" y2="19.304" width="0.127" layer="22"/>
-<wire x1="5.08" y1="12.954" x2="5.08" y2="19.304" width="0.127" layer="22"/>
-<wire x1="7.62" y1="12.954" x2="7.62" y2="19.304" width="0.127" layer="22"/>
-<wire x1="10.16" y1="12.954" x2="10.16" y2="19.304" width="0.127" layer="22"/>
-<hole x="55.245" y="22.225" drill="3.81"/>
-<wire x1="55.245" y1="19.05" x2="58.42" y2="19.05" width="0.127" layer="22"/>
-<wire x1="52.07" y1="22.225" x2="52.07" y2="25.4" width="0.127" layer="22"/>
-<wire x1="55.245" y1="19.05" x2="52.07" y2="22.225" width="0.127" layer="22" curve="-90"/>
-<smd name="RESET" x="12.7" y="22.86" dx="1.27" dy="1.27" layer="16"/>
-<smd name="MISO" x="15.24" y="22.86" dx="1.27" dy="1.27" layer="16"/>
-<wire x1="6.35" y1="3.175" x2="3.175" y2="6.35" width="0.127" layer="22" curve="90"/>
-<wire x1="6.35" y1="0" x2="6.35" y2="3.175" width="0.127" layer="22"/>
-<wire x1="0" y1="6.35" x2="3.175" y2="6.35" width="0.127" layer="22"/>
-<hole x="3.175" y="3.175" drill="3.81"/>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="22.86"/>
-<vertex x="2.54" y="25.4"/>
-<vertex x="0" y="25.4"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="52.07" y="25.4"/>
-<vertex x="52.07" y="22.225" curve="90"/>
-<vertex x="55.245" y="19.05"/>
-<vertex x="58.42" y="19.05"/>
-<vertex x="58.42" y="25.4"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="6.35"/>
-<vertex x="3.175" y="6.35" curve="-90"/>
-<vertex x="6.35" y="3.175"/>
-<vertex x="6.35" y="0"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="55.88" y="0"/>
-<vertex x="58.42" y="2.54"/>
-<vertex x="58.42" y="0"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="6.35" y="0"/>
-<vertex x="6.35" y="3.175" curve="90"/>
-<vertex x="3.175" y="6.35"/>
-<vertex x="0" y="6.35"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="58.42" y="25.4"/>
-<vertex x="52.07" y="25.4"/>
-<vertex x="52.07" y="22.225" curve="90"/>
-<vertex x="55.245" y="19.05"/>
-<vertex x="58.42" y="19.05"/>
-</polygon>
-</package>
-<package name="FOOTPRINT-DOUBLE-NODIMENSION">
-<wire x1="55.88" y1="0" x2="58.42" y2="2.54" width="0.127" layer="22"/>
-<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="22"/>
-<wire x1="2.54" y1="25.4" x2="0" y2="22.86" width="0.127" layer="22"/>
-<smd name="P$1" x="2.54" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$2" x="5.08" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$3" x="7.62" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<smd name="P$4" x="10.16" y="8.89" dx="1.2954" dy="2.794" layer="16"/>
-<wire x1="1.27" y1="10.414" x2="11.43" y2="10.414" width="0.127" layer="22"/>
-<wire x1="11.43" y1="10.414" x2="11.43" y2="12.954" width="0.127" layer="22"/>
-<wire x1="11.43" y1="12.954" x2="10.16" y2="12.954" width="0.127" layer="22"/>
-<wire x1="10.16" y1="12.954" x2="7.62" y2="12.954" width="0.127" layer="22"/>
-<wire x1="7.62" y1="12.954" x2="5.08" y2="12.954" width="0.127" layer="22"/>
-<wire x1="5.08" y1="12.954" x2="2.54" y2="12.954" width="0.127" layer="22"/>
-<wire x1="2.54" y1="12.954" x2="1.27" y2="12.954" width="0.127" layer="22"/>
-<wire x1="1.27" y1="12.954" x2="1.27" y2="10.414" width="0.127" layer="22"/>
-<wire x1="2.54" y1="12.954" x2="2.54" y2="19.304" width="0.127" layer="22"/>
-<wire x1="5.08" y1="12.954" x2="5.08" y2="19.304" width="0.127" layer="22"/>
-<wire x1="7.62" y1="12.954" x2="7.62" y2="19.304" width="0.127" layer="22"/>
-<wire x1="10.16" y1="12.954" x2="10.16" y2="19.304" width="0.127" layer="22"/>
-<hole x="55.245" y="22.225" drill="3.81"/>
-<wire x1="55.245" y1="19.05" x2="58.42" y2="19.05" width="0.127" layer="22"/>
-<wire x1="52.07" y1="22.225" x2="52.07" y2="25.4" width="0.127" layer="22"/>
-<wire x1="55.245" y1="19.05" x2="52.07" y2="22.225" width="0.127" layer="22" curve="-90"/>
-<smd name="RESET" x="12.7" y="22.86" dx="1.27" dy="1.27" layer="16"/>
-<smd name="MISO" x="15.24" y="22.86" dx="1.27" dy="1.27" layer="16"/>
-<wire x1="6.35" y1="3.175" x2="3.175" y2="6.35" width="0.127" layer="22" curve="90"/>
-<wire x1="6.35" y1="0" x2="6.35" y2="3.175" width="0.127" layer="22"/>
-<wire x1="0" y1="6.35" x2="3.175" y2="6.35" width="0.127" layer="22"/>
-<hole x="3.175" y="3.175" drill="3.81"/>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="22.86"/>
-<vertex x="2.54" y="25.4"/>
-<vertex x="0" y="25.4"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="52.07" y="25.4"/>
-<vertex x="52.07" y="22.225" curve="90"/>
-<vertex x="55.245" y="19.05"/>
-<vertex x="58.42" y="19.05"/>
-<vertex x="58.42" y="25.4"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="6.35"/>
-<vertex x="3.175" y="6.35" curve="-90"/>
-<vertex x="6.35" y="3.175"/>
-<vertex x="6.35" y="0"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="55.88" y="0"/>
-<vertex x="58.42" y="2.54"/>
-<vertex x="58.42" y="0"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="6.35" y="0"/>
-<vertex x="6.35" y="3.175" curve="90"/>
-<vertex x="3.175" y="6.35"/>
-<vertex x="0" y="6.35"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="58.42" y="25.4"/>
-<vertex x="52.07" y="25.4"/>
-<vertex x="52.07" y="22.225" curve="90"/>
-<vertex x="55.245" y="19.05"/>
-<vertex x="58.42" y="19.05"/>
-</polygon>
-</package>
-<package name="FOOTPRINT2">
-<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
-<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
-<wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
-<wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
-<wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
-<wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
-<wire x1="2.54" y1="29.845" x2="33.02" y2="29.845" width="0.127" layer="20"/>
-<wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
-<wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
-<wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
-<wire x1="35.941" y1="5.08" x2="35.941" y2="0" width="0.127" layer="20"/>
-<wire x1="35.941" y1="0" x2="-0.381" y2="0" width="0.127" layer="20"/>
-<smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
-<rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
-<rectangle x1="7.239" y1="10.16" x2="8.001" y2="12.192" layer="30"/>
-<rectangle x1="9.779" y1="10.16" x2="10.541" y2="12.192" layer="30"/>
-<smd name="BUS0" x="5.08" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<smd name="BUS1" x="7.62" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<smd name="BUS2" x="10.16" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="40"/>
-<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="40"/>
-<smd name="PROG2" x="20.32" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG3" x="22.86" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<rectangle x1="13.97" y1="22.86" x2="21.59" y2="29.845" layer="40"/>
-<rectangle x1="3.556" y1="12.7" x2="13.97" y2="29.845" layer="40"/>
-<pad name="P$1" x="2.54" y="2.54" drill="2.2225" diameter="3.81"/>
-<pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
-<circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
-<circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
-<pad name="P$3" x="29.21" y="27.305" drill="2.2225" diameter="3.81"/>
-<circle x="29.21" y="27.305" radius="2.3749" width="0.127" layer="21"/>
-<smd name="PROG4" x="25.4" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG1" x="17.78" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG0" x="15.24" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<rectangle x1="21.59" y1="22.86" x2="26.67" y2="29.845" layer="40"/>
-<text x="33.655" y="5.334" size="1.778" layer="21" ratio="15" rot="R90">&gt;BOARD</text>
-<text x="3.175" y="5.3975" size="1.778" layer="21" ratio="15" rot="R90">Modulo</text>
-<text x="3.175" y="16.637" size="1.27" layer="21" ratio="15" rot="SR90">Integer Labs</text>
-<text x="33.655" y="29.21" size="1.27" layer="21" ratio="12" rot="SR90" align="bottom-right">&gt;VERSION</text>
-</package>
-<package name="FOOTPRINT3-2U">
-<wire x1="0" y1="0" x2="25.4" y2="0" width="0.127" layer="21"/>
-<wire x1="25.4" y1="0" x2="25.4" y2="27.94" width="0.127" layer="21"/>
-<wire x1="25.4" y1="27.94" x2="0" y2="27.94" width="0.127" layer="21"/>
-<wire x1="0" y1="27.94" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="P$5" x="3.81" y="24.13" drill="3.197859375"/>
-<pad name="P$6" x="21.59" y="24.13" drill="3.197859375"/>
-<pad name="P$3" x="3.81" y="3.81" drill="3.197859375"/>
-<pad name="P$7" x="21.59" y="3.81" drill="3.197859375"/>
-<pad name="GNDL" x="2.2225" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
-<pad name="SDAL" x="1.9685" y="15.24" drill="1.016" diameter="1.778"/>
-<pad name="VCCL" x="2.0955" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
-<pad name="SCLL" x="1.9685" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
-<pad name="GNDR" x="23.4315" y="17.78" drill="1.016" diameter="1.778" shape="square"/>
-<pad name="SDAR" x="23.1775" y="15.24" drill="1.016" diameter="1.778"/>
-<pad name="VCCR" x="23.4315" y="12.7" drill="1.016" diameter="1.778" rot="R270"/>
-<pad name="SCLR" x="23.1775" y="10.16" drill="1.016" diameter="1.778" rot="R270"/>
-</package>
 <package name="0805">
 <wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
@@ -2259,24 +1984,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <text x="2.54" y="5.08" size="1.27" layer="97" align="center-left">PCINT10/ADC8/CLK0/TOCC7/ICP2/RXD0</text>
 <text x="2.54" y="-5.08" size="1.27" layer="97" align="center-left">PCINT11/ADC9/RESET/dW</text>
 </symbol>
-<symbol name="FOOTPRINT">
-<pin name="GND" x="-10.16" y="15.24" visible="pin" length="middle"/>
-<pin name="SCL" x="-10.16" y="7.62" visible="pin" length="middle"/>
-<pin name="SDA" x="-10.16" y="12.7" visible="pin" length="middle"/>
-<pin name="VCC" x="-10.16" y="10.16" visible="pin" length="middle"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
-<wire x1="5.08" y1="17.78" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<pin name="MISO" x="-10.16" y="-5.08" visible="pin" length="middle"/>
-<pin name="MOSI" x="-10.16" y="-7.62" visible="pin" length="middle"/>
-<pin name="SCK" x="-10.16" y="-2.54" visible="pin" length="middle"/>
-<pin name="RESET" x="-10.16" y="0" visible="pin" length="middle"/>
-<pin name="VPROG" x="-10.16" y="2.54" visible="pin" length="middle"/>
-<text x="7.62" y="10.16" size="1.27" layer="97">&gt;VERSION</text>
-<text x="7.62" y="12.954" size="1.27" layer="97">&gt;BOARD</text>
-<text x="7.62" y="15.494" size="1.27" layer="97">Modulo Footprint</text>
-</symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
@@ -2346,83 +2053,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <connect gate="G$1" pin="PB2" pad="P$12"/>
 <connect gate="G$1" pin="PB3" pad="P$13"/>
 <connect gate="G$1" pin="VCC" pad="P$14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FOOTPRINT">
-<description>Modulo Footprint</description>
-<gates>
-<gate name="G$1" symbol="FOOTPRINT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FOOTPRINT">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$3"/>
-<connect gate="G$1" pin="MISO" pad="RESET"/>
-<connect gate="G$1" pin="MOSI" pad="MISO"/>
-<connect gate="G$1" pin="SCL" pad="P$4"/>
-<connect gate="G$1" pin="SDA" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DOUBLE" package="FOOTPRINT-DOUBLE">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$3"/>
-<connect gate="G$1" pin="MISO" pad="RESET"/>
-<connect gate="G$1" pin="MOSI" pad="MISO"/>
-<connect gate="G$1" pin="SCL" pad="P$4"/>
-<connect gate="G$1" pin="SDA" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DOUBLE-NODIM" package="FOOTPRINT-DOUBLE-NODIMENSION">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$3"/>
-<connect gate="G$1" pin="MISO" pad="RESET"/>
-<connect gate="G$1" pin="MOSI" pad="MISO"/>
-<connect gate="G$1" pin="SCL" pad="P$4"/>
-<connect gate="G$1" pin="SDA" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="FOOTPRINT-2" package="FOOTPRINT2">
-<connects>
-<connect gate="G$1" pin="GND" pad="BUS0"/>
-<connect gate="G$1" pin="MISO" pad="PROG3"/>
-<connect gate="G$1" pin="MOSI" pad="PROG4"/>
-<connect gate="G$1" pin="RESET" pad="PROG1"/>
-<connect gate="G$1" pin="SCK" pad="PROG2"/>
-<connect gate="G$1" pin="SCL" pad="BUS3"/>
-<connect gate="G$1" pin="SDA" pad="BUS1"/>
-<connect gate="G$1" pin="VCC" pad="BUS2"/>
-<connect gate="G$1" pin="VPROG" pad="PROG0"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BOARD" value="Board" constant="no"/>
-<attribute name="VERSION" value="1" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="FOOTPRINT3" package="FOOTPRINT3-2U">
-<connects>
-<connect gate="G$1" pin="GND" pad="GNDL GNDR"/>
-<connect gate="G$1" pin="SCL" pad="SCLL SCLR"/>
-<connect gate="G$1" pin="SDA" pad="SDAL SDAR"/>
-<connect gate="G$1" pin="VCC" pad="VCCL VCCR"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3153,6 +2783,176 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="Modulo">
+<packages>
+<package name="DEVICE-PCB-TABS">
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
+<wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
+<wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
+<wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
+<wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
+<wire x1="35.941" y1="5.08" x2="35.941" y2="0" width="0.127" layer="20"/>
+<smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
+<rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
+<rectangle x1="7.239" y1="10.16" x2="8.001" y2="12.192" layer="30"/>
+<rectangle x1="9.779" y1="10.16" x2="10.541" y2="12.192" layer="30"/>
+<smd name="BUS0" x="5.08" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="BUS1" x="7.62" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="BUS2" x="10.16" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="40"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="40"/>
+<smd name="PROG2" x="20.32" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG3" x="22.86" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<rectangle x1="13.97" y1="22.86" x2="21.59" y2="29.845" layer="40"/>
+<rectangle x1="3.556" y1="12.7" x2="13.97" y2="29.845" layer="40"/>
+<pad name="P$1" x="2.54" y="2.54" drill="2.2225" diameter="3.81"/>
+<pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
+<circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
+<circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
+<pad name="P$3" x="29.21" y="27.305" drill="2.2225" diameter="3.81"/>
+<circle x="29.21" y="27.305" radius="2.3749" width="0.127" layer="21"/>
+<smd name="PROG4" x="25.4" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG1" x="17.78" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG0" x="15.24" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<rectangle x1="21.59" y1="22.86" x2="26.67" y2="29.845" layer="40"/>
+<text x="33.655" y="5.334" size="1.778" layer="21" ratio="15" rot="R90">&gt;BOARD</text>
+<text x="3.175" y="5.3975" size="1.778" layer="21" ratio="15" rot="R90">Modulo</text>
+<text x="3.175" y="16.637" size="1.27" layer="21" ratio="15" rot="SR90">Integer Labs</text>
+<text x="33.655" y="29.21" size="1.27" layer="21" ratio="12" rot="SR90" align="bottom-right">&gt;VERSION</text>
+<wire x1="2.54" y1="29.845" x2="3.81" y2="29.845" width="0.127" layer="20"/>
+<wire x1="33.02" y1="29.845" x2="13.97" y2="29.845" width="0.127" layer="20"/>
+<wire x1="-0.381" y1="0" x2="3.81" y2="0" width="0.127" layer="20"/>
+<wire x1="35.941" y1="0" x2="13.97" y2="0" width="0.127" layer="20"/>
+<hole x="4.445" y="29.845" drill="0.6"/>
+<hole x="5.715" y="29.845" drill="0.6"/>
+<hole x="6.985" y="29.845" drill="0.6"/>
+<hole x="8.255" y="29.845" drill="0.6"/>
+<hole x="9.525" y="29.845" drill="0.6"/>
+<hole x="10.795" y="29.845" drill="0.6"/>
+<hole x="12.065" y="29.845" drill="0.6"/>
+<hole x="13.335" y="29.845" drill="0.6"/>
+<hole x="4.445" y="0" drill="0.6"/>
+<hole x="5.715" y="0" drill="0.6"/>
+<hole x="6.985" y="0" drill="0.6"/>
+<hole x="8.255" y="0" drill="0.6"/>
+<hole x="9.525" y="0" drill="0.6"/>
+<hole x="10.795" y="0" drill="0.6"/>
+<hole x="12.065" y="0" drill="0.6"/>
+<hole x="13.335" y="0" drill="0.6"/>
+</package>
+<package name="DEVICE-PCB">
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
+<wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
+<wire x1="2.54" y1="29.845" x2="33.02" y2="29.845" width="0.127" layer="20"/>
+<wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
+<wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
+<wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
+<wire x1="35.941" y1="5.08" x2="35.941" y2="0" width="0.127" layer="20"/>
+<wire x1="35.941" y1="0" x2="-0.381" y2="0" width="0.127" layer="20"/>
+<smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
+<rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
+<rectangle x1="7.239" y1="10.16" x2="8.001" y2="12.192" layer="30"/>
+<rectangle x1="9.779" y1="10.16" x2="10.541" y2="12.192" layer="30"/>
+<smd name="BUS0" x="5.08" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="BUS1" x="7.62" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="BUS2" x="10.16" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="40"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="40"/>
+<smd name="PROG2" x="20.32" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG3" x="22.86" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<rectangle x1="13.97" y1="22.86" x2="21.59" y2="29.845" layer="40"/>
+<rectangle x1="3.556" y1="12.7" x2="13.97" y2="29.845" layer="40"/>
+<pad name="P$1" x="2.54" y="2.54" drill="2.2225" diameter="3.81"/>
+<pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
+<circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
+<circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
+<pad name="P$3" x="29.21" y="27.305" drill="2.2225" diameter="3.81"/>
+<circle x="29.21" y="27.305" radius="2.3749" width="0.127" layer="21"/>
+<smd name="PROG4" x="25.4" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG1" x="17.78" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG0" x="15.24" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<rectangle x1="21.59" y1="22.86" x2="26.67" y2="29.845" layer="40"/>
+<text x="33.655" y="5.334" size="1.778" layer="21" ratio="15" rot="R90">&gt;BOARD</text>
+<text x="3.175" y="5.3975" size="1.778" layer="21" ratio="15" rot="R90">Modulo</text>
+<text x="3.175" y="16.637" size="1.27" layer="21" ratio="15" rot="SR90">Integer Labs</text>
+<text x="33.655" y="29.21" size="1.27" layer="21" ratio="12" rot="SR90" align="bottom-right">&gt;VERSION</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DEVICE-PCB">
+<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle"/>
+<pin name="SCL" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SDA" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="MISO" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="MOSI" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SCK" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VPROG" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<text x="12.7" y="-12.7" size="1.27" layer="97" align="bottom-right">&gt;VERSION</text>
+<text x="-7.62" y="-12.7" size="1.27" layer="97">&gt;BOARD</text>
+<text x="-7.62" y="8.89" size="1.27" layer="96">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DEVICE-PCB" prefix="PCB">
+<description>Modulo Footprint</description>
+<gates>
+<gate name="G$1" symbol="DEVICE-PCB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DEVICE-PCB">
+<connects>
+<connect gate="G$1" pin="GND" pad="BUS0"/>
+<connect gate="G$1" pin="MISO" pad="PROG3"/>
+<connect gate="G$1" pin="MOSI" pad="PROG4"/>
+<connect gate="G$1" pin="RESET" pad="PROG1"/>
+<connect gate="G$1" pin="SCK" pad="PROG2"/>
+<connect gate="G$1" pin="SCL" pad="BUS3"/>
+<connect gate="G$1" pin="SDA" pad="BUS1"/>
+<connect gate="G$1" pin="VCC" pad="BUS2"/>
+<connect gate="G$1" pin="VPROG" pad="PROG0"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-TABS" package="DEVICE-PCB-TABS">
+<connects>
+<connect gate="G$1" pin="GND" pad="BUS0"/>
+<connect gate="G$1" pin="MISO" pad="PROG3"/>
+<connect gate="G$1" pin="MOSI" pad="PROG4"/>
+<connect gate="G$1" pin="RESET" pad="PROG1"/>
+<connect gate="G$1" pin="SCK" pad="PROG2"/>
+<connect gate="G$1" pin="SCL" pad="BUS3"/>
+<connect gate="G$1" pin="SDA" pad="BUS1"/>
+<connect gate="G$1" pin="VCC" pad="BUS2"/>
+<connect gate="G$1" pin="VPROG" pad="PROG0"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3165,10 +2965,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <parts>
 <part name="U$1" library="adafruit" deviceset="PNA460XM" device=""/>
 <part name="U$2" library="IntegerLabs" deviceset="TINY841" device=""/>
-<part name="U$3" library="IntegerLabs" deviceset="FOOTPRINT" device="FOOTPRINT-2">
-<attribute name="BOARD" value="IR Remote"/>
-<attribute name="VERSION" value="v1"/>
-</part>
+<part name="U$3" library="Modulo" deviceset="DEVICE-PCB" device="-TABS"/>
 <part name="C3" library="IntegerLabs" deviceset="CAP" device="0805" value=".47uF"/>
 <part name="R3" library="IntegerLabs" deviceset="RESISTOR" device="0805" value="680"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
@@ -3206,12 +3003,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="195.58" y1="25.4" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="20.32" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 <label x="182.88" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VPROG"/>
-<wire x1="195.58" y1="17.78" x2="182.88" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="17.78" x2="182.88" y2="17.78" width="0.1524" layer="91"/>
 <label x="182.88" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3238,7 +3035,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="195.58" y1="30.48" x2="182.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="7.62" x2="182.88" y2="30.48" width="0.1524" layer="91"/>
 <label x="182.88" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3317,7 +3114,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="RESET" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="RESET"/>
-<wire x1="195.58" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="17.78" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
 <label x="182.88" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3329,7 +3126,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="MISO" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="MISO"/>
-<wire x1="195.58" y1="10.16" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="20.32" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
 <label x="182.88" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3341,12 +3138,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="SCL/SCK" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="SCL"/>
-<wire x1="195.58" y1="22.86" x2="182.88" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="12.7" x2="182.88" y2="22.86" width="0.1524" layer="91"/>
 <label x="182.88" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SCK"/>
-<wire x1="195.58" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="15.24" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
 <label x="182.88" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3358,12 +3155,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="SDA/MOSI" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="SDA"/>
-<wire x1="195.58" y1="27.94" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="7.62" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
 <label x="182.88" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="MOSI"/>
-<wire x1="195.58" y1="7.62" x2="182.88" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="10.16" x2="182.88" y2="7.62" width="0.1524" layer="91"/>
 <label x="182.88" y="7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>

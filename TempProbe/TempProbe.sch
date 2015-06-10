@@ -2001,14 +2001,15 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-5.08" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="CAPACITOR">
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<wire x1="-0.381" y1="1.27" x2="-0.381" y2="-1.27" width="0.127" layer="94"/>
-<wire x1="0.381" y1="1.27" x2="0.381" y2="-1.27" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-0.508" y2="0" width="0.127" layer="94"/>
-<wire x1="2.54" y1="0" x2="0.508" y2="0" width="0.127" layer="94"/>
+<text x="-3.81" y="6.5786" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-8.382" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="0" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R270"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-0.508" width="0.254" layer="94"/>
+<rectangle x1="-1.524" y1="-0.762" x2="1.524" y2="-0.254" layer="94"/>
+<rectangle x1="-1.524" y1="-0.762" x2="1.524" y2="-0.254" layer="94"/>
+<rectangle x1="-1.524" y1="0.254" x2="1.524" y2="0.762" layer="94"/>
 </symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
@@ -2051,7 +2052,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </connects>
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="ATTINY841-SSUR" constant="no"/>
+<attribute name="PARTNUM" value="ATTINY841-SSUR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2333,13 +2334,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="PTH">
 <attribute name="PARTNUM" value="EXCLUDE"/>
 </part>
-<part name="U1" library="Modulo" deviceset="ATTINY841" device="" value="ATTINY841-SSUR"/>
+<part name="U1" library="Modulo" deviceset="ATTINY841" device="" value="ATTINY841"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="PTH">
 <attribute name="PARTNUM" value="EXCLUDE"/>
 </part>
-<part name="C1" library="Modulo" deviceset="CAPACITOR" device="-100NF" value=".1uF"/>
-<part name="C2" library="Modulo" deviceset="CAPACITOR" device="-100NF" value=".1uF"/>
-<part name="C3" library="Modulo" deviceset="CAPACITOR" device="-100NF" value=".1uF"/>
+<part name="C1" library="Modulo" deviceset="CAPACITOR" device="-100NF" value="100nF"/>
+<part name="C2" library="Modulo" deviceset="CAPACITOR" device="-100NF" value="100nF"/>
+<part name="C3" library="Modulo" deviceset="CAPACITOR" device="-100NF" value="100nF"/>
 <part name="R1" library="Modulo" deviceset="RESISTOR" device="-120Ω" value="120Ω"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -2371,9 +2372,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="JP2" gate="G$1" x="162.56" y="101.6" rot="R180">
 <attribute name="PARTNUM" x="162.56" y="101.6" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="C1" gate="G$1" x="66.04" y="88.9" rot="R90"/>
-<instance part="C2" gate="G$1" x="149.86" y="48.26" rot="R90"/>
-<instance part="C3" gate="G$1" x="167.64" y="53.34" rot="R90"/>
+<instance part="C1" gate="G$1" x="63.5" y="86.36" rot="R180"/>
+<instance part="C2" gate="G$1" x="149.86" y="48.26" rot="R180"/>
+<instance part="C3" gate="G$1" x="167.64" y="48.26" rot="R180"/>
 <instance part="R1" gate="G$1" x="142.24" y="48.26" rot="R90"/>
 <instance part="GND1" gate="1" x="43.18" y="60.96"/>
 <instance part="GND2" gate="1" x="142.24" y="35.56"/>
@@ -2407,7 +2408,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="43.18" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="50.8" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="45.72" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="45.72" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
@@ -2421,7 +2422,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="66.04" y1="86.36" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="83.82" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
@@ -2445,7 +2446,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="55.88" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="50.8" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
 <label x="195.58" y="58.42" size="1.27" layer="95" xref="yes"/>
@@ -2519,7 +2520,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="91.44" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="88.9" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 </net>

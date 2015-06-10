@@ -163,48 +163,6 @@
 <wire x1="-0.635" y1="-2.54" x2="8.255" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="8.255" y1="1.905" x2="-0.635" y2="1.905" width="0.127" layer="21"/>
 </package>
-<package name="FOOTPRINT2">
-<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
-<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
-<wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
-<wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
-<wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
-<wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
-<wire x1="2.54" y1="29.845" x2="33.02" y2="29.845" width="0.127" layer="20"/>
-<wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
-<wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
-<wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
-<wire x1="35.941" y1="5.08" x2="35.941" y2="0" width="0.127" layer="20"/>
-<wire x1="35.941" y1="0" x2="-0.381" y2="0" width="0.127" layer="20"/>
-<smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
-<rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
-<rectangle x1="7.239" y1="10.16" x2="8.001" y2="12.192" layer="30"/>
-<rectangle x1="9.779" y1="10.16" x2="10.541" y2="12.192" layer="30"/>
-<smd name="BUS0" x="5.08" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<smd name="BUS1" x="7.62" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<smd name="BUS2" x="10.16" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
-<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="40"/>
-<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="40"/>
-<smd name="PROG2" x="20.32" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG3" x="22.86" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<rectangle x1="13.97" y1="22.86" x2="21.59" y2="29.845" layer="40"/>
-<rectangle x1="3.556" y1="12.7" x2="13.97" y2="29.845" layer="40"/>
-<pad name="P$1" x="2.54" y="2.54" drill="2.2225" diameter="3.81"/>
-<pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
-<circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
-<circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
-<pad name="P$3" x="29.21" y="27.305" drill="2.2225" diameter="3.81"/>
-<circle x="29.21" y="27.305" radius="2.3749" width="0.127" layer="21"/>
-<smd name="PROG4" x="25.4" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG1" x="17.78" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<smd name="PROG0" x="15.24" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
-<rectangle x1="21.59" y1="22.86" x2="26.67" y2="29.845" layer="40"/>
-<text x="33.655" y="5.334" size="1.778" layer="21" ratio="15" rot="R90">&gt;BOARD</text>
-<text x="3.175" y="5.3975" size="1.778" layer="21" ratio="15" rot="R90">Modulo</text>
-<text x="3.175" y="16.637" size="1.27" layer="21" ratio="15" rot="SR90">Integer Labs</text>
-<text x="33.655" y="29.21" size="1.27" layer="21" ratio="12" rot="SR90" align="bottom-right">&gt;VERSION</text>
-</package>
 </packages>
 </library>
 <library name="SparkFun-LED">
@@ -310,6 +268,70 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="Modulo">
+<packages>
+<package name="DEVICE-PCB-TABS">
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
+<wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="28.575" width="0.127" layer="20"/>
+<wire x1="1.27" y1="28.575" x2="2.54" y2="29.845" width="0.127" layer="20" curve="-90"/>
+<wire x1="33.02" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
+<wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
+<wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
+<wire x1="35.941" y1="5.08" x2="35.941" y2="0" width="0.127" layer="20"/>
+<smd name="BUS3" x="12.7" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="12.319" y1="10.16" x2="13.081" y2="12.192" layer="30"/>
+<rectangle x1="4.699" y1="10.16" x2="5.461" y2="12.192" layer="30"/>
+<rectangle x1="7.239" y1="10.16" x2="8.001" y2="12.192" layer="30"/>
+<rectangle x1="9.779" y1="10.16" x2="10.541" y2="12.192" layer="30"/>
+<smd name="BUS0" x="5.08" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="BUS1" x="7.62" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<smd name="BUS2" x="10.16" y="11.43" dx="1.27" dy="2.54" layer="16" stop="no"/>
+<rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="40"/>
+<rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="40"/>
+<smd name="PROG2" x="20.32" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG3" x="22.86" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<rectangle x1="13.97" y1="22.86" x2="21.59" y2="29.845" layer="40"/>
+<rectangle x1="3.556" y1="12.7" x2="13.97" y2="29.845" layer="40"/>
+<pad name="P$1" x="2.54" y="2.54" drill="2.2225" diameter="3.81"/>
+<pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
+<circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
+<circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
+<pad name="P$3" x="29.21" y="27.305" drill="2.2225" diameter="3.81"/>
+<circle x="29.21" y="27.305" radius="2.3749" width="0.127" layer="21"/>
+<smd name="PROG4" x="25.4" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG1" x="17.78" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<smd name="PROG0" x="15.24" y="27.94" dx="1.27" dy="2.54" layer="16" cream="no"/>
+<rectangle x1="21.59" y1="22.86" x2="26.67" y2="29.845" layer="40"/>
+<text x="33.655" y="5.334" size="1.778" layer="21" ratio="15" rot="R90">&gt;BOARD</text>
+<text x="3.175" y="5.3975" size="1.778" layer="21" ratio="15" rot="R90">Modulo</text>
+<text x="3.175" y="16.637" size="1.27" layer="21" ratio="15" rot="SR90">Integer Labs</text>
+<text x="33.655" y="29.21" size="1.27" layer="21" ratio="12" rot="SR90" align="bottom-right">&gt;VERSION</text>
+<wire x1="2.54" y1="29.845" x2="3.81" y2="29.845" width="0.127" layer="20"/>
+<wire x1="33.02" y1="29.845" x2="13.97" y2="29.845" width="0.127" layer="20"/>
+<wire x1="-0.381" y1="0" x2="3.81" y2="0" width="0.127" layer="20"/>
+<wire x1="35.941" y1="0" x2="13.97" y2="0" width="0.127" layer="20"/>
+<hole x="4.445" y="29.845" drill="0.6"/>
+<hole x="5.715" y="29.845" drill="0.6"/>
+<hole x="6.985" y="29.845" drill="0.6"/>
+<hole x="8.255" y="29.845" drill="0.6"/>
+<hole x="9.525" y="29.845" drill="0.6"/>
+<hole x="10.795" y="29.845" drill="0.6"/>
+<hole x="12.065" y="29.845" drill="0.6"/>
+<hole x="13.335" y="29.845" drill="0.6"/>
+<hole x="4.445" y="0" drill="0.6"/>
+<hole x="5.715" y="0" drill="0.6"/>
+<hole x="6.985" y="0" drill="0.6"/>
+<hole x="8.255" y="0" drill="0.6"/>
+<hole x="9.525" y="0" drill="0.6"/>
+<hole x="10.795" y="0" drill="0.6"/>
+<hole x="12.065" y="0" drill="0.6"/>
+<hole x="13.335" y="0" drill="0.6"/>
 </package>
 </packages>
 </library>
@@ -496,10 +518,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <elements>
 <element name="U$1" library="adafruit" package="PNA460XM" value="PNA460XM" x="25.4" y="2.54" smashed="yes"/>
 <element name="U$2" library="IntegerLabs" package="SOIC14" value="TINY841" x="21.59" y="20.32" rot="R270"/>
-<element name="U$3" library="IntegerLabs" package="FOOTPRINT2" value="FOOTPRINTFOOTPRINT-2" x="0" y="0">
-<attribute name="VERSION" value="v1" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="BOARD" value="IR Remote" x="0" y="0" size="1.778" layer="27" display="off"/>
-</element>
+<element name="U$3" library="Modulo" package="DEVICE-PCB-TABS" value="DEVICE-PCB-TABS" x="0" y="0"/>
 <element name="C3" library="IntegerLabs" package="0805" value=".47uF" x="16.51" y="23.1775" rot="R90"/>
 <element name="R3" library="IntegerLabs" package="0805" value="680" x="26.67" y="22.86" rot="R270"/>
 <element name="LED1" library="adafruit" package="CHIP-LED0805" value="" x="17.78" y="27.94" smashed="yes" rot="R90">
