@@ -1,0 +1,7 @@
+"Qty","Value","Device","Package","Parts","Description","BOM","NOBOM","PARTNUM",
+"4","","M04LOCK","1X04_LOCK","JP1, JP3, JP5, JP6","Header 4","","","M20-9750446",
+"2","CARD-GUIDE","CARD-GUIDE","CARD-GUIDE-2","G1, G3","","","","HCG-201-165",
+"1","CARD-GUIDE","CARD-GUIDE","CARD-GUIDE-2","G2","","","","HCG-202-165",
+"3","HEADER-1X4-JST-PA-SIDE-SMD","HEADER-1X4-JST-PA-SIDE-SMD","JST-PA-SIDE-SMD","JP2, JP4, JP7","","","","SM04B-PASS-TBT(LF)(SN)",
+"1","foot","BOM_ITEM","","PCB1","","","","Base PCB",
+"4","foot","BOM_ITEM","","FOOT1, FOOT2, FOOT3, FOOT4","","","","SJ61A4",

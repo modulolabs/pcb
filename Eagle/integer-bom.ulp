@@ -335,25 +335,25 @@ void CollectPartData (string var)
   {
     SCH.allparts (P)
     {
-      if (P.device.package)
-      {
+
+        skip = 0;
         P.attributes(A)
         {
-            skip = 0;
             for (i=0; i < FoundAttributes; i++) {
               if (A.value == "EXCLUDE") {
                 skip = 1;
-                break;
               }
             }
         }
 
-        if (P.populate && P.value != "NOBOM" && skip == 0)
+        if (P.populate && !skip)
         {
           PartName[NumParts] = P.name;
           PartValue[NumParts] = P.value;
           PartDevice[NumParts] = P.device.name;
-          PartPackage[NumParts] = P.device.package.name;
+          if (P.device.package) {
+            PartPackage[NumParts] = P.device.package.name;
+          }
           PartHeadline[NumParts] = P.device.headline;
           PartDescription [NumParts] = P.device.description;
           PartValueOn[NumParts] = P.device.value == "On";
@@ -376,7 +376,6 @@ void CollectPartData (string var)
           NumParts ++;
         }
       }
-    }
   }
 }
 

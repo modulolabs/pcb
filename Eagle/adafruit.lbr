@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -45590,7 +45590,7 @@ With round pins</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PNA460XM">
+<deviceset name="PNA460XM" prefix="U">
 <description>&lt;b&gt;IR 38KHz receiver&lt;/b&gt;
 &lt;p&gt;
 PNA4602 and related receivers
