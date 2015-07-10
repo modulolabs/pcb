@@ -2185,8 +2185,8 @@ LETTER landscape</description>
 <attribute name="PARTNUM" x="116.84" y="38.1" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="PCB1" gate="G$1" x="116.84" y="30.48"/>
-<instance part="HS1" gate="G$1" x="116.84" y="15.24">
-<attribute name="PARTNUM" x="116.84" y="15.24" size="1.27" layer="96" display="off"/>
+<instance part="HS1" gate="G$1" x="116.84" y="22.86">
+<attribute name="PARTNUM" x="116.84" y="22.86" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="JP1" gate="G$1" x="45.72" y="76.2"/>
 </instances>
