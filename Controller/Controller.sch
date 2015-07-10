@@ -922,6 +922,12 @@
 <vertex x="0" y="1" curve="90"/>
 </polygon>
 </package>
+<package name="SMP">
+<smd name="C" x="0" y="0" dx="2.667" dy="2.54" layer="1"/>
+<smd name="A" x="2.3495" y="0" dx="0.762" dy="1.27" layer="1"/>
+<text x="1.651" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+<text x="1.524" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -1662,6 +1668,17 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </technology>
 </technologies>
 </device>
+<device name="" package="SMP">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="SS3P3-M3/84A" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="USB" prefix="JP">
@@ -1895,13 +1912,25 @@ LETTER landscape</description>
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="JP2" library="Modulo" deviceset="HEADER-1X4" device="-AMPMODU"/>
-<part name="D2" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A"/>
-<part name="D3" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A"/>
-<part name="D4" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A"/>
-<part name="D5" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A"/>
-<part name="D6" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A"/>
-<part name="D7" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A"/>
-<part name="D1" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A"/>
+<part name="D2" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A">
+<attribute name="PARTNUM" value="CUS520,H3F"/>
+</part>
+<part name="D3" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A">
+<attribute name="PARTNUM" value="CUS520,H3F"/>
+</part>
+<part name="D4" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A">
+<attribute name="PARTNUM" value="CUS520,H3F"/>
+</part>
+<part name="D5" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A">
+<attribute name="PARTNUM" value="CUS520,H3F"/>
+</part>
+<part name="D6" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A">
+<attribute name="PARTNUM" value="CUS520,H3F"/>
+</part>
+<part name="D7" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A">
+<attribute name="PARTNUM" value="CUS520,H3F"/>
+</part>
+<part name="D1" library="Modulo" deviceset="DIODE-SCHOTTKY" device="" value="DIODE-SCHOTTKY"/>
 <part name="C5" library="Modulo" deviceset="CAPACITOR-POL" device="-56UF-25V" value="56uF"/>
 <part name="SW1" library="Modulo" deviceset="SWITCH" device="-PTS-810"/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device="">

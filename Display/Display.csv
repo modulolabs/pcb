@@ -6,7 +6,7 @@
 "1","10uH","INDUCTOR","INDUCTOR_1007","L1","Inductors","","","","MPI2520R1-100-R","","","",
 "1","1KΩ","RESISTOR-1KΩ","0603","R4","Resistor","","","","ERJ-3EKF1001V","","1KΩ","",
 "1","ATSAMD20E17A-AU","SAMD21E","TQFP-32","U3","","","","","SAMD20E17A","","ATSAMD21E18A-AU","",
-"1","BAT54T1G","DIODESOD-123","SOD-123","D1","Diode","","","","BAT54T1G","","","",
+"1","BAT54T1G","DIODE-SCHOTTKY","SMP","D1","","","","","SS3P3-M3/84A","","","",
 "1","DEVICE-PCB","DEVICE-PCB","DEVICE-PCB","PCB1","Modulo Footprint","Display","","","Display PCB","","","2",
 "1","ER-OLED0.95-2C","OLED-COLORREVERSE","FPC-24-REVERSE","U1","","","","buydisplay.com","ER-OLED0.95-2C","buydisplay.com","ER-OLED0.95-2C","",
 "1","FAN5331SX","FAN5331","SOT23-5","U2","FAN5331 - LED/OLED 20V Boost Converter","","","","FAN5331SX","","","",
