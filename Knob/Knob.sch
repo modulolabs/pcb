@@ -1017,6 +1017,14 @@ LETTER landscape</description>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 <text x="3.556" y="0" size="2.54" layer="95" align="center-left">&gt;NAME</text>
 </symbol>
+<symbol name="BOM_ITEM">
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="-5.08" y1="-1.27" x2="20.32" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-1.27" x2="20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.27" layer="96">&gt;PARTNUM</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CAPACITOR" prefix="C">
@@ -1517,6 +1525,18 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 </device>
 </devices>
 </deviceset>
+<deviceset name="BOM_ITEM" prefix="BOM">
+<gates>
+<gate name="G$1" symbol="BOM_ITEM" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1551,6 +1571,9 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <part name="F2" library="Modulo" deviceset="FIDUCIAL" device=""/>
 <part name="R5" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 <part name="R4" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
+<part name="CAP1" library="Modulo" deviceset="BOM_ITEM" device="">
+<attribute name="PARTNUM" value="Knob Cap"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1600,6 +1623,9 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <instance part="R4" gate="G$1" x="124.46" y="88.9" smashed="yes">
 <attribute name="NAME" x="120.65" y="90.3986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="125.984" y="90.424" size="1.778" layer="96"/>
+</instance>
+<instance part="CAP1" gate="G$1" x="182.88" y="109.22">
+<attribute name="PARTNUM" x="182.88" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>

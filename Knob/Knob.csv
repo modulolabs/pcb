@@ -3,6 +3,7 @@
 "5","150Ω","RESISTOR-150Ω","0603","R2, R3, R4, R5, R6","Resistor","","ERJ-3EKF1500V","150Ω",
 "2","1KΩ","RESISTOR-1KΩ","0603","R1, R7","Resistor","","ERJ-3EKF1001V","1KΩ",
 "1","ATTINY48/88-TQFP","ATTINY48/88-TQFP","TQFP-32","U1","","","ATTINY48-AUR","",
+"1","BOM_ITEM","BOM_ITEM","","CAP1","","","Knob Cap","",
 "1","DEVICE-PCB","DEVICE-PCB","DEVICE-PCB","PCB1","Modulo Footprint","","Knob PCB","",
 "1","HEADER-1X4-AMPMODU","HEADER-1X4-AMPMODU","AMPMODU-4P","JP1","","","147733-3","",
 "1","LED-1206-REV","LED-1206-REV","LED-1206-REV","LED1","LED","","LTST-C230TBKT","",
