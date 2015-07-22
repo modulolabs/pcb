@@ -1638,9 +1638,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="H2" library="Modulo" deviceset="HOLE" device="#2" value="HOLE#2">
 <attribute name="NOBOM" value="1"/>
 </part>
-<part name="JP4" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-TOP-SMD"/>
-<part name="JP7" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-TOP-SMD"/>
-<part name="JP2" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-TOP-SMD"/>
+<part name="JP4" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD"/>
+<part name="JP7" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD"/>
+<part name="JP2" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD"/>
 <part name="H3" library="Modulo" deviceset="HOLE" device="#2" value="HOLE#2">
 <attribute name="NOBOM" value="1"/>
 </part>
@@ -1654,21 +1654,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="FOOT1" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
+<part name="BOM1" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
 <attribute name="PARTNUM" value="SJ61A4"/>
 </part>
-<part name="FOOT2" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
+<part name="BOM2" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
 <attribute name="PARTNUM" value="SJ61A4"/>
 </part>
-<part name="FOOT3" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
+<part name="BOM3" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
 <attribute name="PARTNUM" value="SJ61A4"/>
 </part>
-<part name="FOOT4" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
+<part name="BOM4" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
 <attribute name="PARTNUM" value="SJ61A4"/>
 </part>
-<part name="PCB1" library="Modulo" deviceset="BOM_ITEM" device="" value="foot">
+<part name="BOM5" library="Modulo" deviceset="BOM_ITEM" device="" value="">
 <attribute name="DESCRIPTION" value="PCB"/>
-<attribute name="PARTNUM" value="Base PCB"/>
+<attribute name="PARTNUM" value="Particle Base PCB"/>
 </part>
 <part name="G1" library="Modulo" deviceset="CARD-GUIDE" device="">
 <attribute name="PARTNUM" value="HCG-201-165"/>
@@ -1733,19 +1733,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="BOM" x="0" y="0" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="FOOT1" gate="G$1" x="193.04" y="71.12">
+<instance part="BOM1" gate="G$1" x="193.04" y="71.12">
 <attribute name="PARTNUM" x="193.04" y="71.12" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="FOOT2" gate="G$1" x="193.04" y="63.5">
+<instance part="BOM2" gate="G$1" x="193.04" y="63.5">
 <attribute name="PARTNUM" x="193.04" y="63.5" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="FOOT3" gate="G$1" x="193.04" y="55.88">
+<instance part="BOM3" gate="G$1" x="193.04" y="55.88">
 <attribute name="PARTNUM" x="193.04" y="55.88" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="FOOT4" gate="G$1" x="193.04" y="48.26">
+<instance part="BOM4" gate="G$1" x="193.04" y="48.26">
 <attribute name="PARTNUM" x="193.04" y="48.26" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="PCB1" gate="G$1" x="193.04" y="40.64">
+<instance part="BOM5" gate="G$1" x="193.04" y="40.64">
 <attribute name="PARTNUM" x="193.04" y="40.64" size="1.27" layer="96" display="off"/>
 <attribute name="DESCRIPTION" x="193.04" y="40.64" size="1.27" layer="96" display="off"/>
 </instance>

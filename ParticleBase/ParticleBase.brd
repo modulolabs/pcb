@@ -207,15 +207,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="Modulo">
 <packages>
-<package name="JST-PA-TOP-SMD">
-<smd name="1" x="-3" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="-3.4" dx="1.8" dy="3.8" layer="1"/>
-<smd name="R2" x="5.35" y="-3.4" dx="1.8" dy="3.8" layer="1"/>
-<hole x="5.2" y="0" drill="0.8"/>
-<hole x="-5.2" y="0" drill="0.8"/>
+<package name="JST-PA-SIDE-SMD">
+<smd name="1" x="-3" y="9.174" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="9.174" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="9.174" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="9.174" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
+<smd name="R2" x="5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
+<hole x="5.2" y="7.874" drill="0.8"/>
+<hole x="-5.2" y="7.874" drill="0.8"/>
+<wire x1="-6" y1="-0.076" x2="6" y2="-0.076" width="0.127" layer="48"/>
 </package>
 <package name="HOLE-#2">
 <pad name="P$1" x="0" y="0" drill="2.2225" diameter="3.81"/>
@@ -2506,14 +2507,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NOBOM" value="1" x="109.22" y="58.42" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="109.22" y="58.42" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="JP4" library="Modulo" package="JST-PA-TOP-SMD" value="HEADER-1X4-JST-PA-TOP-SMD" x="86.36" y="53.975" rot="R180">
-<attribute name="PARTNUM" value="BM04B-PASS-1-TFT(LF)(SN)" x="86.36" y="53.975" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="JP4" library="Modulo" package="JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD" x="86.36" y="60.96" rot="R180">
+<attribute name="PARTNUM" value="SM04B-PASS-TBT(LF)(SN)" x="86.36" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="JP7" library="Modulo" package="JST-PA-TOP-SMD" value="HEADER-1X4-JST-PA-TOP-SMD" x="53.34" y="53.975" rot="R180">
-<attribute name="PARTNUM" value="BM04B-PASS-1-TFT(LF)(SN)" x="53.34" y="53.975" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="JP7" library="Modulo" package="JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD" x="53.34" y="60.96" rot="R180">
+<attribute name="PARTNUM" value="SM04B-PASS-TBT(LF)(SN)" x="53.34" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="JP2" library="Modulo" package="JST-PA-TOP-SMD" value="HEADER-1X4-JST-PA-TOP-SMD" x="69.85" y="53.975" rot="R180">
-<attribute name="PARTNUM" value="BM04B-PASS-1-TFT(LF)(SN)" x="69.85" y="53.975" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="JP2" library="Modulo" package="JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD" x="69.85" y="60.96" rot="R180">
+<attribute name="PARTNUM" value="SM04B-PASS-TBT(LF)(SN)" x="69.85" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="H3" library="Modulo" package="HOLE-#2" value="HOLE#2" x="35.56" y="58.42" rot="MR0">
 <attribute name="PARTNUM" value="EXCLUDE" x="35.56" y="58.42" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2601,12 +2602,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="89.154" y1="31.623" x2="86.868" y2="29.337" width="1.016" layer="16"/>
 <wire x1="52.832" y1="31.623" x2="52.578" y2="31.623" width="1.016" layer="16"/>
 <wire x1="52.578" y1="31.623" x2="50.292" y2="29.337" width="1.016" layer="16"/>
-<wire x1="52.34" y1="52.675" x2="52.34" y2="35.29" width="1.524" layer="1"/>
-<wire x1="85.36" y1="52.675" x2="85.36" y2="51.705" width="1.016" layer="1"/>
+<wire x1="52.34" y1="51.786" x2="52.34" y2="35.29" width="1.524" layer="1"/>
+<wire x1="85.36" y1="51.786" x2="85.36" y2="51.705" width="1.016" layer="1"/>
 <wire x1="85.36" y1="51.705" x2="85.09" y2="50.8" width="1.016" layer="1"/>
 <wire x1="85.09" y1="50.8" x2="85.09" y2="34.925" width="1.524" layer="1"/>
 <via x="85.09" y="34.925" extent="1-16" drill="0.4064"/>
-<wire x1="68.85" y1="52.675" x2="68.85" y2="52.34" width="1.016" layer="1"/>
+<wire x1="68.85" y1="51.786" x2="68.85" y2="52.34" width="1.016" layer="1"/>
 <wire x1="68.85" y1="52.34" x2="68.58" y2="52.07" width="1.016" layer="1"/>
 <wire x1="68.58" y1="52.07" x2="68.58" y2="47.625" width="1.524" layer="1"/>
 <wire x1="68.58" y1="47.625" x2="66.04" y2="45.085" width="1.524" layer="1"/>
@@ -2647,17 +2648,17 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="52.832" y1="29.337" x2="50.292" y2="31.877" width="0.254" layer="1"/>
 <wire x1="89.408" y1="29.083" x2="89.408" y2="29.337" width="0.254" layer="1"/>
 <wire x1="89.408" y1="29.337" x2="86.868" y2="31.877" width="0.254" layer="1"/>
-<wire x1="87.36" y1="52.675" x2="87.36" y2="52.34" width="0.254" layer="1"/>
+<wire x1="87.36" y1="51.786" x2="87.36" y2="52.34" width="0.254" layer="1"/>
 <wire x1="87.36" y1="52.34" x2="87.63" y2="52.07" width="0.254" layer="1"/>
 <wire x1="87.63" y1="52.07" x2="87.63" y2="36.83" width="0.254" layer="1"/>
 <via x="87.63" y="36.83" extent="1-16" drill="0.4064"/>
-<wire x1="70.85" y1="52.675" x2="70.85" y2="52.34" width="0.254" layer="1"/>
+<wire x1="70.85" y1="51.786" x2="70.85" y2="52.34" width="0.254" layer="1"/>
 <wire x1="70.85" y1="52.34" x2="71.12" y2="52.07" width="0.254" layer="1"/>
 <wire x1="71.12" y1="52.07" x2="71.12" y2="48.26" width="0.254" layer="1"/>
 <wire x1="71.12" y1="48.26" x2="73.66" y2="45.72" width="0.254" layer="1"/>
 <wire x1="73.66" y1="45.72" x2="73.66" y2="36.83" width="0.254" layer="1"/>
 <via x="73.66" y="36.83" extent="1-16" drill="0.4064"/>
-<wire x1="54.34" y1="52.675" x2="54.34" y2="52.34" width="0.254" layer="1"/>
+<wire x1="54.34" y1="51.786" x2="54.34" y2="52.34" width="0.254" layer="1"/>
 <wire x1="54.34" y1="52.34" x2="54.61" y2="52.07" width="0.254" layer="1"/>
 <wire x1="54.61" y1="52.07" x2="54.61" y2="36.83" width="0.254" layer="1"/>
 <via x="54.61" y="36.83" extent="1-16" drill="0.4064"/>
@@ -2708,13 +2709,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="55.372" y1="31.877" x2="55.88" y2="32.385" width="0.254" layer="1"/>
 <wire x1="55.88" y1="32.385" x2="55.88" y2="38.1" width="0.254" layer="1"/>
 <via x="55.88" y="38.1" extent="1-16" drill="0.4064"/>
-<wire x1="83.36" y1="52.675" x2="83.36" y2="52.53" width="0.254" layer="1"/>
+<wire x1="83.36" y1="51.786" x2="83.36" y2="52.53" width="0.254" layer="1"/>
 <wire x1="83.36" y1="52.53" x2="83.185" y2="52.07" width="0.254" layer="1"/>
 <wire x1="83.185" y1="52.07" x2="83.185" y2="38.1" width="0.254" layer="1"/>
 <via x="83.185" y="38.1" extent="1-16" drill="0.4064"/>
-<wire x1="66.85" y1="52.675" x2="66.85" y2="52.245" width="0.254" layer="1"/>
+<wire x1="66.85" y1="51.786" x2="66.85" y2="52.245" width="0.254" layer="1"/>
 <wire x1="66.85" y1="52.245" x2="66.675" y2="52.07" width="0.254" layer="1"/>
-<wire x1="50.34" y1="52.675" x2="50.34" y2="52.245" width="0.254" layer="1"/>
+<wire x1="50.34" y1="51.786" x2="50.34" y2="52.245" width="0.254" layer="1"/>
 <wire x1="50.34" y1="52.245" x2="50.165" y2="52.07" width="0.254" layer="1"/>
 <wire x1="50.165" y1="52.07" x2="50.165" y2="38.1" width="0.254" layer="1"/>
 <via x="50.165" y="38.1" extent="1-16" drill="0.4064"/>
@@ -2760,15 +2761,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="45.72" y1="31.115" x2="45.72" y2="26.67" width="1.016" layer="16"/>
 <wire x1="45.72" y1="26.67" x2="46.99" y2="25.4" width="1.016" layer="16"/>
 <wire x1="46.99" y1="25.4" x2="55.88" y2="25.4" width="1.016" layer="16"/>
-<wire x1="56.34" y1="52.675" x2="56.34" y2="47.8" width="1.016" layer="1"/>
+<wire x1="56.34" y1="51.786" x2="56.34" y2="47.8" width="1.016" layer="1"/>
 <wire x1="56.34" y1="47.8" x2="58.42" y2="45.72" width="1.016" layer="1"/>
 <wire x1="58.42" y1="45.72" x2="58.42" y2="25.4" width="1.016" layer="1"/>
 <via x="58.42" y="25.4" extent="1-16" drill="0.4064"/>
-<wire x1="72.85" y1="52.675" x2="72.85" y2="50.34" width="1.016" layer="1"/>
+<wire x1="72.85" y1="51.786" x2="72.85" y2="50.34" width="1.016" layer="1"/>
 <wire x1="72.85" y1="50.34" x2="74.93" y2="48.26" width="1.016" layer="1"/>
 <wire x1="74.93" y1="48.26" x2="74.93" y2="25.4" width="1.016" layer="1"/>
 <via x="74.93" y="25.4" extent="1-16" drill="0.4064"/>
-<wire x1="89.36" y1="52.675" x2="89.36" y2="42.72" width="1.016" layer="1"/>
+<wire x1="89.36" y1="51.786" x2="89.36" y2="42.72" width="1.016" layer="1"/>
 <wire x1="89.36" y1="42.72" x2="93.98" y2="38.1" width="1.016" layer="1"/>
 <wire x1="93.98" y1="38.1" x2="93.98" y2="30.48" width="1.016" layer="1"/>
 <wire x1="93.98" y1="30.48" x2="92.71" y2="29.21" width="1.016" layer="1"/>
