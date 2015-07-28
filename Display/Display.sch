@@ -2840,7 +2840,7 @@ drops below theshold</text>
 <label x="154.94" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="BS0" class="0">
+<net name="BS2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="BS2"/>
 <wire x1="55.88" y1="157.48" x2="66.04" y2="157.48" width="0.1524" layer="91"/>
