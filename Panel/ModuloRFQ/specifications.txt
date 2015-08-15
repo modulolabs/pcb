@@ -1,0 +1,11 @@
+Quantity is 250 panels.
+
+Mousebite holes are not yet present but will be added before production.
+
+Part designators are prefixed with a board number. ie, "4-C2". Please see legend.pdf to match board number to location within panel.
+
+PCB - FR4 1.6mm, dark purple soldermask, white silkscreen both sides, ENIG. Sample and customer approval of soldermask color required.
+
+Deliver assembled panels. Depanelization, programming, testing, and packaging will be completed by customer.
+
+See notes field in BOM for part specific assembly requirements
