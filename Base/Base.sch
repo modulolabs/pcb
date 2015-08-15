@@ -758,23 +758,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <vertex x="0" y="1" curve="90"/>
 </polygon>
 </package>
-<package name="AMPMODU-4P">
-<smd name="P$1" x="-3.81" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$2" x="-3.81" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$3" x="-1.27" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$4" x="-1.27" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$5" x="1.27" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$6" x="1.27" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$7" x="3.81" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$8" x="3.81" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<text x="-3.81" y="-1.27" size="1.016" layer="25">&gt;NAME</text>
-<wire x1="5.08" y1="4.064" x2="5.08" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="4.064" x2="-5.08" y2="-4.064" width="0.127" layer="21"/>
-<circle x="-3.81" y="8.001" radius="0.254" width="0.127" layer="21"/>
-<circle x="-1.27" y="8.001" radius="0.254" width="0.127" layer="21"/>
-<circle x="1.27" y="8.001" radius="0.254" width="0.127" layer="21"/>
-<circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="21"/>
-</package>
 <package name="CARD-GUIDE-2">
 <hole x="0" y="-12.6238" drill="4.2926"/>
 <wire x1="3.81" y1="25.4" x2="3.81" y2="-25.4" width="0.127" layer="21"/>
@@ -802,6 +785,23 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <hole x="5.2" y="7.874" drill="0.8"/>
 <hole x="-5.2" y="7.874" drill="0.8"/>
 <wire x1="-6" y1="-0.076" x2="6" y2="-0.076" width="0.127" layer="48"/>
+</package>
+<package name="AMPMODU-4P">
+<smd name="P$1" x="-3.81" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="P$2" x="-3.81" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.27" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="P$4" x="-1.27" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="P$5" x="1.27" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="P$6" x="1.27" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="P$7" x="3.81" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="P$8" x="3.81" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<text x="-3.81" y="-1.27" size="1.016" layer="25">&gt;NAME</text>
+<wire x1="5.08" y1="4.064" x2="5.08" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.064" x2="-5.08" y2="-4.064" width="0.127" layer="21"/>
+<circle x="-3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
+<circle x="-1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
+<circle x="1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
+<circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
 </package>
 </packages>
 <symbols>
