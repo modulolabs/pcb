@@ -811,23 +811,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <vertex x="-2.15" y="2.1"/>
 </polygon>
 </package>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.635" layer="27" font="vector">&gt;VALUE</text>
-</package>
 <package name="0603">
-<smd name="1" x="-0.762" y="0" dx="0.6096" dy="0.889" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="0.6096" dy="0.889" layer="1"/>
+<smd name="1" x="-0.8382" y="0" dx="0.9906" dy="1.0922" layer="1"/>
+<smd name="2" x="0.8382" y="0" dx="0.9906" dy="1.0922" layer="1"/>
 <text x="-1.0795" y="0.66675" size="0.508" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.23825" size="0.508" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-1.2192" y1="0.6096" x2="1.2192" y2="0.6096" width="0.075" layer="21"/>
-<wire x1="1.2192" y1="0.6096" x2="1.2192" y2="-0.6096" width="0.075" layer="21"/>
-<wire x1="1.2192" y1="-0.6096" x2="-1.2192" y2="-0.6096" width="0.075" layer="21"/>
-<wire x1="-1.2192" y1="-0.6096" x2="-1.2192" y2="0.6096" width="0.075" layer="21"/>
 </package>
 <package name="2X18-LOCK">
 <wire x1="-22.86" y1="-1.905" x2="-22.225" y2="-2.54" width="0.1524" layer="21"/>
@@ -1060,6 +1048,12 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <circle x="1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
 <circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
 </package>
+<package name="0805">
+<smd name="1" x="-1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
+<smd name="2" x="1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
+<text x="-1.6764" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.651" y="-1.4478" size="0.635" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-1X4">
@@ -1183,7 +1177,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PARTNUM" value="147733-3" constant="no"/>
+<attribute name="PARTNUM" value="147721-3" constant="no"/>
 </technology>
 </technologies>
 </device>
