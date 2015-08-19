@@ -187,30 +187,11 @@ LETTER landscape</description>
 </library>
 <library name="Modulo">
 <packages>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.635" layer="27" font="vector">&gt;VALUE</text>
-</package>
-<package name="0805-LED">
-<smd name="A" x="0" y="-0.9" dx="0.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="C" x="0" y="0.9" dx="0.8" dy="1.2" layer="1" rot="R90"/>
-<text x="-1.0795" y="1.4605" size="0.635" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-2.3495" size="0.635" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="0.635" y1="0.3" x2="-0.635" y2="0.3" width="0.127" layer="21"/>
-</package>
 <package name="0603">
-<smd name="1" x="-0.762" y="0" dx="0.6096" dy="0.889" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="0.6096" dy="0.889" layer="1"/>
+<smd name="1" x="-0.8382" y="0" dx="0.9906" dy="1.0922" layer="1"/>
+<smd name="2" x="0.8382" y="0" dx="0.9906" dy="1.0922" layer="1"/>
 <text x="-1.0795" y="0.66675" size="0.508" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.23825" size="0.508" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-1.2192" y1="0.6096" x2="1.2192" y2="0.6096" width="0.075" layer="21"/>
-<wire x1="1.2192" y1="0.6096" x2="1.2192" y2="-0.6096" width="0.075" layer="21"/>
-<wire x1="1.2192" y1="-0.6096" x2="-1.2192" y2="-0.6096" width="0.075" layer="21"/>
-<wire x1="-1.2192" y1="-0.6096" x2="-1.2192" y2="0.6096" width="0.075" layer="21"/>
 </package>
 <package name="DEVICE-PCB-TABS">
 <rectangle x1="14.3256" y1="7.62" x2="16.51" y2="32.385" layer="40" rot="R180"/>
@@ -764,6 +745,19 @@ LETTER landscape</description>
 <wire x1="8.255" y1="1.905" x2="-0.635" y2="1.905" width="0.127" layer="21"/>
 <text x="-1.27" y="-2.54" size="0.635" layer="25" rot="R90">&gt;NAME</text>
 <text x="9.525" y="-2.54" size="0.635" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="0805">
+<smd name="1" x="-1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
+<smd name="2" x="1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
+<text x="-1.6764" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.651" y="-1.4478" size="0.635" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="0805-LED">
+<smd name="A" x="0" y="-1.143" dx="1.4986" dy="1.397" layer="1" rot="R90"/>
+<smd name="C" x="0" y="1.143" dx="1.4986" dy="1.397" layer="1" rot="R90"/>
+<text x="-0.8509" y="-1.4351" size="0.635" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<text x="1.4859" y="-1.5748" size="0.635" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<wire x1="0.635" y1="0.1984" x2="-0.635" y2="0.1984" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1501,6 +1495,7 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <part name="U2" library="Modulo" deviceset="ATTINY841" device=""/>
 <part name="R8" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 <part name="R9" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
+<part name="R10" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 </parts>
 <sheets>
 <sheet>
@@ -1515,21 +1510,21 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <instance part="SW1" gate="G$1" x="63.5" y="73.66">
 <attribute name="PARTNUM" x="63.5" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R2" gate="G$1" x="91.44" y="78.74" smashed="yes">
-<attribute name="NAME" x="87.63" y="80.2386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="91.44" y="80.518" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="101.6" y="83.82" smashed="yes">
+<attribute name="NAME" x="97.79" y="85.3186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="101.6" y="85.598" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="91.44" y="73.66" smashed="yes">
-<attribute name="NAME" x="87.63" y="75.1586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="92.964" y="75.184" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="101.6" y="78.74" smashed="yes">
+<attribute name="NAME" x="97.79" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="103.124" y="80.264" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="93.98" y="60.96" smashed="yes">
-<attribute name="NAME" x="90.17" y="62.4586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="95.504" y="62.484" size="1.778" layer="96"/>
+<instance part="R6" gate="G$1" x="101.6" y="63.5" smashed="yes">
+<attribute name="NAME" x="97.79" y="64.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="103.124" y="65.024" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="88.9" y="55.88" smashed="yes">
-<attribute name="NAME" x="85.09" y="57.3786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.678" y="57.404" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="101.6" y="55.88" smashed="yes">
+<attribute name="NAME" x="97.79" y="57.3786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="103.378" y="57.404" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0">
 <attribute name="BOM" x="0" y="0" size="1.778" layer="96" display="off"/>
@@ -1542,13 +1537,13 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <instance part="JP1" gate="G$1" x="116.84" y="22.86"/>
 <instance part="F1" gate="G$1" x="165.1" y="45.72"/>
 <instance part="F2" gate="G$1" x="190.5" y="45.72"/>
-<instance part="R5" gate="G$1" x="93.98" y="66.04" smashed="yes">
-<attribute name="NAME" x="90.17" y="67.5386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="95.504" y="67.564" size="1.778" layer="96"/>
+<instance part="R5" gate="G$1" x="101.6" y="68.58" smashed="yes">
+<attribute name="NAME" x="97.79" y="70.0786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="103.124" y="70.104" size="1.778" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="91.44" y="71.12" smashed="yes">
-<attribute name="NAME" x="87.63" y="72.6186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="92.964" y="72.644" size="1.778" layer="96"/>
+<instance part="R4" gate="G$1" x="101.6" y="73.66" smashed="yes">
+<attribute name="NAME" x="97.79" y="75.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="103.124" y="75.184" size="1.778" layer="96"/>
 </instance>
 <instance part="CAP1" gate="G$1" x="182.88" y="109.22">
 <attribute name="PARTNUM" x="182.88" y="109.22" size="1.778" layer="96" display="off"/>
@@ -1556,6 +1551,10 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <instance part="U2" gate="G$1" x="63.5" y="132.08" rot="MR180"/>
 <instance part="R8" gate="G$1" x="101.6" y="175.26"/>
 <instance part="R9" gate="G$1" x="45.72" y="175.26"/>
+<instance part="R10" gate="G$1" x="101.6" y="88.9" smashed="yes">
+<attribute name="NAME" x="97.79" y="90.3986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="101.6" y="90.678" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1563,8 +1562,8 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <net name="GND" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
-<label x="101.6" y="55.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="106.68" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
+<label x="114.3" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SW1" gate="G$1" pin="C"/>
@@ -1664,8 +1663,9 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <pinref part="SW1" gate="G$1" pin="SW"/>
 <label x="79.502" y="64.008" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="55.88" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="55.88" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PA2"/>
@@ -1677,39 +1677,50 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="SW1" gate="G$1" pin="-R"/>
-<wire x1="86.36" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="78.74" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="73.66" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="83.82" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="73.66" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="83.82" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<junction x="88.9" y="83.82"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="SW1" gate="G$1" pin="-G"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="71.12" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="71.12" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="73.66" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
-<junction x="83.82" y="71.12"/>
+<wire x1="91.44" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<junction x="91.44" y="73.66"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="SW1" gate="G$1" pin="-B"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="68.58" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="66.04" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
-<junction x="88.9" y="66.04"/>
+<wire x1="96.52" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="68.58" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<junction x="91.44" y="68.58"/>
 </segment>
 </net>
 <net name="RED" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
-<label x="104.14" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="106.68" y1="83.82" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
+<label x="114.3" y="83.82" size="1.27" layer="95" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="83.82" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="88.9" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
+<junction x="111.76" y="83.82"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PA1"/>
@@ -1720,13 +1731,13 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <net name="GREEN" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
-<label x="104.14" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="106.68" y1="78.74" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
+<label x="114.3" y="73.66" size="1.27" layer="95" xref="yes"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="71.12" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
-<junction x="101.6" y="73.66"/>
+<wire x1="106.68" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="73.66" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+<junction x="111.76" y="73.66"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PA7"/>
@@ -1749,13 +1760,13 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <net name="BLUE" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<label x="106.68" y="60.96" size="1.27" layer="95" xref="yes"/>
-<wire x1="101.6" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="60.96" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="63.5" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
+<label x="114.3" y="63.5" size="1.27" layer="95" xref="yes"/>
+<wire x1="111.76" y1="63.5" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="63.5" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
-<junction x="101.6" y="60.96"/>
+<wire x1="111.76" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
+<junction x="111.76" y="63.5"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB2"/>
