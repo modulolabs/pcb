@@ -722,16 +722,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </library>
 <library name="Modulo">
 <packages>
-<package name="JST-PA-TOP-SMD">
-<smd name="1" x="-3" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="1.3" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="-3.4" dx="1.8" dy="3.8" layer="1"/>
-<smd name="R2" x="5.35" y="-3.4" dx="1.8" dy="3.8" layer="1"/>
-<hole x="5.2" y="0" drill="0.8"/>
-<hole x="-5.2" y="0" drill="0.8"/>
-</package>
 <package name="HOLE-#4">
 <pad name="P$1" x="0" y="0" drill="3.197859375" diameter="5.08"/>
 <circle x="0" y="0" radius="2.794" width="0.127" layer="21"/>
@@ -766,14 +756,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-3.81" y1="25.4" x2="3.81" y2="25.4" width="0.127" layer="21"/>
 <text x="-2.54" y="19.05" size="1.27" layer="25">&gt;NAME</text>
 <hole x="0" y="12.6238" drill="4.2926"/>
-</package>
-<package name="DF3DZ-3P">
-<smd name="P$1" x="-3" y="0" dx="3.1" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$2" x="-1" y="0" dx="3.1" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$3" x="1" y="0" dx="3.1" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$4" x="3" y="0" dx="3.1" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$5" x="-7.4" y="4.75" dx="3.3" dy="2.3" layer="1" rot="R90"/>
-<smd name="P$6" x="7.4" y="4.75" dx="3.3" dy="2.3" layer="1" rot="R90"/>
 </package>
 <package name="PANASONIC_D">
 <wire x1="-3.25" y1="3.25" x2="1.55" y2="3.25" width="0.1016" layer="51"/>
@@ -1021,32 +1003,15 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="22.86" y1="-1.905" x2="22.225" y2="-2.54" width="0.1524" layer="21"/>
 </package>
 <package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<smd name="R2" x="5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<hole x="5.2" y="7.874" drill="0.8"/>
-<hole x="-5.2" y="7.874" drill="0.8"/>
-<wire x1="-6" y1="-0.076" x2="6" y2="-0.076" width="0.127" layer="48"/>
-</package>
-<package name="AMPMODU-4P">
-<smd name="P$1" x="-3.81" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$2" x="-3.81" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$3" x="-1.27" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$4" x="-1.27" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$5" x="1.27" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$6" x="1.27" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$7" x="3.81" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<smd name="P$8" x="3.81" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
-<text x="-3.81" y="-1.27" size="1.016" layer="25">&gt;NAME</text>
-<wire x1="5.08" y1="4.064" x2="5.08" y2="-4.064" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="4.064" x2="-5.08" y2="-4.064" width="0.127" layer="21"/>
-<circle x="-3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
-<circle x="-1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
-<circle x="1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
-<circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
+<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<hole x="5.2" y="9.95" drill="0.8"/>
+<hole x="-5.2" y="9.95" drill="0.8"/>
+<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 <package name="0805">
 <smd name="1" x="-1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
@@ -1056,17 +1021,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </package>
 </packages>
 <symbols>
-<symbol name="HEADER-1X4">
-<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle"/>
-<pin name="2" x="-5.08" y="0" visible="pin" length="middle"/>
-<pin name="3" x="-5.08" y="-2.54" visible="pin" length="middle"/>
-<pin name="4" x="-5.08" y="-5.08" visible="pin" length="middle"/>
-<wire x1="0" y1="5.08" x2="0" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="6.096" size="2.54" layer="95" font="fixed" ratio="10">&gt;NAME</text>
-</symbol>
 <symbol name="HOLE">
 <pin name="HOLE" x="0" y="0" visible="off" length="point"/>
 <text x="3.556" y="0" size="1.27" layer="95">&gt;NAME</text>
@@ -1161,65 +1115,19 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="10.16" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
 <text x="-2.54" y="13.97" size="1.27" layer="96">&gt;NAME</text>
 </symbol>
+<symbol name="HEADER-MODULO">
+<pin name="GND" x="-7.62" y="5.08" visible="pin" length="middle"/>
+<pin name="VCC" x="-7.62" y="2.54" visible="pin" length="middle"/>
+<pin name="SDA" x="-7.62" y="0" visible="pin" length="middle"/>
+<pin name="SCL" x="-7.62" y="-2.54" visible="pin" length="middle"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="8.636" size="2.54" layer="95" font="fixed" ratio="10">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="HEADER-1X4" prefix="JP">
-<gates>
-<gate name="G$1" symbol="HEADER-1X4" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-AMPMODU" package="AMPMODU-4P">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1 P$2"/>
-<connect gate="G$1" pin="2" pad="P$3 P$4"/>
-<connect gate="G$1" pin="3" pad="P$5 P$6"/>
-<connect gate="G$1" pin="4" pad="P$7 P$8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PARTNUM" value="147721-3" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-JST-PA-TOP-SMD" package="JST-PA-TOP-SMD">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PARTNUM" value="BM04B-PASS-1-TFT(LF)(SN)" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-HIROSE-DF3-HORIZONTAL" package="DF3DZ-3P">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-JST-PA-SIDE-SMD" package="JST-PA-SIDE-SMD">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PARTNUM" value="SM04B-PASS-TBT(LF)(SN)" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="HOLE" prefix="H">
 <gates>
 <gate name="G$1" symbol="HOLE" x="0" y="0"/>
@@ -1513,6 +1421,24 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
+<deviceset name="HEADER-MODULO" prefix="JP">
+<gates>
+<gate name="G$1" symbol="HEADER-MODULO" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="JST-PA-SIDE-SMD">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="frames">
@@ -1632,9 +1558,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="H2" library="Modulo" deviceset="HOLE" device="#2" value="HOLE#2">
 <attribute name="NOBOM" value="1"/>
 </part>
-<part name="JP4" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD"/>
-<part name="JP7" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD"/>
-<part name="JP2" library="Modulo" deviceset="HEADER-1X4" device="-JST-PA-SIDE-SMD" value="HEADER-1X4-JST-PA-SIDE-SMD"/>
 <part name="H3" library="Modulo" deviceset="HOLE" device="#2" value="HOLE#2">
 <attribute name="NOBOM" value="1"/>
 </part>
@@ -1685,6 +1608,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP9" library="Modulo" deviceset="HEADER-2X18" device=""/>
 <part name="H5" library="Modulo" deviceset="HOLE" device="#2"/>
 <part name="H10" library="Modulo" deviceset="HOLE" device="#2"/>
+<part name="JP7" library="Modulo" deviceset="HEADER-MODULO" device=""/>
+<part name="JP2" library="Modulo" deviceset="HEADER-MODULO" device=""/>
+<part name="JP4" library="Modulo" deviceset="HEADER-MODULO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1710,9 +1636,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="H2" gate="G$1" x="134.366" y="81.534">
 <attribute name="NOBOM" x="134.366" y="81.534" size="1.016" layer="96" display="off"/>
 </instance>
-<instance part="JP4" gate="G$1" x="71.12" y="86.36"/>
-<instance part="JP7" gate="G$1" x="101.6" y="86.36"/>
-<instance part="JP2" gate="G$1" x="33.02" y="86.36"/>
 <instance part="H3" gate="G$1" x="134.62" y="73.66">
 <attribute name="NOBOM" x="134.62" y="73.66" size="1.016" layer="96" display="off"/>
 </instance>
@@ -1764,6 +1687,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP9" gate="G$1" x="195.58" y="157.48"/>
 <instance part="H5" gate="G$1" x="134.62" y="58.42"/>
 <instance part="H10" gate="G$1" x="144.78" y="58.42"/>
+<instance part="JP7" gate="G$1" x="30.48" y="86.36"/>
+<instance part="JP2" gate="G$1" x="66.04" y="86.36"/>
+<instance part="JP4" gate="G$1" x="101.6" y="86.36"/>
 </instances>
 <busses>
 </busses>
@@ -1790,21 +1716,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="104.14" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
-<label x="88.9" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP7" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<wire x1="27.94" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
-<label x="20.32" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<label x="58.42" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP4" gate="G$1" pin="3"/>
-</segment>
-<segment>
 <label x="40.894" y="152.4" size="1.778" layer="95" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="40.64" y1="142.24" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
@@ -1816,6 +1727,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP8" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="167.64" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
 <junction x="139.7" y="167.64"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="VCC"/>
+<wire x1="22.86" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
+<label x="20.32" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="VCC"/>
+<wire x1="58.42" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
+<label x="55.88" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="VCC"/>
+<wire x1="93.98" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<label x="91.44" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1840,21 +1766,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="104.14" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
-<label x="88.9" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP7" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="27.94" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
-<label x="20.32" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
-<label x="58.42" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="40.64" y1="134.62" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
@@ -1866,6 +1777,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP8" gate="G$1" pin="4"/>
 <wire x1="162.56" y1="165.1" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
 <junction x="139.7" y="165.1"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="GND"/>
+<wire x1="22.86" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
+<label x="20.32" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="91.44" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="55.88" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="GND"/>
+<wire x1="93.98" y1="91.44" x2="91.44" y2="91.44" width="0.1524" layer="91"/>
+<label x="91.44" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -1890,21 +1816,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="27.94" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
-<label x="88.9" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP7" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="27.94" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
-<label x="20.32" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
-<label x="58.42" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <label x="81.28" y="147.32" size="1.778" layer="95" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
@@ -1917,6 +1828,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP9" gate="G$1" pin="23"/>
 <wire x1="210.82" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
 <junction x="210.82" y="139.7"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="SDA"/>
+<wire x1="22.86" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
+<label x="20.32" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="SDA"/>
+<wire x1="58.42" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+<label x="55.88" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="SDA"/>
+<wire x1="93.98" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
+<label x="91.44" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -1941,21 +1867,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="27.94" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
-<label x="88.9" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP7" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="27.94" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<label x="20.32" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
-<label x="58.42" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP4" gate="G$1" pin="4"/>
-</segment>
-<segment>
 <label x="81.28" y="152.4" size="1.778" layer="95" xref="yes"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
@@ -1968,6 +1879,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP9" gate="G$1" pin="21"/>
 <wire x1="187.96" y1="142.24" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
 <junction x="210.82" y="142.24"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="SCL"/>
+<wire x1="22.86" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
+<label x="20.32" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="SCL"/>
+<wire x1="58.42" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
+<label x="55.88" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="SCL"/>
+<wire x1="93.98" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
+<label x="91.44" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
