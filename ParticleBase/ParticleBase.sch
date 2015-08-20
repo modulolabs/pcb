@@ -1982,12 +1982,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="73.66" y="127"/>
 </segment>
 <segment>
-<pinref part="JP9" gate="G$1" pin="6"/>
-<wire x1="210.82" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
-<label x="213.36" y="162.56" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP9" gate="G$1" pin="5"/>
-<wire x1="187.96" y1="162.56" x2="210.82" y2="162.56" width="0.1524" layer="91"/>
-<junction x="210.82" y="162.56"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="167.64" x2="210.82" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="167.64" x2="213.36" y2="167.64" width="0.1524" layer="91"/>
+<label x="213.36" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2102,13 +2101,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="162.56" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="JP9" gate="G$1" pin="1"/>
-<pinref part="JP9" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="167.64" x2="210.82" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="JP9" gate="G$1" pin="4"/>
@@ -2205,6 +2197,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP9" gate="G$1" pin="36"/>
 <pinref part="JP9" gate="G$1" pin="35"/>
 <wire x1="210.82" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="JP9" gate="G$1" pin="5"/>
+<pinref part="JP9" gate="G$1" pin="6"/>
+<wire x1="187.96" y1="162.56" x2="210.82" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
