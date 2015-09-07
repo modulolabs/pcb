@@ -1,0 +1,13 @@
+RefDes,Layer,LocationX,LocationY,Rotation
+C1,Bottom,2.750,1.700,0
+D1,Bottom,3.950,1.800,270
+D2,Bottom,3.550,1.800,270
+F1,Bottom,0.550,0.150,0
+F2,Bottom,0.550,2.250,0
+F3,Bottom,4.075,0.150,0
+F4,Bottom,3.925,2.250,0
+JP2,Bottom,1.650,2.400,180
+JP4,Bottom,2.300,2.400,180
+JP7,Bottom,1.000,2.400,180
+R1,Bottom,3.800,1.800,270
+R2,Bottom,3.700,1.800,270
