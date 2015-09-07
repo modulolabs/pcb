@@ -711,17 +711,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-1.27" y="-2.54" size="0.635" layer="25" rot="R90">&gt;NAME</text>
 <text x="9.525" y="-2.54" size="0.635" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<smd name="R2" x="5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<hole x="5.2" y="7.874" drill="0.8"/>
-<hole x="-5.2" y="7.874" drill="0.8"/>
-<wire x1="-6" y1="-0.076" x2="6" y2="-0.076" width="0.127" layer="48"/>
-</package>
 <package name="DEVICE-PCB-OLD">
 <rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
 <rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
@@ -884,6 +873,17 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+<package name="JST-PA-SIDE-SMD">
+<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<hole x="5.2" y="9.95" drill="0.8"/>
+<hole x="-5.2" y="9.95" drill="0.8"/>
+<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
 <symbols>
@@ -1463,7 +1463,7 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </connects>
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="MIC5205-3.3YM5 TR" constant="no"/>
+<attribute name="PARTNUM" value="MIC5205-3.3YM5 TR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1773,7 +1773,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="R11" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 <part name="R7" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 <part name="R9" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
-<part name="U1" library="Modulo" deviceset="VREG-MIC5205" device="-3.3V" value="MIC5205-3.3YM5 TR"/>
+<part name="U1" library="Modulo" deviceset="VREG-MIC5205" device="-3.3V" value="VREG-MIC5205-3.3V"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>

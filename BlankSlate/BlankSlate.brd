@@ -704,8 +704,9 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="22.098" y="19.8755" size="0.635" layer="25" font="vector"/>
 <attribute name="VALUE" x="21.209" y="16.0655" size="0.635" layer="27" font="vector"/>
 </element>
-<element name="U1" library="Modulo" package="SOT23-5" value="MIC5205-3.3YM5 TR" x="28.575" y="19.685" smashed="yes" rot="MR270">
+<element name="U1" library="Modulo" package="SOT23-5" value="VREG-MIC5205-3.3V" x="28.575" y="19.685" smashed="yes" rot="MR270">
 <attribute name="NAME" x="28.0035" y="21.971" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="PARTNUM" value="MIC5205-3.3YM5 TR" x="28.575" y="19.685" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="SJ1" library="SparkFun-Passives" package="SJ_2S" value="SOLDERJUMPERNC" x="24.765" y="19.685" smashed="yes" rot="MR270">
 <attribute name="BOM" value="EXCLUDE" x="24.765" y="19.685" size="1.778" layer="28" rot="MR270" display="off"/>
