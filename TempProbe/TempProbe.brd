@@ -517,6 +517,7 @@ einem neuen Namen ab.</description>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="2X3" value="AVR_SPI_PRG_6PTH" x="8.89" y="5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.255" y="3.4925" size="0.635" layer="25" ratio="10" rot="R180"/>
+<attribute name="BOM" value="EXCLUDE" x="8.89" y="5.08" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$1" library="Modulo" package="LOGO-TINY" value="" x="19.685" y="5.08"/>
 <element name="JP2" library="SparkFun-Connectors" package="1X04_NO_SILK" value="" x="3.81" y="11.43" smashed="yes" rot="R270">

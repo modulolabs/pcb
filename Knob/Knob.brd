@@ -140,12 +140,12 @@
 <text x="-1.016" y="-1.23825" size="0.508" layer="27" font="vector">&gt;VALUE</text>
 </package>
 <package name="LED-1206-REV">
-<wire x1="-1.15" y1="-1.15" x2="-1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="-1.15" y1="1.15" x2="1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="1.15" x2="1.15" y2="-1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="-1.15" x2="-1.15" y2="-1.15" width="0.05" layer="20"/>
-<smd name="A" x="-1.905" y="0" dx="1.524" dy="1.524" layer="1"/>
-<smd name="C" x="1.9" y="0" dx="1.524" dy="1.524" layer="1"/>
+<wire x1="-1.016" y1="-1.15" x2="-1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="-1.016" y1="1.15" x2="1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="1.15" x2="1.016" y2="-1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="-1.15" x2="-1.016" y2="-1.15" width="0.05" layer="20"/>
+<smd name="A" x="-1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<smd name="C" x="1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
 <wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
 <wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
 <text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
@@ -341,7 +341,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="LaenPCBOrder">
+<designrules name="Modulo">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -349,9 +349,8 @@ die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
 Einstellungen hier und speichern die Design Rules unter 
 einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
-&lt;p&gt;
-Please make sure your boards conform to these design rules.</description>
+<description language="en">&lt;b&gt;Modulo Design Rules&lt;/b&gt;
+</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
 <param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
@@ -405,7 +404,7 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -634,7 +633,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.055" y1="13.425" x2="17.055" y2="13.245" width="0.2032" layer="16"/>
 <wire x1="17.055" y1="13.245" x2="15.875" y2="12.065" width="0.2032" layer="16"/>
 <via x="15.875" y="12.065" extent="1-16" drill="0.4064"/>
-<wire x1="8.885" y1="22.225" x2="11.43" y2="22.225" width="0.254" layer="16"/>
+<wire x1="8.763" y1="22.225" x2="11.43" y2="22.225" width="0.254" layer="16"/>
 <wire x1="11.43" y1="22.225" x2="12.065" y2="21.59" width="0.254" layer="16"/>
 <wire x1="12.065" y1="21.59" x2="12.065" y2="15.875" width="0.254" layer="16"/>
 <wire x1="12.065" y1="15.875" x2="13.49375" y2="14.44625" width="0.254" layer="16"/>
@@ -655,7 +654,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$7">
 <contactref element="R7" pad="1"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="5.08" y1="19.2532" x2="5.08" y2="22.225" width="0.254" layer="16"/>
+<wire x1="5.08" y1="19.2532" x2="5.207" y2="22.225" width="0.254" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="PCB1" pad="VPROG"/>
@@ -869,8 +868,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="18,29,deeb4efd7be924fb"/>
-<approved hash="18,29,46c4412e21e7a602"/>
 <approved hash="18,30,1479475a07525471"/>
 <approved hash="18,30,ef75dc569c4eaf6d"/>
 <approved hash="18,30,4661b542f57b0658"/>
@@ -879,20 +876,25 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,30,c7c5f7a6b7be87dd"/>
 <approved hash="18,30,6ed19eb2de8b2ee8"/>
 <approved hash="18,30,f1ec218f6187b1e4"/>
-<approved hash="4,16,40a736d77b522e2a"/>
-<approved hash="4,16,fcccab399842c067"/>
-<approved hash="4,16,3c9249e67b4f41fc"/>
-<approved hash="4,16,d651b48fc7b2a443"/>
-<approved hash="4,16,32087e855f00ce25"/>
-<approved hash="4,16,4e2173e92eb24713"/>
-<approved hash="4,16,cbaba71b687d4744"/>
-<approved hash="4,16,b5a818b86851ea07"/>
-<approved hash="4,16,d6d60bde27f397cb"/>
-<approved hash="4,16,54cc41aabd66b4e0"/>
-<approved hash="4,16,a49a28a117fe3717"/>
-<approved hash="4,16,ae665e218eb082bf"/>
-<approved hash="4,16,401bc1e6040be12d"/>
-<approved hash="4,16,b98d17382b9b8afe"/>
+<approved hash="4,16,98255bd51152292a"/>
+<approved hash="4,16,55829432aa20698c"/>
+<approved hash="4,16,e4124ee4114d2cfc"/>
+<approved hash="4,16,d301b1c0a89da373"/>
+<approved hash="4,16,6b9babce52ac9c86"/>
+<approved hash="4,16,dceee0d1044fae1c"/>
+<approved hash="4,16,6b6105e4afbb23cf"/>
+<approved hash="4,16,6c604eee19baf3cd"/>
+<approved hash="4,16,b26ad9d4d8735605"/>
+<approved hash="4,16,cc6609f7d85094c6"/>
+<approved hash="4,16,ec7cf1e30f280e0b"/>
+<approved hash="4,16,e8624658ec28077c"/>
+<approved hash="4,16,b9925214da7db87b"/>
+<approved hash="4,16,a755227f2c52f64b"/>
+<approved hash="4,16,b2151f631daea238"/>
+<approved hash="4,16,888a56ee2127513a"/>
+<approved hash="4,16,b079a3a1334d74a6"/>
+<approved hash="4,16,c2b562f76228c26a"/>
+<approved hash="4,16,518113312d306d9c"/>
 <approved hash="6,16,f3b7edbce1bcffb7"/>
 <approved hash="6,16,dcbed0ba8fba83be"/>
 </errors>

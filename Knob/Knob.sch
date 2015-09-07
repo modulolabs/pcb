@@ -322,12 +322,12 @@ LETTER landscape</description>
 <circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
 </package>
 <package name="LED-1206-REV">
-<wire x1="-1.15" y1="-1.15" x2="-1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="-1.15" y1="1.15" x2="1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="1.15" x2="1.15" y2="-1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="-1.15" x2="-1.15" y2="-1.15" width="0.05" layer="20"/>
-<smd name="A" x="-1.905" y="0" dx="1.524" dy="1.524" layer="1"/>
-<smd name="C" x="1.9" y="0" dx="1.524" dy="1.524" layer="1"/>
+<wire x1="-1.016" y1="-1.15" x2="-1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="-1.016" y1="1.15" x2="1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="1.15" x2="1.016" y2="-1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="-1.15" x2="-1.016" y2="-1.15" width="0.05" layer="20"/>
+<smd name="A" x="-1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<smd name="C" x="1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
 <wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
 <wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
 <text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
@@ -712,17 +712,6 @@ LETTER landscape</description>
 <text x="19.05" y="27.94" size="1.778" layer="22" rot="MR0" align="bottom-center">d</text>
 <text x="13.97" y="27.94" size="1.778" layer="22" rot="MR0" align="bottom-center">c</text>
 </package>
-<package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<smd name="R2" x="5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<hole x="5.2" y="7.874" drill="0.8"/>
-<hole x="-5.2" y="7.874" drill="0.8"/>
-<wire x1="-6" y1="-0.076" x2="6" y2="-0.076" width="0.127" layer="48"/>
-</package>
 <package name="SOIC-14">
 <smd name="1" x="0" y="-3.175" dx="0.889" dy="0.508" layer="1" rot="R90"/>
 <smd name="2" x="1.27" y="-3.175" dx="0.889" dy="0.508" layer="1" rot="R90"/>
@@ -758,6 +747,17 @@ LETTER landscape</description>
 <text x="-0.8509" y="-1.4351" size="0.635" layer="25" font="vector" rot="R90">&gt;NAME</text>
 <text x="1.4859" y="-1.5748" size="0.635" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <wire x1="0.635" y1="0.1984" x2="-0.635" y2="0.1984" width="0.127" layer="21"/>
+</package>
+<package name="JST-PA-SIDE-SMD">
+<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<hole x="5.2" y="9.95" drill="0.8"/>
+<hole x="-5.2" y="9.95" drill="0.8"/>
+<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
 <symbols>

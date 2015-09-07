@@ -1557,7 +1557,9 @@ LETTER landscape</description>
 <part name="PROBE1" library="Modulo" deviceset="TEMP-PROBE" device="">
 <attribute name="PARTNUM" value="NTCLE413E2103F102L"/>
 </part>
-<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M04" device="1X04_NO_SILK">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
@@ -1594,7 +1596,9 @@ LETTER landscape</description>
 <instance part="PROBE1" gate="G$1" x="88.9" y="73.66" rot="R180">
 <attribute name="PARTNUM" x="88.9" y="73.66" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="J1" gate="G$1" x="35.56" y="76.2"/>
+<instance part="J1" gate="G$1" x="35.56" y="76.2">
+<attribute name="BOM" x="35.56" y="76.2" size="1.27" layer="96" display="off"/>
+</instance>
 <instance part="JP2" gate="G$1" x="45.72" y="124.46" rot="R180">
 <attribute name="BOM" x="45.72" y="124.46" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
