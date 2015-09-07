@@ -9,7 +9,9 @@ Desktop="Desktop"
 AutoSaveProject=1
 UsedLibrary="Eagle/IntegerLabs.lbr"
 UsedLibrary="Eagle/Modulo.lbr"
+UsedLibrary="Eagle/Particle.lbr"
 UsedLibrary="Eagle/Spark.lbr"
+UsedLibrary="Eagle/WorksWithParticle.lbr"
 UsedLibrary="Eagle/adafruit.lbr"
 UsedLibrary="Eagle/tag-connect.lbr"
 UsedLibrary="/Applications/EAGLE-7.1.0/lbr/19inch.lbr"
@@ -389,4 +391,4 @@ UsedLibrary="/Applications/EAGLE-7.1.0/lbr/elektro/eib-busch-jaeger.lbr"
 UsedLibrary="Eagle/SparkFun-Eagle-Libraries-master/SparkFun-Connectors.lbr"
 
 [Desktop]
-Screen="4000 1440"
+Screen="1680 1050"
