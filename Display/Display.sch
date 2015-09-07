@@ -257,14 +257,6 @@
 <circle x="-2.8" y="2.8" radius="0.4" width="0.127" layer="21"/>
 <text x="-3.81" y="5.08" size="0.8128" layer="25">&gt;NAME</text>
 </package>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.635" layer="27" font="vector">&gt;VALUE</text>
-</package>
 <package name="BOURNS-7914J">
 <smd name="POS$2" x="-1.27" y="-1.905" dx="1.27" dy="1.778" layer="1"/>
 <smd name="NEG$2" x="1.27" y="-1.905" dx="1.27" dy="1.778" layer="1"/>
@@ -316,14 +308,10 @@
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
 <package name="0603">
-<smd name="1" x="-0.725" y="0" dx="0.95" dy="0.95" layer="1"/>
-<smd name="2" x="0.725" y="0" dx="0.95" dy="0.95" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.635" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-1.35" y1="0.62" x2="1.35" y2="0.62" width="0.075" layer="21"/>
-<wire x1="1.35" y1="0.62" x2="1.35" y2="-0.62" width="0.075" layer="21"/>
-<wire x1="1.35" y1="-0.62" x2="-1.35" y2="-0.62" width="0.075" layer="21"/>
-<wire x1="-1.35" y1="-0.62" x2="-1.35" y2="0.62" width="0.075" layer="21"/>
+<smd name="1" x="-0.8382" y="0" dx="0.9906" dy="1.0922" layer="1"/>
+<smd name="2" x="0.8382" y="0" dx="0.9906" dy="1.0922" layer="1"/>
+<text x="-1.0795" y="0.66675" size="0.508" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.23825" size="0.508" layer="27" font="vector">&gt;VALUE</text>
 </package>
 <package name="DEVICE-PCB-TABS">
 <rectangle x1="14.3256" y1="7.62" x2="16.51" y2="32.385" layer="40" rot="R180"/>
@@ -514,10 +502,10 @@
 <text x="-3.81" y="-1.27" size="1.016" layer="25">&gt;NAME</text>
 <wire x1="5.08" y1="4.064" x2="5.08" y2="-4.064" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="4.064" x2="-5.08" y2="-4.064" width="0.127" layer="21"/>
-<circle x="-3.81" y="8.001" radius="0.254" width="0.127" layer="21"/>
-<circle x="-1.27" y="8.001" radius="0.254" width="0.127" layer="21"/>
-<circle x="1.27" y="8.001" radius="0.254" width="0.127" layer="21"/>
-<circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="21"/>
+<circle x="-3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
+<circle x="-1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
+<circle x="1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
+<circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
 </package>
 <package name="JST-PA-TOP-SMD">
 <smd name="1" x="-3" y="1.3" dx="1" dy="3" layer="1"/>
@@ -591,8 +579,8 @@
 <rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
 <wire x1="-0.381" y1="0" x2="-0.381" y2="5.08" width="0.127" layer="20"/>
 <wire x1="-0.381" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="20"/>
-<wire x1="1.27" y1="5.08" x2="1.27" y2="21.59" width="0.127" layer="20"/>
-<wire x1="1.27" y1="24.13" x2="1.27" y2="28.575" width="0.127" layer="20"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="13.97" width="0.127" layer="20"/>
+<wire x1="1.27" y1="16.51" x2="1.27" y2="28.575" width="0.127" layer="20"/>
 <wire x1="1.27" y1="28.575" x2="2.413" y2="29.845" width="0.127" layer="20" curve="-90"/>
 <wire x1="33.147" y1="29.845" x2="34.29" y2="28.575" width="0.127" layer="20" curve="-90"/>
 <wire x1="34.29" y1="5.08" x2="35.941" y2="5.08" width="0.127" layer="20"/>
@@ -602,26 +590,25 @@
 <pad name="P$2" x="33.02" y="2.54" drill="2.2225" diameter="3.81"/>
 <circle x="2.54" y="2.54" radius="2.3749" width="0.127" layer="21"/>
 <circle x="33.02" y="2.54" radius="2.3749" width="0.127" layer="21"/>
-<text x="32.5755" y="11.4935" size="1.27" layer="21" ratio="15" rot="SR270" align="bottom-right">&gt;BOARD</text>
-<text x="1.5875" y="21.3995" size="1.524" layer="21" ratio="15" rot="SR270">Modulo</text>
-<text x="32.5755" y="5.08" size="1.27" layer="21" ratio="12" rot="R270" align="bottom-right">&gt;VERSION</text>
+<text x="32.5755" y="16.5735" size="1.27" layer="21" ratio="15" rot="SR270">&gt;BOARD</text>
+<text x="1.5875" y="13.7795" size="1.524" layer="21" ratio="15" rot="SR270">Modulo</text>
 <wire x1="2.413" y1="29.845" x2="5.08" y2="29.845" width="0.127" layer="20"/>
 <wire x1="35.941" y1="0" x2="-0.381" y2="0" width="0.127" layer="20"/>
-<pad name="GND" x="2.54" y="7.62" drill="0.9906"/>
-<pad name="VCC" x="2.54" y="10.16" drill="0.9906"/>
+<pad name="GND" x="33.02" y="17.78" drill="0.9906"/>
+<pad name="VCC" x="33.02" y="25.4" drill="0.9906"/>
 <pad name="SDA" x="2.54" y="27.94" drill="0.9906"/>
-<pad name="SCL" x="2.54" y="25.4" drill="0.9906"/>
+<pad name="SCL" x="2.54" y="22.86" drill="0.9906"/>
 <wire x1="26.67" y1="29.845" x2="26.67" y2="27.94" width="0.127" layer="20"/>
 <wire x1="26.67" y1="27.94" x2="27.432" y2="27.94" width="0.127" layer="20"/>
 <wire x1="29.718" y1="27.94" x2="30.48" y2="27.94" width="0.127" layer="20"/>
 <wire x1="30.48" y1="27.94" x2="30.48" y2="29.845" width="0.127" layer="20"/>
 <wire x1="30.48" y1="29.845" x2="33.147" y2="29.845" width="0.127" layer="20"/>
 <wire x1="26.67" y1="29.845" x2="8.89" y2="29.845" width="0.127" layer="20"/>
-<pad name="RESET" x="33.02" y="10.16" drill="0.9906"/>
-<pad name="VPROG" x="2.54" y="12.7" drill="0.9906"/>
-<pad name="MISO" x="33.02" y="25.4" drill="0.9906"/>
-<pad name="MOSI" x="33.02" y="7.62" drill="0.9906"/>
-<pad name="CLK" x="33.02" y="27.94" drill="0.9906"/>
+<pad name="RESET" x="33.02" y="20.32" drill="0.9906"/>
+<pad name="VPROG" x="33.02" y="27.94" drill="0.9906"/>
+<pad name="MISO" x="2.54" y="17.78" drill="0.9906"/>
+<pad name="MOSI" x="2.54" y="25.4" drill="0.9906"/>
+<pad name="CLK" x="2.54" y="20.32" drill="0.9906"/>
 <wire x1="5.08" y1="29.845" x2="5.08" y2="27.94" width="0.127" layer="20"/>
 <wire x1="5.08" y1="27.94" x2="5.842" y2="27.94" width="0.127" layer="20"/>
 <wire x1="8.128" y1="27.94" x2="8.89" y2="27.94" width="0.127" layer="20"/>
@@ -632,15 +619,6 @@
 <wire x1="30.9499" y1="27.94" x2="26.2001" y2="27.94" width="0.127" layer="21" curve="-186.732921"/>
 <wire x1="30.9499" y1="27.94" x2="26.2001" y2="27.94" width="0.127" layer="22" curve="-186.732921"/>
 <wire x1="9.3599" y1="27.94" x2="4.6101" y2="27.94" width="0.127" layer="22" curve="-186.732921"/>
-<pad name="CLK1" x="34.29" y="27.94" drill="0.9906"/>
-<pad name="MISO1" x="34.29" y="25.4" drill="0.9906"/>
-<pad name="VPROG1" x="1.27" y="12.7" drill="0.9906"/>
-<pad name="RESET1" x="34.29" y="10.16" drill="0.9906"/>
-<pad name="MOSI1" x="34.29" y="7.62" drill="0.9906"/>
-<pad name="SCL1" x="1.27" y="25.4" drill="0.9906"/>
-<pad name="SDA1" x="1.27" y="27.94" drill="0.9906"/>
-<pad name="VCC1" x="1.27" y="10.16" drill="0.9906"/>
-<pad name="GND1" x="1.27" y="7.62" drill="0.9906"/>
 <wire x1="22.86" y1="25.019" x2="12.7" y2="25.019" width="0.127" layer="22"/>
 <wire x1="12.7" y1="25.019" x2="12.7" y2="16.891" width="0.127" layer="22"/>
 <wire x1="12.7" y1="16.891" x2="22.86" y2="16.891" width="0.127" layer="22"/>
@@ -653,11 +631,11 @@
 <wire x1="17.145" y1="21.59" x2="17.145" y2="19.685" width="0.127" layer="22"/>
 <wire x1="17.145" y1="19.685" x2="18.415" y2="19.685" width="0.127" layer="22"/>
 <wire x1="34.29" y1="28.575" x2="34.29" y2="5.08" width="0.127" layer="20"/>
-<wire x1="1.27" y1="21.59" x2="1.27" y2="24.13" width="0.127" layer="20" curve="180"/>
+<wire x1="1.27" y1="13.97" x2="1.27" y2="16.51" width="0.127" layer="20" curve="180"/>
 <wire x1="17.78" y1="21.59" x2="17.78" y2="20.32" width="0.127" layer="49"/>
 <wire x1="18.415" y1="20.955" x2="17.145" y2="20.955" width="0.127" layer="49"/>
-<text x="33.8455" y="11.4935" size="1.27" layer="22" ratio="15" rot="MR270" align="bottom-right">&gt;BOARD</text>
-<text x="1.5875" y="13.7795" size="1.524" layer="22" ratio="15" rot="MR90">Modulo</text>
+<text x="33.8455" y="5.1435" size="1.27" layer="22" ratio="15" rot="MR270" align="bottom-right">&gt;BOARD</text>
+<text x="1.5875" y="4.8895" size="1.524" layer="22" ratio="15" rot="MR90">Modulo</text>
 <polygon width="0.127" layer="40">
 <vertex x="9.525" y="27.94"/>
 <vertex x="9.525" y="26.67"/>
@@ -683,18 +661,11 @@
 <vertex x="26.035" y="27.94"/>
 </polygon>
 <pad name="SWDIO" x="33.02" y="22.86" drill="0.9906"/>
-<pad name="SWDIO2" x="34.29" y="22.86" drill="0.9906"/>
-</package>
-<package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<smd name="R2" x="5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<hole x="5.2" y="7.874" drill="0.8"/>
-<hole x="-5.2" y="7.874" drill="0.8"/>
-<wire x1="-6" y1="-0.076" x2="6" y2="-0.076" width="0.127" layer="48"/>
+<text x="31.75" y="28.3845" size="1.27" layer="22" ratio="12" rot="SMR0">&gt;VERSION</text>
+<text x="21.59" y="27.94" size="1.778" layer="22" rot="MR0" align="bottom-center">-</text>
+<text x="16.51" y="27.94" size="1.778" layer="22" rot="MR0" align="bottom-center">+</text>
+<text x="19.05" y="27.94" size="1.778" layer="22" rot="MR0" align="bottom-center">d</text>
+<text x="13.97" y="27.94" size="1.778" layer="22" rot="MR0" align="bottom-center">c</text>
 </package>
 <package name="FIDUCIAL_1MM">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
@@ -729,11 +700,11 @@
 <text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="0805-LED">
-<smd name="A" x="0" y="-0.9" dx="0.8" dy="1.2" layer="1" rot="R90"/>
-<smd name="C" x="0" y="0.9" dx="0.8" dy="1.2" layer="1" rot="R90"/>
-<text x="-1.0795" y="1.4605" size="0.635" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-2.3495" size="0.635" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="0.635" y1="0.3" x2="-0.635" y2="0.3" width="0.127" layer="21"/>
+<smd name="A" x="0" y="-1.143" dx="1.4986" dy="1.397" layer="1" rot="R90"/>
+<smd name="C" x="0" y="1.143" dx="1.4986" dy="1.397" layer="1" rot="R90"/>
+<text x="-0.8509" y="-1.4351" size="0.635" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<text x="1.4859" y="-1.5748" size="0.635" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<wire x1="0.635" y1="0.1984" x2="-0.635" y2="0.1984" width="0.127" layer="21"/>
 </package>
 <package name="LED-1206-REV">
 <wire x1="-1.15" y1="-1.15" x2="-1.15" y2="1.15" width="0.05" layer="20"/>
@@ -746,6 +717,23 @@
 <wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
 <text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
 <text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
+</package>
+<package name="0805">
+<smd name="1" x="-1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
+<smd name="2" x="1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
+<text x="-1.6764" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.651" y="-1.4478" size="0.635" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="JST-PA-SIDE-SMD">
+<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<hole x="5.2" y="9.95" drill="0.8"/>
+<hole x="-5.2" y="9.95" drill="0.8"/>
+<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
 <symbols>
@@ -1368,7 +1356,7 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PARTNUM" value="147733-3" constant="no"/>
+<attribute name="PARTNUM" value="147721-3" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2488,10 +2476,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D1" library="Modulo" deviceset="DIODE-SCHOTTKY" device="" value="BAT54T1G"/>
 <part name="R3" library="Modulo" deviceset="RESISTOR" device="-10KΩ" value="10KΩ"/>
 <part name="R4" library="Modulo" deviceset="RESISTOR" device="-1KΩ" value="1KΩ"/>
-<part name="JP2" library="Modulo" deviceset="HEADER-1X4" device="-AMPMODU">
-<attribute name="PARTNUM" value="147721-3"/>
-</part>
-<part name="R1" library="Modulo" deviceset="RESISTOR" device="-10KΩ" value="10KΩ"/>
+<part name="JP2" library="Modulo" deviceset="HEADER-1X4" device="-AMPMODU"/>
+<part name="R1" library="Modulo" deviceset="RESISTOR" device="-10KΩ" value="10K"/>
 <part name="R5" library="Modulo" deviceset="RESISTOR" device="-10KΩ" value="10KΩ"/>
 <part name="R6" library="Modulo" deviceset="RESISTOR" device="-10KΩ" value="10KΩ"/>
 <part name="C3" library="Modulo" deviceset="CAPACITOR" device="-.1UF" value=".1uF"/>
