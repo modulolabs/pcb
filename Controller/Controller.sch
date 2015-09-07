@@ -743,17 +743,6 @@
 <smd name="P$5" x="-7.4" y="4.75" dx="3.3" dy="2.3" layer="1" rot="R90"/>
 <smd name="P$6" x="7.4" y="4.75" dx="3.3" dy="2.3" layer="1" rot="R90"/>
 </package>
-<package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="9.174" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<smd name="R2" x="5.35" y="4.474" dx="1.8" dy="3.8" layer="1"/>
-<hole x="5.2" y="7.874" drill="0.8"/>
-<hole x="-5.2" y="7.874" drill="0.8"/>
-<wire x1="-6" y1="-0.076" x2="6" y2="-0.076" width="0.127" layer="48"/>
-</package>
 <package name="DEVICE-PCB-OLD">
 <rectangle x1="1.27" y1="5.08" x2="3.4544" y2="29.845" layer="39"/>
 <rectangle x1="32.1056" y1="5.08" x2="34.29" y2="29.845" layer="39"/>
@@ -915,6 +904,17 @@
 <smd name="2" x="1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
 <text x="-1.6764" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.651" y="-1.4478" size="0.635" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="JST-PA-SIDE-SMD">
+<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<hole x="5.2" y="9.95" drill="0.8"/>
+<hole x="-5.2" y="9.95" drill="0.8"/>
+<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
 <symbols>
