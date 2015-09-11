@@ -954,18 +954,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="1.4859" y="-1.5748" size="0.635" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <wire x1="0.635" y1="0.1984" x2="-0.635" y2="0.1984" width="0.127" layer="21"/>
 </package>
-<package name="LED-1206-REV">
-<wire x1="-1.15" y1="-1.15" x2="-1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="-1.15" y1="1.15" x2="1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="1.15" x2="1.15" y2="-1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="-1.15" x2="-1.15" y2="-1.15" width="0.05" layer="20"/>
-<smd name="A" x="-1.905" y="0" dx="1.524" dy="1.524" layer="1"/>
-<smd name="C" x="1.9" y="0" dx="1.524" dy="1.524" layer="1"/>
-<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
-<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
-</package>
 <package name="FIDUCIAL_1MM">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
 <polygon width="0.127" layer="29">
@@ -1015,6 +1003,18 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <smd name="2" x="1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
 <text x="-1.6764" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.651" y="-1.4478" size="0.635" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="LED-1206-REV">
+<wire x1="-1.016" y1="-1.15" x2="-1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="-1.016" y1="1.15" x2="1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="1.15" x2="1.016" y2="-1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="-1.15" x2="-1.016" y2="-1.15" width="0.05" layer="20"/>
+<smd name="A" x="-1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<smd name="C" x="1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
 </package>
 </packages>
 <symbols>
@@ -1344,6 +1344,42 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technology>
 </technologies>
 </device>
+<device name="-5KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF5101V" constant="no"/>
+<attribute name="VALUE" value="5kΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-12Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-PA3J120V" constant="no"/>
+<attribute name="VALUE" value="12Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" constant="no"/>
+<attribute name="VALUE" value="0Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LED" prefix="LED">
@@ -1546,10 +1582,10 @@ LETTER landscape</description>
 <attribute name="PARTNUM" value="F221B1/2 CL210"/>
 </part>
 <part name="U2" library="Modulo" deviceset="ATTINY841" device="" value="ATTINY841"/>
-<part name="R8" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω">
+<part name="R8" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="R9" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω">
+<part name="R9" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="F3" library="Modulo" deviceset="FIDUCIAL" device=""/>

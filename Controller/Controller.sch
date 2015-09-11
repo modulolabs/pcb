@@ -603,18 +603,6 @@
 <circle x="1.27" y="8.001" radius="0.254" width="0.127" layer="49"/>
 <circle x="3.81" y="8.001" radius="0.254" width="0.127" layer="49"/>
 </package>
-<package name="LED-1206-REV">
-<wire x1="-1.15" y1="-1.15" x2="-1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="-1.15" y1="1.15" x2="1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="1.15" x2="1.15" y2="-1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="-1.15" x2="-1.15" y2="-1.15" width="0.05" layer="20"/>
-<smd name="A" x="-1.905" y="0" dx="1.524" dy="1.524" layer="1"/>
-<smd name="C" x="1.9" y="0" dx="1.524" dy="1.524" layer="1"/>
-<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
-<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
-</package>
 <package name="JST-PA-TOP-SMD">
 <smd name="1" x="-3" y="1.3" dx="1" dy="3" layer="1"/>
 <smd name="2" x="-1" y="1.3" dx="1" dy="3" layer="1"/>
@@ -631,10 +619,11 @@
 <wire x1="-0.9" y1="-0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
 <wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="21"/>
 <wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
-<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<smd name="C" x="-1.15" y="0" dx="0.9" dy="0.9" layer="1"/>
+<smd name="A" x="1.15" y="0" dx="0.9" dy="0.9" layer="1"/>
 <text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<circle x="-1.97" y="-0.016" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="USB-MICROB-FCI">
 <pad name="S3" x="-3.5" y="0" drill="1.15"/>
@@ -894,10 +883,11 @@
 </polygon>
 </package>
 <package name="SMP">
-<smd name="C" x="0" y="0" dx="2.667" dy="2.54" layer="1"/>
-<smd name="A" x="2.3495" y="0" dx="0.762" dy="1.27" layer="1"/>
+<smd name="C" x="0" y="0" dx="2.667" dy="3.048" layer="1"/>
+<smd name="A" x="2.3495" y="0" dx="0.762" dy="1.524" layer="1"/>
 <text x="1.651" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
 <text x="1.524" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<circle x="3.2" y="0.7" radius="0.14141875" width="0.254" layer="21"/>
 </package>
 <package name="0805">
 <smd name="1" x="-1.143" y="0" dx="1.4986" dy="1.397" layer="1"/>
@@ -905,15 +895,27 @@
 <text x="-1.6764" y="0.8255" size="0.635" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.651" y="-1.4478" size="0.635" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="LED-1206-REV">
+<wire x1="-1.016" y1="-1.15" x2="-1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="-1.016" y1="1.15" x2="1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="1.15" x2="1.016" y2="-1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="-1.15" x2="-1.016" y2="-1.15" width="0.05" layer="20"/>
+<smd name="A" x="-1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<smd name="C" x="1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
+</package>
 <package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
-<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
-<hole x="5.2" y="9.95" drill="0.8"/>
-<hole x="-5.2" y="9.95" drill="0.8"/>
+<description>JST PA Side SMD Connector
+Also works for Grove right angle SMD connector</description>
+<smd name="1" x="-3" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="3.626" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="3.626" dx="1.8" dy="6.6" layer="1"/>
 <wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
@@ -1346,6 +1348,30 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technology>
 </technologies>
 </device>
+<device name="-5KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF5101V" constant="no"/>
+<attribute name="VALUE" value="5kΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-12Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-PA3J120V" constant="no"/>
+<attribute name="VALUE" value="12Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LED" prefix="LED">
@@ -1435,7 +1461,7 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </connects>
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="MIC5205-3.3YM5 TR" constant="no"/>
+<attribute name="PARTNUM" value="MIC5205-3.3YM5 TR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2502,11 +2528,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="JP1" library="Modulo" deviceset="USB" device="FCI-MICROB">
 <attribute name="PARTNUM" value="10118193-0001LF"/>
 </part>
-<part name="R2" library="Modulo" deviceset="RESISTOR" device="-1KΩ" value="1KΩ"/>
-<part name="R1" library="Modulo" deviceset="RESISTOR" device="-1KΩ" value="1KΩ"/>
+<part name="R2" library="Modulo" deviceset="RESISTOR" device="-5KΩ" value="5kΩ"/>
+<part name="R1" library="Modulo" deviceset="RESISTOR" device="-5KΩ" value="5kΩ"/>
 <part name="C6" library="Modulo" deviceset="CAPACITOR" device="-10UF" value="10uF"/>
 <part name="LED2" library="Modulo" deviceset="LED" device="-0805-BLUE" value="blue"/>
-<part name="U2" library="Modulo" deviceset="VREG-MIC5205" device="-3.3V" value="MIC5205-3.3YM5 TR">
+<part name="U2" library="Modulo" deviceset="VREG-MIC5205" device="-3.3V" value="VREG-MIC5205-3.3V">
 <attribute name="PARTNUM" value="MIC5205-3.3YM5 TR"/>
 </part>
 <part name="JP3" library="adafruit" deviceset="PINHD-1X6" device="LOCK">

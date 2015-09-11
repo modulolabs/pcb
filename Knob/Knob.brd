@@ -587,15 +587,15 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="20.955" y="10.795" size="0.635" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="18.7325" y="10.795" size="0.635" layer="28" rot="MR0"/>
 </element>
-<element name="R8" library="Modulo" package="0603" value="150Ω" x="13.335" y="3.175" smashed="yes" rot="MR180">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="13.335" y="3.175" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="R8" library="Modulo" package="0603" value="0Ω" x="13.335" y="3.175" smashed="yes" rot="MR180">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="13.335" y="3.175" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="11.8745" y="3.048" size="0.635" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="14.6685" y="1.778" size="0.635" layer="28" font="vector" rot="MR0"/>
+<attribute name="VALUE" value="0Ω" x="14.6685" y="1.778" size="0.635" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="R9" library="Modulo" package="0603" value="150Ω" x="24.4475" y="2.8575" smashed="yes" rot="MR270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="24.4475" y="2.8575" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="R9" library="Modulo" package="0603" value="0Ω" x="24.4475" y="2.8575" smashed="yes" rot="MR270">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="24.4475" y="2.8575" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="23.6855" y="5.04825" size="0.635" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="23.4315" y="1.397" size="0.635" layer="28" font="vector" rot="MR180"/>
+<attribute name="VALUE" value="0Ω" x="23.4315" y="1.397" size="0.635" layer="28" font="vector" rot="MR180"/>
 </element>
 <element name="R10" library="Modulo" package="0603" value="150Ω" x="10.795" y="6.985" smashed="yes" rot="MR270">
 <attribute name="PARTNUM" value="ERJ-3EKF1500V" x="10.795" y="6.985" size="1.778" layer="28" rot="MR270" display="off"/>

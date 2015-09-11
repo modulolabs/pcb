@@ -642,12 +642,12 @@ einem neuen Namen ab.</description>
 <element name="U3" library="Modulo" package="SOIC-14" value="ATTINY841" x="16.51" y="11.43" rot="MR270">
 <attribute name="PARTNUM" value="ATTINY841-SSUR" x="20.32" y="11.43" size="1.27" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R8" library="Modulo" package="0603" value="150Ω" x="11.43" y="13.97" rot="MR270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="15.24" y="13.97" size="1.27" layer="28" rot="MR270" display="off"/>
+<element name="R8" library="Modulo" package="0603" value="0Ω" x="11.43" y="13.97" rot="MR270">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="15.24" y="13.97" size="1.27" layer="28" rot="MR270" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="15.24" y="13.97" size="1.27" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R9" library="Modulo" package="0603" value="150Ω" x="21.2725" y="13.335" rot="MR270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="28.8925" y="16.51" size="1.27" layer="28" rot="MR270" display="off"/>
+<element name="R9" library="Modulo" package="0603" value="0Ω" x="21.2725" y="13.335" rot="MR270">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="28.8925" y="16.51" size="1.27" layer="28" rot="MR270" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="28.8925" y="16.51" size="1.27" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R6" library="Modulo" package="0603" value="150Ω" x="6.35" y="22.86" smashed="yes" rot="MR180">

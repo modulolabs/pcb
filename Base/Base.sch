@@ -758,12 +758,14 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <hole x="0" y="12.6238" drill="4.2926"/>
 </package>
 <package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
-<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
+<description>JST PA Side SMD Connector
+Also works for Grove right angle SMD connector</description>
+<smd name="1" x="-3" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="3.626" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="3.626" dx="1.8" dy="6.6" layer="1"/>
 <wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 <package name="SOD-323">
@@ -772,16 +774,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-0.9" y1="-0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
 <wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="21"/>
 <wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
-<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<smd name="C" x="-1.15" y="0" dx="0.9" dy="0.9" layer="1"/>
+<smd name="A" x="1.15" y="0" dx="0.9" dy="0.9" layer="1"/>
 <text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SMP">
-<smd name="C" x="0" y="0" dx="2.667" dy="2.54" layer="1"/>
-<smd name="A" x="2.3495" y="0" dx="0.762" dy="1.27" layer="1"/>
-<text x="1.651" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
-<text x="1.524" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<circle x="-1.97" y="-0.016" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="SOT23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -816,6 +813,13 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <smd name="2" x="0.8382" y="0" dx="0.9906" dy="1.0922" layer="1"/>
 <text x="-1.0795" y="0.66675" size="0.508" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.23825" size="0.508" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="SMP">
+<smd name="C" x="0" y="0" dx="2.667" dy="3.048" layer="1"/>
+<smd name="A" x="2.3495" y="0" dx="0.762" dy="1.524" layer="1"/>
+<text x="1.651" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+<text x="1.524" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<circle x="3.2" y="0.7" radius="0.14141875" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -890,6 +894,21 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="-1.524" y1="-0.762" x2="1.524" y2="-0.254" layer="94"/>
 <rectangle x1="-1.524" y1="-0.762" x2="1.524" y2="-0.254" layer="94"/>
 <rectangle x1="-1.524" y1="0.254" x2="1.524" y2="0.762" layer="94"/>
+</symbol>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1129,6 +1148,177 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </device>
 </devices>
 </deviceset>
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<description>&lt;b&gt;Resistor&lt;/b&gt;
+Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-22Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF22R0V" constant="no"/>
+<attribute name="VALUE" value="22Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-68.1Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF68R1V" constant="no"/>
+<attribute name="VALUE" value="68.1Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-120Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ3EKF1200V" constant="no"/>
+<attribute name="VALUE" value="120Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-681Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF6810V" constant="no"/>
+<attribute name="VALUE" value="681Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-1KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF1001V" constant="no"/>
+<attribute name="VALUE" value="1KΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-1.5KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF1501V" constant="no"/>
+<attribute name="VALUE" value="1.5KΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-10KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF1002V" constant="no"/>
+<attribute name="VALUE" value="10KΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-47KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF4702V" constant="no"/>
+<attribute name="VALUE" value="47KΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-150Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" constant="no"/>
+<attribute name="VALUE" value="150Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-470Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF4700V" constant="no"/>
+<attribute name="VALUE" value="470Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-5KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF5101V" constant="no"/>
+<attribute name="VALUE" value="5kΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-12Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-PA3J120V" constant="no"/>
+<attribute name="VALUE" value="12Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="frames">
@@ -1264,6 +1454,10 @@ LETTER landscape</description>
 </part>
 <part name="U1" library="Modulo" deviceset="VREG-MIC5205" device="-3.3V"/>
 <part name="C1" library="Modulo" deviceset="CAPACITOR" device="-10UF" value="10uF"/>
+<part name="R1" library="Modulo" deviceset="RESISTOR" device="-12Ω" value="12Ω"/>
+<part name="R2" library="Modulo" deviceset="RESISTOR" device="-12Ω" value="12Ω"/>
+<part name="R3" library="Modulo" deviceset="RESISTOR" device="-5KΩ" value="5kΩ"/>
+<part name="R4" library="Modulo" deviceset="RESISTOR" device="-5KΩ" value="5kΩ"/>
 </parts>
 <sheets>
 <sheet>
@@ -1334,6 +1528,10 @@ LETTER landscape</description>
 <instance part="D2" gate="G$1" x="200.66" y="139.7"/>
 <instance part="U1" gate="G$1" x="205.74" y="111.76"/>
 <instance part="C1" gate="G$1" x="203.2" y="93.98" rot="R90"/>
+<instance part="R1" gate="G$1" x="223.52" y="152.4"/>
+<instance part="R2" gate="G$1" x="223.52" y="139.7"/>
+<instance part="R3" gate="G$1" x="223.52" y="132.08"/>
+<instance part="R4" gate="G$1" x="223.52" y="160.02"/>
 </instances>
 <busses>
 </busses>
@@ -1470,8 +1668,13 @@ LETTER landscape</description>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="198.12" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="152.4" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
 <label x="190.5" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="160.02" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="160.02" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
+<junction x="195.58" y="152.4"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -1512,8 +1715,13 @@ LETTER landscape</description>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="198.12" y1="139.7" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="139.7" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
 <label x="190.5" y="139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="139.7" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="132.08" x2="195.58" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="132.08" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
+<junction x="195.58" y="139.7"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -1528,14 +1736,37 @@ LETTER landscape</description>
 <label x="226.06" y="116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="203.2" y1="152.4" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
-<label x="210.82" y="152.4" size="1.778" layer="95" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="132.08" x2="233.68" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="132.08" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="139.7" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="147.32" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="152.4" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="139.7" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
+<label x="238.76" y="147.32" size="1.778" layer="95" xref="yes"/>
+<junction x="233.68" y="152.4"/>
+<junction x="233.68" y="147.32"/>
+<junction x="233.68" y="139.7"/>
 </segment>
+</net>
+<net name="N$1" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="203.2" y1="139.7" x2="210.82" y2="139.7" width="0.1524" layer="91"/>
-<label x="210.82" y="139.7" size="1.778" layer="95" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="139.7" x2="218.44" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="218.44" y1="152.4" x2="203.2" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

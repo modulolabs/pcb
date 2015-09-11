@@ -33,11 +33,7 @@
 
 *.info
 
-*.eps
 
-*/gerber/*
-*/*/gerber/*
-*/*/*/gerber/*
-*/gerber.zip
-*/*/gerber.zip
-*/*/*/gerber.zip
+*.gpi
+*.ger
+*.xln

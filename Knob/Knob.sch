@@ -1183,6 +1183,42 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technology>
 </technologies>
 </device>
+<device name="-5KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF5101V" constant="no"/>
+<attribute name="VALUE" value="5kΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-12Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-PA3J120V" constant="no"/>
+<attribute name="VALUE" value="12Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" constant="no"/>
+<attribute name="VALUE" value="0Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LED" prefix="LED">
@@ -1493,8 +1529,8 @@ EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLR
 <attribute name="PARTNUM" value="Knob Cap"/>
 </part>
 <part name="U2" library="Modulo" deviceset="ATTINY841" device=""/>
-<part name="R8" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
-<part name="R9" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
+<part name="R8" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
+<part name="R9" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
 <part name="R10" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 </parts>
 <sheets>

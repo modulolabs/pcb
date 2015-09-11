@@ -303,22 +303,22 @@
 <wire x1="0.635" y1="7.62" x2="1.905" y2="7.62" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="0.635" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="12.7" width="0.2032" layer="51"/>
-<pad name="MOUNT1" x="-7.62" y="6.6675" drill="2.032"/>
-<pad name="MOUNT4" x="7.62" y="6.6675" drill="2.032"/>
-<pad name="MOUNT2" x="-7.62" y="-6.6675" drill="2.032"/>
-<pad name="H3" x="2.54" y="-10.16" drill="1.524"/>
-<pad name="H2" x="0" y="-10.16" drill="1.524"/>
-<pad name="H1" x="-2.54" y="-10.16" drill="1.524"/>
-<pad name="V2" x="-10.16" y="0" drill="1.524"/>
-<pad name="V3" x="-10.16" y="-2.54" drill="1.524"/>
-<pad name="V1" x="-10.16" y="2.54" drill="1.524"/>
-<pad name="B2B" x="3.175" y="7.62" drill="1.524"/>
-<pad name="B2A" x="-3.175" y="7.62" drill="1.524"/>
-<pad name="B1A" x="-3.175" y="12.7" drill="1.524"/>
-<pad name="B1B" x="3.175" y="12.7" drill="1.524"/>
+<pad name="MOUNT1" x="-7.62" y="6.6675" drill="1.778" diameter="3.048"/>
+<pad name="MOUNT4" x="7.62" y="6.6675" drill="1.778" diameter="3.048"/>
+<pad name="MOUNT2" x="-7.62" y="-6.6675" drill="1.778" diameter="3.048"/>
+<pad name="H3" x="2.54" y="-10.16" drill="1.27" diameter="2.032"/>
+<pad name="H2" x="0" y="-10.16" drill="1.27" diameter="2.032"/>
+<pad name="H1" x="-2.54" y="-10.16" drill="1.27" diameter="2.032"/>
+<pad name="V2" x="-10.16" y="0" drill="1.27" diameter="2.032"/>
+<pad name="V3" x="-10.16" y="-2.54" drill="1.27" diameter="2.032"/>
+<pad name="V1" x="-10.16" y="2.54" drill="1.27" diameter="2.032"/>
+<pad name="B2B" x="3.175" y="7.62" drill="1.27" diameter="2.032"/>
+<pad name="B2A" x="-3.175" y="7.62" drill="1.27" diameter="2.032"/>
+<pad name="B1A" x="-3.175" y="12.7" drill="1.27" diameter="2.032"/>
+<pad name="B1B" x="3.175" y="12.7" drill="1.27" diameter="2.032"/>
 <text x="-5.08" y="-5.08" size="1.27" layer="25">&gt;Name</text>
 <text x="-5.08" y="-6.35" size="1.27" layer="27">&gt;Value</text>
-<pad name="MOUNT5" x="7.62" y="-6.6675" drill="2.032"/>
+<pad name="MOUNT5" x="7.62" y="-6.6675" drill="1.778" diameter="3.048"/>
 </package>
 <package name="JOYSTICK-MOUNTPADS">
 <wire x1="5.588" y1="13.97" x2="-5.588" y2="13.97" width="0.2032" layer="21"/>
@@ -574,8 +574,6 @@
 <smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
 <smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
 <smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
-<hole x="5.2" y="9.95" drill="0.8"/>
-<hole x="-5.2" y="9.95" drill="0.8"/>
 <wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
@@ -1040,6 +1038,42 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technology>
 </technologies>
 </device>
+<device name="-5KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF5101V" constant="no"/>
+<attribute name="VALUE" value="5kΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-12Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-PA3J120V" constant="no"/>
+<attribute name="VALUE" value="12Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" constant="no"/>
+<attribute name="VALUE" value="0Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="HEADER-1X4" prefix="JP">
@@ -1333,8 +1367,8 @@ LETTER landscape</description>
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="U3" library="Modulo" deviceset="ATTINY841" device=""/>
-<part name="R8" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
-<part name="R9" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
+<part name="R8" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
+<part name="R9" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
 </parts>
 <sheets>
 <sheet>

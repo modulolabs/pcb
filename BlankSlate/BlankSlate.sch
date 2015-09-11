@@ -643,18 +643,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pad name="SWDIO" x="-15.24" y="25.4" drill="0.9906" rot="R180"/>
 <pad name="SWDIO2" x="-16.51" y="25.4" drill="0.9906" rot="R180"/>
 </package>
-<package name="LED-1206-REV">
-<wire x1="-1.15" y1="-1.15" x2="-1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="-1.15" y1="1.15" x2="1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="1.15" x2="1.15" y2="-1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="-1.15" x2="-1.15" y2="-1.15" width="0.05" layer="20"/>
-<smd name="A" x="-1.905" y="0" dx="1.524" dy="1.524" layer="1"/>
-<smd name="C" x="1.9" y="0" dx="1.524" dy="1.524" layer="1"/>
-<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
-<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
-</package>
 <package name="JST-PA-TOP-SMD">
 <smd name="1" x="-3" y="1.3" dx="1" dy="3" layer="1"/>
 <smd name="2" x="-1" y="1.3" dx="1" dy="3" layer="1"/>
@@ -874,6 +862,18 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
+<package name="LED-1206-REV">
+<wire x1="-1.016" y1="-1.15" x2="-1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="-1.016" y1="1.15" x2="1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="1.15" x2="1.016" y2="-1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="-1.15" x2="-1.016" y2="-1.15" width="0.05" layer="20"/>
+<smd name="A" x="-1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<smd name="C" x="1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
+</package>
 <package name="JST-PA-SIDE-SMD">
 <smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
 <smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
@@ -881,8 +881,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
 <smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
 <smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
-<hole x="5.2" y="9.95" drill="0.8"/>
-<hole x="-5.2" y="9.95" drill="0.8"/>
 <wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
@@ -1280,6 +1278,42 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name="">
 <attribute name="PARTNUM" value="ERJ-3EKF4700V" constant="no"/>
 <attribute name="VALUE" value="470Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-5KΩ" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3EKF5101V" constant="no"/>
+<attribute name="VALUE" value="5kΩ" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-12Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-PA3J120V" constant="no"/>
+<attribute name="VALUE" value="12Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0Ω" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" constant="no"/>
+<attribute name="VALUE" value="0Ω" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1769,12 +1803,12 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="U2" library="Modulo" deviceset="ATTINY841" device=""/>
-<part name="R10" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
-<part name="R11" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
+<part name="R10" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
+<part name="R11" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
 <part name="R7" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 <part name="R9" library="Modulo" deviceset="RESISTOR" device="-150Ω" value="150Ω"/>
 <part name="U1" library="Modulo" deviceset="VREG-MIC5205" device="-3.3V" value="VREG-MIC5205-3.3V"/>
-<part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC">
+<part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO" value="SOLDERJUMPERNO">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 </parts>
@@ -1843,7 +1877,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <attribute name="BOM" x="187.96" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U2" gate="G$1" x="116.84" y="116.84" rot="MR180"/>
-<instance part="R10" gate="G$1" x="25.4" y="124.46"/>
+<instance part="R10" gate="G$1" x="25.4" y="127"/>
 <instance part="R11" gate="G$1" x="25.4" y="119.38"/>
 <instance part="R7" gate="G$1" x="48.26" y="17.78"/>
 <instance part="R9" gate="G$1" x="119.38" y="17.78"/>
@@ -2053,8 +2087,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
-<label x="15.24" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="20.32" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<label x="15.24" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="SCK"/>
@@ -2101,8 +2135,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <net name="SCL/SCK" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
-<label x="35.56" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="30.48" y1="127" x2="35.56" y2="127" width="0.1524" layer="91"/>
+<label x="35.56" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PA4"/>
