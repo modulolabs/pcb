@@ -574,7 +574,7 @@ einem neuen Namen ab.</description>
 <elements>
 <element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="BOARD" value="BlankSlate" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VERSION" value="4" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VERSION" value="5" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="PARTNUM" value="Blank Slate PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R1" library="Modulo" package="0603" value="1KΩ" x="5.3975" y="18.415" smashed="yes" rot="R90">

@@ -8,7 +8,7 @@
 "2","1KΩ","RESISTOR-1KΩ","0603","R4, R7","Resistor","","","","ERJ-3EKF1001V","","1KΩ","",
 "1","ATSAMD20E17A-AU","SAMD21E","TQFP-32","U3","","","","","ATSAMD20E17A-AU","","ATSAMD21E18A-AU","",
 "1","BAT54T1G","DIODE-SCHOTTKY","SMP","D1","","","","","SS3P3-M3/84A","","","",
-"1","DEVICE-PCB","DEVICE-PCB","DEVICE-PCB","PCB1","Modulo Footprint","Display","","","Display PCB","","","3",
+"1","DEVICE-PCB","DEVICE-PCB","DEVICE-PCB","PCB1","Modulo Footprint","Display","","","Display PCB","","","4",
 "1","ER-OLED0.95-2C","OLED-COLORREVERSE","FPC-24-REVERSE","U1","","","","buydisplay.com","ER-OLED0.95-2C","buydisplay.com","ER-OLED0.95-2C","",
 "1","FAN5331SX","FAN5331","SOT23-5","U2","FAN5331 - LED/OLED 20V Boost Converter","","","","FAN5331SX","","","",
 "1","HEADER-1X4-AMPMODU","HEADER-1X4-AMPMODU","AMPMODU-4P","JP2","","","","","147721-3","","","",

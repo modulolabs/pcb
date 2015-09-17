@@ -2272,11 +2272,6 @@ LETTER landscape</description>
 </net>
 <net name="IR_LED" class="0">
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
-<label x="127" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="109.22" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
@@ -2452,6 +2447,11 @@ LETTER landscape</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="127" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
 <label x="121.92" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<label x="127" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="IR_LED5" class="0">

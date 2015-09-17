@@ -165,6 +165,7 @@
 <wire x1="100.965" y1="22.86" x2="103.505" y2="25.4" width="0.254" layer="21"/>
 <wire x1="89.535" y1="22.86" x2="86.995" y2="25.4" width="0.254" layer="21"/>
 <wire x1="91.44" y1="58.42" x2="99.06" y2="58.42" width="0.254" layer="21"/>
+<text x="110.49" y="6.35" size="1.524" layer="22" rot="MR0">v1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -2386,6 +2387,30 @@ Also works for Grove right angle SMD connector</description>
 </package>
 </packages>
 </library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SJ_2S-NO">
+<description>Small solder jumper with no paste layer so it will open after reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2692,6 +2717,9 @@ einem neuen Namen ab.</description>
 <element name="C2" library="Modulo" package="0603" value="10uF" x="90.17" y="49.53" rot="MR270">
 <attribute name="PARTNUM" value="GRM188R61C106MA73D" x="90.17" y="49.53" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
+<element name="SJ1" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="100.33" y="49.53" smashed="yes" rot="MR0">
+<attribute name="NAME" x="98.698" y="49.53" size="0.4064" layer="26" rot="MR0"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
@@ -2935,6 +2963,11 @@ einem neuen Namen ab.</description>
 <wire x1="91.6432" y1="48.6918" x2="91.44" y2="48.895" width="0.254" layer="16"/>
 <wire x1="91.44" y1="48.895" x2="90.3732" y2="48.895" width="0.254" layer="16"/>
 <wire x1="90.3732" y1="48.895" x2="90.17" y2="48.6918" width="0.254" layer="16"/>
+<contactref element="SJ1" pad="2"/>
+<wire x1="99.88" y1="49.53" x2="99.695" y2="49.53" width="0.254" layer="16"/>
+<wire x1="99.695" y1="49.53" x2="99.06" y2="48.895" width="0.254" layer="16"/>
+<wire x1="99.06" y1="48.895" x2="99.06" y2="45.9232" width="0.254" layer="16"/>
+<wire x1="99.06" y1="45.9232" x2="98.8568" y2="45.72" width="0.254" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="JP8" pad="5"/>
@@ -3108,6 +3141,11 @@ einem neuen Namen ab.</description>
 <contactref element="JP9" pad="1"/>
 <contactref element="JP9" pad="2"/>
 <wire x1="104.267" y1="54.61" x2="106.807" y2="54.61" width="0.254" layer="16"/>
+<contactref element="SJ1" pad="1"/>
+<wire x1="104.267" y1="54.61" x2="102.87" y2="54.61" width="0.254" layer="16"/>
+<wire x1="102.87" y1="54.61" x2="100.965" y2="52.705" width="0.254" layer="16"/>
+<wire x1="100.965" y1="52.705" x2="100.965" y2="49.715" width="0.254" layer="16"/>
+<wire x1="100.965" y1="49.715" x2="100.78" y2="49.53" width="0.254" layer="16"/>
 </signal>
 </signals>
 <errors>

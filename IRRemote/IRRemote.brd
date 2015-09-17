@@ -596,7 +596,7 @@ einem neuen Namen ab.</description>
 </element>
 <element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="BOARD" value="IR Remote" x="0" y="0" size="1.27" layer="27" display="off"/>
-<attribute name="VERSION" value="3" x="0" y="0" size="1.27" layer="27" display="off"/>
+<attribute name="VERSION" value="4" x="0" y="0" size="1.27" layer="27" display="off"/>
 <attribute name="PARTNUM" value="IRRemote PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LED1" library="Modulo" package="LED-1206-REV" value="LED-1206-REV" x="27.94" y="19.05" rot="MR180">
@@ -732,7 +732,6 @@ einem neuen Namen ab.</description>
 <contactref element="LED2" pad="K"/>
 </signal>
 <signal name="IR_LED">
-<contactref element="JP3" pad="2"/>
 <contactref element="LED2" pad="A"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R3" pad="1"/>
@@ -749,11 +748,6 @@ einem neuen Namen ab.</description>
 <wire x1="5.3975" y1="10.4775" x2="5.3975" y2="9.2075" width="0.2032" layer="1"/>
 <wire x1="5.3975" y1="9.2075" x2="10.16" y2="4.445" width="0.2032" layer="1"/>
 <wire x1="10.16" y1="4.445" x2="10.16" y2="2.54" width="0.2032" layer="1"/>
-<wire x1="25.4" y1="10.16" x2="25.4" y2="6.35" width="0.2032" layer="1"/>
-<wire x1="25.4" y1="6.35" x2="24.13" y2="5.08" width="0.2032" layer="1"/>
-<wire x1="24.13" y1="5.08" x2="21.59" y2="5.08" width="0.2032" layer="1"/>
-<wire x1="21.59" y1="5.08" x2="19.05" y2="2.54" width="0.2032" layer="1"/>
-<wire x1="19.05" y1="2.54" x2="10.16" y2="2.54" width="0.2032" layer="1"/>
 </signal>
 <signal name="IR_SENSE">
 <contactref element="U1" pad="1"/>
@@ -896,6 +890,10 @@ einem neuen Namen ab.</description>
 <wire x1="9.525" y1="22.86" x2="8.89" y2="22.86" width="0.2032" layer="1"/>
 <wire x1="7.1882" y1="22.86" x2="8.89" y2="22.86" width="0.2032" layer="16"/>
 <via x="8.89" y="22.86" extent="1-16" drill="0.4064"/>
+<contactref element="JP3" pad="2"/>
+<wire x1="25.4" y1="10.16" x2="25.4" y2="9.525" width="0.254" layer="1"/>
+<wire x1="25.4" y1="9.525" x2="24.4475" y2="8.5725" width="0.254" layer="1"/>
+<wire x1="24.4475" y1="8.5725" x2="15.5575" y2="8.5725" width="0.254" layer="1"/>
 </signal>
 <signal name="IR_LED5">
 <contactref element="U3" pad="5"/>
@@ -939,20 +937,25 @@ einem neuen Namen ab.</description>
 <approved hash="18,30,ef75dc569c4eaf6d"/>
 <approved hash="18,30,4661b542f57b0658"/>
 <approved hash="18,30,d95c0a7f4a779954"/>
-<approved hash="4,16,2e643a54dfd091b7"/>
-<approved hash="4,16,d253c966dfcf5d65"/>
-<approved hash="4,16,8e4fa53b9847b3e1"/>
-<approved hash="4,16,6ad0391303e9571f"/>
-<approved hash="4,16,8974d8025b868ea4"/>
-<approved hash="4,16,edfe632951b20f0c"/>
-<approved hash="4,16,7d68f716e8f17b6d"/>
-<approved hash="4,16,83641bb6e8d5aa2d"/>
-<approved hash="4,16,c33f43286f150022"/>
-<approved hash="4,16,415b8d44f68b210f"/>
-<approved hash="4,16,42f164f8d0fd603e"/>
-<approved hash="4,16,55038d1e6abbf789"/>
-<approved hash="4,16,079f01e1450ba0a9"/>
-<approved hash="4,16,548e313a0c9569f3"/>
+<approved hash="4,16,89e21e52f0d789b6"/>
+<approved hash="4,16,75d4d160f0c97964"/>
+<approved hash="4,16,3202a2b29ca50e0b"/>
+<approved hash="4,16,6e043dd24eccf22b"/>
+<approved hash="4,16,5024cbb3e5245211"/>
+<approved hash="4,16,19b7976ee8b1f405"/>
+<approved hash="4,16,df1c4cf5d0e40c8d"/>
+<approved hash="4,16,dc1f83fb64e35e8e"/>
+<approved hash="4,16,a42a555637f309ac"/>
+<approved hash="4,16,5a26697637d7086c"/>
+<approved hash="4,16,cd113c8e4547af64"/>
+<approved hash="4,16,ed32d29c5636665f"/>
+<approved hash="4,16,bd962710af7ab97c"/>
+<approved hash="4,16,97d00ee700db44cd"/>
+<approved hash="4,16,84ed35e4302d94b8"/>
+<approved hash="4,16,840af87022bacba2"/>
+<approved hash="4,16,aefea7401cbffa29"/>
+<approved hash="4,16,453685f4822d42ef"/>
+<approved hash="4,16,c60214b22abffa11"/>
 <approved hash="6,16,49fc75fa4efa72fc"/>
 <approved hash="6,16,bf72a37caf7cb372"/>
 </errors>

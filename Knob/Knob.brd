@@ -523,7 +523,7 @@ einem neuen Namen ab.</description>
 <element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="PARTNUM" value="Knob PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="BOARD" value="Knob" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VERSION" value="6" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VERSION" value="7" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LED1" library="Modulo" package="LED-1206-REV" value="LED-1206-REV" x="6.985" y="22.225" smashed="yes" rot="MR180">
 <attribute name="PARTNUM" value="LTST-C230TBKT" x="6.985" y="22.225" size="1.778" layer="28" rot="MR180" display="off"/>

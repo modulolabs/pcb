@@ -548,7 +548,7 @@ einem neuen Namen ab.</description>
 <element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="NOBOM" value="1" x="0" y="-5.08" size="1.778" layer="27" display="off"/>
 <attribute name="BOARD" value="Joystick" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VERSION" value="4" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VERSION" value="5" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="PARTNUM" value="Joystick PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LED1" library="Modulo" package="LED-1206-REV" value="LED-1206-REV" x="28.8925" y="23.8125" smashed="yes" rot="MR180">

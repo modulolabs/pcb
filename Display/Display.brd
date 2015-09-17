@@ -687,7 +687,7 @@ einem neuen Namen ab.</description>
 </element>
 <element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="BOARD" value="Display" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VERSION" value="3" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VERSION" value="4" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="PARTNUM" value="Display PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="SW1" library="Modulo" package="TACT-SWITCH-PTS-810" value="SWITCH-PTS-810" x="7.62" y="1.905">

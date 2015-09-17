@@ -2449,7 +2449,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="PCB1" library="Modulo" deviceset="DEVICE-PCB" device="" value="DEVICE-PCB">
 <attribute name="BOARD" value="Display"/>
 <attribute name="PARTNUM" value="Display PCB"/>
-<attribute name="VERSION" value="3"/>
+<attribute name="VERSION" value="4"/>
 </part>
 <part name="SW1" library="Modulo" deviceset="SWITCH" device="-PTS-810" value="SWITCH-PTS-810"/>
 <part name="SW2" library="Modulo" deviceset="SWITCH" device="-PTS-810" value="SWITCH-PTS-810"/>

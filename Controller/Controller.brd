@@ -711,7 +711,7 @@ einem neuen Namen ab.</description>
 <elements>
 <element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="BOARD" value="Controller" x="0" y="0" size="0.6096" layer="27" display="off"/>
-<attribute name="VERSION" value="6" x="0" y="0" size="0.6096" layer="27" display="off"/>
+<attribute name="VERSION" value="7" x="0" y="0" size="0.6096" layer="27" display="off"/>
 <attribute name="PARTNUM" value="Controller PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="JP1" library="Modulo" package="USB-MICROB-FCI" value="USBFCI-MICROB" x="25.7175" y="1.524">
