@@ -255,18 +255,6 @@
 <text x="1.4859" y="-1.5748" size="0.635" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <wire x1="0.635" y1="0.1984" x2="-0.635" y2="0.1984" width="0.127" layer="21"/>
 </package>
-<package name="LED-1206-REV">
-<wire x1="-1.15" y1="-1.15" x2="-1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="-1.15" y1="1.15" x2="1.15" y2="1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="1.15" x2="1.15" y2="-1.15" width="0.05" layer="20"/>
-<wire x1="1.15" y1="-1.15" x2="-1.15" y2="-1.15" width="0.05" layer="20"/>
-<smd name="A" x="-1.905" y="0" dx="1.524" dy="1.524" layer="1"/>
-<smd name="C" x="1.9" y="0" dx="1.524" dy="1.524" layer="1"/>
-<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
-<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
-</package>
 <package name="AMPMODU-4P">
 <smd name="P$1" x="-3.81" y="3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
 <smd name="P$2" x="-3.81" y="-3.81" dx="2.54" dy="1.524" layer="1" rot="R90"/>
@@ -555,17 +543,7 @@
 <wire x1="1.5" y1="-0.8" x2="1.5" y2="0.8" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="0.8" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
 <circle x="-1.016" y="-0.254" radius="0.15" width="0.127" layer="21"/>
-</package>
-<package name="JST-PA-SIDE-SMD">
-<smd name="1" x="-3" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-1" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="3" x="1" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="4" x="3" y="11.25" dx="1" dy="3" layer="1"/>
-<smd name="R1" x="-5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
-<smd name="R2" x="5.35" y="5.15" dx="1.8" dy="6.6" layer="1"/>
-<hole x="5.2" y="9.95" drill="0.8"/>
-<hole x="-5.2" y="9.95" drill="0.8"/>
-<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
+<text x="-1.905" y="-1.27" size="0.508" layer="21" rot="R90">&gt;NAME</text>
 </package>
 <package name="SOD-323">
 <wire x1="-0.9" y1="0.65" x2="-0.5" y2="0.65" width="0.2032" layer="21"/>
@@ -578,6 +556,29 @@
 <text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 <circle x="-1.97" y="-0.016" radius="0.127" width="0.254" layer="21"/>
+</package>
+<package name="LED-1206-REV">
+<wire x1="-1.016" y1="-1.15" x2="-1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="-1.016" y1="1.15" x2="1.016" y2="1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="1.15" x2="1.016" y2="-1.15" width="0.05" layer="20"/>
+<wire x1="1.016" y1="-1.15" x2="-1.016" y2="-1.15" width="0.05" layer="20"/>
+<smd name="A" x="-1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<smd name="C" x="1.778" y="0" dx="1.778" dy="1.524" layer="1"/>
+<wire x1="1.3" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="1.016" layer="21" font="fixed" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.4064" layer="20" font="fixed" ratio="10" rot="R180" align="center">cutout</text>
+</package>
+<package name="JST-PA-SIDE-SMD">
+<description>JST PA Side SMD Connector
+Also works for Grove right angle SMD connector</description>
+<smd name="1" x="-3" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="2" x="-1" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="3" x="1" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="4" x="3" y="9.726" dx="1" dy="3" layer="1"/>
+<smd name="R1" x="-5.35" y="3.626" dx="1.8" dy="6.6" layer="1"/>
+<smd name="R2" x="5.35" y="3.626" dx="1.8" dy="6.6" layer="1"/>
+<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="48"/>
 </package>
 </packages>
 <symbols>
@@ -3598,58 +3599,58 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </class>
 </classes>
 <parts>
-<part name="R1" library="Modulo" deviceset="RESISTOR" device="-1KΩ" value="1KΩ"/>
-<part name="PCB1" library="Modulo" deviceset="DEVICE-PCB" device="" value="DEVICE-PCB">
+<part name="5-R1" library="Modulo" deviceset="RESISTOR" device="-1KΩ" value="1KΩ"/>
+<part name="5-PCB1" library="Modulo" deviceset="DEVICE-PCB" device="" value="DEVICE-PCB">
 <attribute name="PARTNUM" value="Motor Driver PCB"/>
 </part>
-<part name="LED1" library="Modulo" deviceset="LED" device="-0805-BLUE" value="blue"/>
-<part name="C1" library="Modulo" deviceset="CAPACITOR" device="-.1UF" value=".1uF"/>
-<part name="JP1" library="Modulo" deviceset="HEADER-1X4" device="-AMPMODU"/>
-<part name="U2" library="Modulo" deviceset="DRV8848" device=""/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M06" device="3.5MM-6">
+<part name="5-LED1" library="Modulo" deviceset="LED" device="-0805-BLUE" value="blue"/>
+<part name="5-C1" library="Modulo" deviceset="CAPACITOR" device="-.1UF" value=".1uF"/>
+<part name="5-JP1" library="Modulo" deviceset="HEADER-1X4" device="-AMPMODU"/>
+<part name="5-U2" library="Modulo" deviceset="DRV8848" device=""/>
+<part name="5-JP3" library="SparkFun-Connectors" deviceset="M06" device="3.5MM-6">
 <attribute name="PARTNUM" value="OSTTE060104"/>
 </part>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="2010" value=".25Ω">
+<part name="5-R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="2010" value=".25Ω">
 <attribute name="PARTNUM" value="CSRN2010FKR250"/>
 </part>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="2010" value=".25Ω">
+<part name="5-R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="2010" value=".25Ω">
 <attribute name="PARTNUM" value="CSRN2010FKR250"/>
 </part>
-<part name="C3" library="Modulo" deviceset="CAPACITOR-POL" device="-56UF-25V" value="56uF">
+<part name="5-C3" library="Modulo" deviceset="CAPACITOR-POL" device="-56UF-25V" value="56uF">
 <attribute name="RATING" value="&gt;20V"/>
 </part>
-<part name="C4" library="Modulo" deviceset="CAPACITOR" device="-10UF" value="10uF"/>
+<part name="5-C4" library="Modulo" deviceset="CAPACITOR" device="-10UF" value="10uF"/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="F1" library="Modulo" deviceset="FIDUCIAL" device=""/>
-<part name="F2" library="Modulo" deviceset="FIDUCIAL" device=""/>
-<part name="F3" library="Modulo" deviceset="FIDUCIAL" device=""/>
-<part name="F4" library="Modulo" deviceset="FIDUCIAL" device=""/>
-<part name="C2" library="Modulo" deviceset="CAPACITOR" device="-.1UF" value=".1uF">
+<part name="5-F1" library="Modulo" deviceset="FIDUCIAL" device=""/>
+<part name="5-F2" library="Modulo" deviceset="FIDUCIAL" device=""/>
+<part name="5-F3" library="Modulo" deviceset="FIDUCIAL" device=""/>
+<part name="5-F4" library="Modulo" deviceset="FIDUCIAL" device=""/>
+<part name="5-C2" library="Modulo" deviceset="CAPACITOR" device="-.1UF" value=".1uF">
 <attribute name="RATING" value="&gt;20V"/>
 </part>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK_NO_SILK">
+<part name="5-JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK_NO_SILK">
 <attribute name="PARTNUM" value="M20-9990346"/>
 </part>
-<part name="SHUNT1" library="Modulo" deviceset="BOM_ITEM" device="" value="shunt">
+<part name="5-SHUNT1" library="Modulo" deviceset="BOM_ITEM" device="" value="shunt">
 <attribute name="PARTNUM" value="SPC02SYAN"/>
 </part>
-<part name="D1" library="Modulo" deviceset="DIODE-SCHOTTKY" device="" value="DIODE-SCHOTTKY"/>
-<part name="U3" library="Modulo" deviceset="ATTINY841" device=""/>
-<part name="R12" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
-<part name="R13" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
-<part name="U1" library="Modulo" deviceset="MCP4013" device=""/>
-<part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
+<part name="5-D1" library="Modulo" deviceset="DIODE-SCHOTTKY" device="" value="DIODE-SCHOTTKY"/>
+<part name="5-U3" library="Modulo" deviceset="ATTINY841" device=""/>
+<part name="5-R12" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
+<part name="5-R13" library="Modulo" deviceset="RESISTOR" device="-0Ω" value="0Ω"/>
+<part name="5-U1" library="Modulo" deviceset="MCP4013" device=""/>
+<part name="5-SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="SJ2" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
+<part name="5-SJ2" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="SJ3" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
+<part name="5-SJ3" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="D2" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A" value="RB751V40">
+<part name="5-D2" library="Modulo" deviceset="DIODE-SCHOTTKY" device="-BAT60A" value="RB751V40">
 <attribute name="PARTNUM" value="RB751V40"/>
 </part>
 </parts>
@@ -3658,32 +3659,32 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <plain>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="22.86" y="27.94" rot="R180"/>
-<instance part="PCB1" gate="G$1" x="25.4" y="58.42">
+<instance part="5-R1" gate="G$1" x="22.86" y="27.94" rot="R180"/>
+<instance part="5-PCB1" gate="G$1" x="25.4" y="58.42">
 <attribute name="PARTNUM" x="25.4" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED1" gate="G$1" x="33.02" y="27.94" rot="R90"/>
-<instance part="C1" gate="G$1" x="63.5" y="144.78" smashed="yes" rot="R270">
+<instance part="5-LED1" gate="G$1" x="33.02" y="27.94" rot="R90"/>
+<instance part="5-C1" gate="G$1" x="63.5" y="144.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="61.722" y="149.479" size="1.778" layer="95"/>
 <attribute name="VALUE" x="61.722" y="139.573" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="73.66" y="55.88" rot="R180"/>
-<instance part="U2" gate="G$1" x="162.56" y="147.32">
+<instance part="5-JP1" gate="G$1" x="73.66" y="55.88" rot="R180"/>
+<instance part="5-U2" gate="G$1" x="162.56" y="147.32">
 <attribute name="PARTNUM" x="162.56" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP3" gate="G$1" x="220.98" y="96.52" rot="R180">
+<instance part="5-JP3" gate="G$1" x="220.98" y="96.52" rot="R180">
 <attribute name="PARTNUM" x="220.98" y="96.52" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="R4" gate="G$1" x="215.9" y="132.08" rot="R270">
+<instance part="5-R4" gate="G$1" x="215.9" y="132.08" rot="R270">
 <attribute name="PARTNUM" x="215.9" y="132.08" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R3" gate="G$1" x="208.28" y="134.62" rot="R270">
+<instance part="5-R3" gate="G$1" x="208.28" y="134.62" rot="R270">
 <attribute name="PARTNUM" x="208.28" y="134.62" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="C3" gate="G$1" x="152.4" y="116.84">
+<instance part="5-C3" gate="G$1" x="152.4" y="116.84">
 <attribute name="RATING" x="152.4" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C4" gate="G$1" x="177.8" y="68.58" smashed="yes">
+<instance part="5-C4" gate="G$1" x="177.8" y="68.58" smashed="yes">
 <attribute name="NAME" x="173.101" y="66.802" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="183.007" y="66.802" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -3691,35 +3692,35 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <attribute name="BOM" x="0" y="0" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="F1" gate="G$1" x="86.36" y="30.48"/>
-<instance part="F2" gate="G$1" x="86.36" y="25.4"/>
-<instance part="F3" gate="G$1" x="104.14" y="30.48"/>
-<instance part="F4" gate="G$1" x="104.14" y="25.4"/>
-<instance part="C2" gate="G$1" x="144.78" y="116.84" smashed="yes">
+<instance part="5-F1" gate="G$1" x="86.36" y="30.48"/>
+<instance part="5-F2" gate="G$1" x="86.36" y="25.4"/>
+<instance part="5-F3" gate="G$1" x="104.14" y="30.48"/>
+<instance part="5-F4" gate="G$1" x="104.14" y="25.4"/>
+<instance part="5-C2" gate="G$1" x="144.78" y="116.84" smashed="yes">
 <attribute name="VALUE" x="149.987" y="115.062" size="1.778" layer="96" rot="R90"/>
 <attribute name="RATING" x="144.78" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP2" gate="G$1" x="116.84" y="121.92">
+<instance part="5-JP2" gate="G$1" x="116.84" y="121.92">
 <attribute name="PARTNUM" x="116.84" y="121.92" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="SHUNT1" gate="G$1" x="88.9" y="12.7">
+<instance part="5-SHUNT1" gate="G$1" x="88.9" y="12.7">
 <attribute name="PARTNUM" x="88.9" y="12.7" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="D1" gate="G$1" x="129.54" y="119.38" rot="R180"/>
-<instance part="U3" gate="G$1" x="48.26" y="119.38" rot="MR180"/>
-<instance part="R12" gate="G$1" x="86.36" y="162.56"/>
-<instance part="R13" gate="G$1" x="30.48" y="162.56"/>
-<instance part="U1" gate="G$1" x="142.24" y="91.44"/>
-<instance part="SJ1" gate="1" x="119.38" y="71.12">
+<instance part="5-D1" gate="G$1" x="129.54" y="119.38" rot="R180"/>
+<instance part="5-U3" gate="G$1" x="48.26" y="119.38" rot="MR180"/>
+<instance part="5-R12" gate="G$1" x="86.36" y="162.56"/>
+<instance part="5-R13" gate="G$1" x="30.48" y="162.56"/>
+<instance part="5-U1" gate="G$1" x="142.24" y="91.44"/>
+<instance part="5-SJ1" gate="1" x="119.38" y="71.12">
 <attribute name="BOM" x="119.38" y="71.12" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="SJ2" gate="1" x="205.74" y="124.46" rot="R90">
+<instance part="5-SJ2" gate="1" x="205.74" y="124.46" rot="R90">
 <attribute name="BOM" x="205.74" y="124.46" size="1.27" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="SJ3" gate="1" x="220.98" y="124.46" rot="R90">
+<instance part="5-SJ3" gate="1" x="220.98" y="124.46" rot="R90">
 <attribute name="BOM" x="220.98" y="124.46" size="1.27" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="D2" gate="G$1" x="121.92" y="99.06"/>
+<instance part="5-D2" gate="G$1" x="121.92" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -3728,33 +3729,33 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <segment>
 <label x="73.66" y="144.78" size="1.778" layer="95"/>
 <wire x1="73.66" y1="144.78" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="5-C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="5-JP1" gate="G$1" pin="3"/>
 <wire x1="78.74" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
 <label x="86.36" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PCB1" gate="G$1" pin="VPROG"/>
-<pinref part="PCB1" gate="G$1" pin="VCC"/>
+<pinref part="5-PCB1" gate="G$1" pin="VPROG"/>
+<pinref part="5-PCB1" gate="G$1" pin="VCC"/>
 <wire x1="12.7" y1="60.96" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
 <label x="10.16" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 <junction x="12.7" y="63.5"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="5-D1" gate="G$1" pin="A"/>
 <wire x1="132.08" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
 <label x="134.62" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VCC"/>
+<pinref part="5-U3" gate="G$1" pin="VCC"/>
 <wire x1="38.1" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
 <label x="30.48" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="5-D2" gate="G$1" pin="A"/>
 <wire x1="119.38" y1="99.06" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
 <label x="114.3" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -3762,26 +3763,26 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <net name="GND" class="0">
 <segment>
 <label x="53.34" y="144.78" size="1.778" layer="95"/>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="5-C1" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="144.78" x2="60.96" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="5-JP1" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 <label x="86.36" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="-"/>
+<pinref part="5-C3" gate="G$1" pin="-"/>
 <wire x1="152.4" y1="111.76" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="5-C2" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="114.3" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="PAD"/>
+<pinref part="5-U2" gate="G$1" pin="PAD"/>
 <wire x1="185.42" y1="137.16" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="5-R4" gate="G$1" pin="2"/>
+<pinref part="5-R3" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="129.54" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="5-U2" gate="G$1" pin="GND"/>
 <wire x1="185.42" y1="134.62" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="134.62" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="134.62" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
@@ -3797,54 +3798,54 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <junction x="152.4" y="109.22"/>
 <junction x="215.9" y="109.22"/>
 <junction x="200.66" y="109.22"/>
-<pinref part="SJ3" gate="1" pin="1"/>
+<pinref part="5-SJ3" gate="1" pin="1"/>
 <wire x1="220.98" y1="109.22" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="119.38" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="1" pin="1"/>
+<pinref part="5-SJ2" gate="1" pin="1"/>
 <wire x1="205.74" y1="119.38" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 <junction x="205.74" y="109.22"/>
 <junction x="220.98" y="109.22"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="5-C4" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="66.04" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
 <label x="152.4" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="177.8" y1="58.42" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="5-LED1" gate="G$1" pin="C"/>
 <wire x1="38.1" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
 <label x="43.18" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PCB1" gate="G$1" pin="GND"/>
+<pinref part="5-PCB1" gate="G$1" pin="GND"/>
 <wire x1="12.7" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
 <label x="10.16" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="5-U3" gate="G$1" pin="GND"/>
 <wire x1="38.1" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
 <label x="30.48" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="5"/>
+<pinref part="5-JP3" gate="G$1" pin="5"/>
 <wire x1="215.9" y1="91.44" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
 <label x="210.82" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="5-U1" gate="G$1" pin="GND"/>
 <wire x1="132.08" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
 <label x="127" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="PCB1" gate="G$1" pin="RESET"/>
+<pinref part="5-PCB1" gate="G$1" pin="RESET"/>
 <wire x1="43.18" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
 <label x="50.8" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PB3"/>
+<pinref part="5-U3" gate="G$1" pin="PB3"/>
 <wire x1="38.1" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 <label x="30.48" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -3852,62 +3853,62 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <net name="N$7" class="0">
 <segment>
 <wire x1="27.94" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="5-R1" gate="G$1" pin="1"/>
+<pinref part="5-LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="5-JP1" gate="G$1" pin="4"/>
 <wire x1="78.74" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
 <label x="86.36" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PCB1" gate="G$1" pin="SCL"/>
+<pinref part="5-PCB1" gate="G$1" pin="SCL"/>
 <wire x1="43.18" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 <label x="50.8" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="5-R12" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
 <label x="76.2" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PCB1" gate="G$1" pin="SCK"/>
+<pinref part="5-PCB1" gate="G$1" pin="SCK"/>
 <wire x1="43.18" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
 <label x="50.8" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="5-JP1" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 <label x="86.36" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PCB1" gate="G$1" pin="SDA"/>
+<pinref part="5-PCB1" gate="G$1" pin="SDA"/>
 <wire x1="43.18" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
 <label x="50.8" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="5-R13" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="162.56" x2="20.32" y2="162.56" width="0.1524" layer="91"/>
 <label x="20.32" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PCB1" gate="G$1" pin="MOSI"/>
+<pinref part="5-PCB1" gate="G$1" pin="MOSI"/>
 <wire x1="43.18" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 <label x="50.8" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ASENSE" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="AISEN"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="5-U2" gate="G$1" pin="AISEN"/>
+<pinref part="5-R4" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="144.78" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
 <label x="195.58" y="144.78" size="1.27" layer="95"/>
-<pinref part="SJ3" gate="1" pin="2"/>
+<pinref part="5-SJ3" gate="1" pin="2"/>
 <wire x1="215.9" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="144.78" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
 <junction x="215.9" y="144.78"/>
@@ -3915,28 +3916,28 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </net>
 <net name="BSENSE" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BISEN"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="5-U2" gate="G$1" pin="BISEN"/>
+<pinref part="5-R3" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="142.24" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
 <label x="195.58" y="142.24" size="1.27" layer="95"/>
-<pinref part="SJ2" gate="1" pin="2"/>
+<pinref part="5-SJ2" gate="1" pin="2"/>
 <wire x1="205.74" y1="129.54" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
 <junction x="205.74" y="142.24"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VM"/>
-<pinref part="C3" gate="G$1" pin="+"/>
+<pinref part="5-U2" gate="G$1" pin="VM"/>
+<pinref part="5-C3" gate="G$1" pin="+"/>
 <wire x1="144.78" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="121.92" x2="152.4" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="119.38" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
 <junction x="152.4" y="121.92"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="5-C2" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="119.38" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="5-JP2" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
 <junction x="144.78" y="121.92"/>
 </segment>
@@ -3945,252 +3946,252 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <segment>
 <wire x1="124.46" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
 <label x="132.08" y="124.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="3"/>
+<pinref part="5-JP2" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="6"/>
+<pinref part="5-JP3" gate="G$1" pin="6"/>
 <wire x1="215.9" y1="88.9" x2="210.82" y2="88.9" width="0.1524" layer="91"/>
 <label x="210.82" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AIN2" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="AIN2"/>
+<pinref part="5-U2" gate="G$1" pin="AIN2"/>
 <wire x1="152.4" y1="154.94" x2="144.78" y2="154.94" width="0.1524" layer="91"/>
 <label x="144.78" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PB2"/>
+<pinref part="5-U3" gate="G$1" pin="PB2"/>
 <wire x1="38.1" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
 <label x="30.48" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AIN1" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="AIN1"/>
+<pinref part="5-U2" gate="G$1" pin="AIN1"/>
 <wire x1="152.4" y1="157.48" x2="144.78" y2="157.48" width="0.1524" layer="91"/>
 <label x="144.78" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA7"/>
+<pinref part="5-U3" gate="G$1" pin="PA7"/>
 <wire x1="38.1" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
 <label x="30.48" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BIN2" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BIN2"/>
+<pinref part="5-U2" gate="G$1" pin="BIN2"/>
 <wire x1="152.4" y1="149.86" x2="144.78" y2="149.86" width="0.1524" layer="91"/>
 <label x="144.78" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA2"/>
+<pinref part="5-U3" gate="G$1" pin="PA2"/>
 <wire x1="38.1" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
 <label x="30.48" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BIN1" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BIN1"/>
+<pinref part="5-U2" gate="G$1" pin="BIN1"/>
 <wire x1="152.4" y1="152.4" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
 <label x="144.78" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA1"/>
+<pinref part="5-U3" gate="G$1" pin="PA1"/>
 <wire x1="38.1" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
 <label x="30.48" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="NSLEEP" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="NSLEEP"/>
+<pinref part="5-U2" gate="G$1" pin="NSLEEP"/>
 <wire x1="152.4" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
 <label x="144.78" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PB1"/>
+<pinref part="5-U3" gate="G$1" pin="PB1"/>
 <wire x1="38.1" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
 <label x="30.48" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="NFAULT" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="NFAULT"/>
+<pinref part="5-U2" gate="G$1" pin="NFAULT"/>
 <wire x1="152.4" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
 <label x="132.08" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PB0"/>
+<pinref part="5-U3" gate="G$1" pin="PB0"/>
 <wire x1="38.1" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
 <label x="30.48" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VREF" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VREF"/>
+<pinref part="5-U2" gate="G$1" pin="VREF"/>
 <wire x1="152.4" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 <label x="132.08" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="W"/>
+<pinref part="5-U1" gate="G$1" pin="W"/>
 <wire x1="157.48" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <label x="162.56" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ1" gate="1" pin="2"/>
+<pinref part="5-SJ1" gate="1" pin="2"/>
 <wire x1="124.46" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 <label x="129.54" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VINT" class="0">
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="5-C4" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="71.12" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="78.74" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
 <label x="152.4" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="VINT"/>
+<pinref part="5-U2" gate="G$1" pin="VINT"/>
 <wire x1="152.4" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
 <label x="132.08" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="A"/>
+<pinref part="5-U1" gate="G$1" pin="A"/>
 <wire x1="157.48" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
 <label x="162.56" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="5-SJ1" gate="1" pin="1"/>
 <wire x1="114.3" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 <label x="109.22" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AOUT1" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="AOUT1"/>
+<pinref part="5-U2" gate="G$1" pin="AOUT1"/>
 <wire x1="185.42" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
 <label x="190.5" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="5-JP3" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="101.6" x2="210.82" y2="101.6" width="0.1524" layer="91"/>
 <label x="210.82" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AOUT2" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="AOUT2"/>
+<pinref part="5-U2" gate="G$1" pin="AOUT2"/>
 <wire x1="185.42" y1="154.94" x2="190.5" y2="154.94" width="0.1524" layer="91"/>
 <label x="190.5" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="5-JP3" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
 <label x="210.82" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BOUT1" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BOUT1"/>
+<pinref part="5-U2" gate="G$1" pin="BOUT1"/>
 <wire x1="185.42" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
 <label x="190.5" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="4"/>
+<pinref part="5-JP3" gate="G$1" pin="4"/>
 <wire x1="215.9" y1="93.98" x2="210.82" y2="93.98" width="0.1524" layer="91"/>
 <label x="210.82" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BOUT2" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="BOUT2"/>
+<pinref part="5-U2" gate="G$1" pin="BOUT2"/>
 <wire x1="185.42" y1="149.86" x2="190.5" y2="149.86" width="0.1524" layer="91"/>
 <label x="190.5" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="3"/>
+<pinref part="5-JP3" gate="G$1" pin="3"/>
 <wire x1="215.9" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
 <label x="210.82" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="5-JP2" gate="G$1" pin="1"/>
+<pinref part="5-D1" gate="G$1" pin="C"/>
 <wire x1="124.46" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA/MOSI" class="0">
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="5-R13" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
 <label x="40.64" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA6"/>
+<pinref part="5-U3" gate="G$1" pin="PA6"/>
 <wire x1="38.1" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
 <label x="30.48" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL/SCK" class="0">
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="5-R12" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
 <label x="96.52" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="PA4"/>
+<pinref part="5-U3" gate="G$1" pin="PA4"/>
 <wire x1="38.1" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
 <label x="30.48" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MISO/LED" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="PA5"/>
+<pinref part="5-U3" gate="G$1" pin="PA5"/>
 <wire x1="38.1" y1="121.92" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
 <label x="30.48" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="5-R1" gate="G$1" pin="2"/>
 <label x="11.938" y="27.686" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PCB1" gate="G$1" pin="MISO"/>
+<pinref part="5-PCB1" gate="G$1" pin="MISO"/>
 <wire x1="43.18" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 <label x="50.8" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CS" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="PA3"/>
+<pinref part="5-U3" gate="G$1" pin="PA3"/>
 <wire x1="38.1" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
 <label x="30.48" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="CS"/>
+<pinref part="5-U1" gate="G$1" pin="CS"/>
 <wire x1="132.08" y1="91.44" x2="127" y2="91.44" width="0.1524" layer="91"/>
 <label x="127" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UD" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="PA0"/>
+<pinref part="5-U3" gate="G$1" pin="PA0"/>
 <wire x1="38.1" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
 <label x="30.48" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="UD"/>
+<pinref part="5-U1" gate="G$1" pin="UD"/>
 <wire x1="132.08" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
 <label x="127" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="5-D2" gate="G$1" pin="C"/>
 <wire x1="124.46" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="127" y1="99.06" x2="127" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="5-U1" gate="G$1" pin="VCC"/>
 <wire x1="127" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>

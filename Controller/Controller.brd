@@ -416,6 +416,7 @@
 <wire x1="3.75" y1="2.85" x2="3.75" y2="1.5" width="0.05" layer="21"/>
 <wire x1="-3.75" y1="2.85" x2="-3.45" y2="2.85" width="0.05" layer="21"/>
 <wire x1="3.75" y1="2.85" x2="3.4" y2="2.85" width="0.05" layer="21"/>
+<text x="4.445" y="1.27" size="0.508" layer="25">&gt;NAME</text>
 </package>
 <package name="PANASONIC_D">
 <wire x1="-3.25" y1="3.25" x2="1.55" y2="3.25" width="0.1016" layer="51"/>
@@ -459,6 +460,7 @@
 <smd name="P$3" x="-2.075" y="-1.05" dx="1.05" dy="0.65" layer="1"/>
 <smd name="P$4" x="2.075" y="-1.05" dx="1.05" dy="0.65" layer="1"/>
 <circle x="0" y="0" radius="1.5" width="0.05" layer="21"/>
+<text x="1.905" y="0" size="0.508" layer="25">&gt;NAME</text>
 </package>
 <package name="FIDUCIAL_1MM">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
@@ -709,166 +711,167 @@ einem neuen Namen ab.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
+<element name="3-PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="BOARD" value="Controller" x="0" y="0" size="0.6096" layer="27" display="off"/>
 <attribute name="VERSION" value="7" x="0" y="0" size="0.6096" layer="27" display="off"/>
 <attribute name="PARTNUM" value="Controller PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP1" library="Modulo" package="USB-MICROB-FCI" value="USBFCI-MICROB" x="25.7175" y="1.524">
+<element name="3-JP1" library="Modulo" package="USB-MICROB-FCI" value="USBFCI-MICROB" x="25.7175" y="1.524" smashed="yes">
 <attribute name="PARTNUM" value="10118193-0001LF" x="25.7175" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="24.765" y="2.63525" size="0.508" layer="25"/>
 </element>
-<element name="R2" library="Modulo" package="0603" value="5kΩ" x="6.35" y="24.13" smashed="yes" rot="MR180">
-<attribute name="NAME" x="7.8105" y="24.7015" size="0.508" layer="26" font="vector" ratio="10" rot="MR180"/>
+<element name="3-R2" library="Modulo" package="0603" value="5kΩ" x="6.35" y="24.13" smashed="yes" rot="MR180">
+<attribute name="NAME" x="4.47675" y="25.3365" size="0.508" layer="26" font="vector" ratio="10" rot="MR180"/>
 <attribute name="VALUE" value="5kΩ" x="6.38175" y="23.368" size="0.508" layer="28" font="vector" ratio="10" rot="MR180"/>
 <attribute name="PARTNUM" value="ERJ-3EKF5101V" x="6.35" y="24.13" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="R1" library="Modulo" package="0603" value="5kΩ" x="6.35" y="20.955" smashed="yes" rot="MR0">
-<attribute name="NAME" x="4.8895" y="20.32" size="0.508" layer="26" font="vector" ratio="10" rot="MR0"/>
+<element name="3-R1" library="Modulo" package="0603" value="5kΩ" x="6.35" y="20.955" smashed="yes" rot="MR0">
+<attribute name="NAME" x="4.1275" y="20.193" size="0.508" layer="26" font="vector" ratio="10" rot="MR90"/>
 <attribute name="VALUE" value="5kΩ" x="6.731" y="21.6535" size="0.508" layer="28" font="vector" ratio="10" rot="MR0"/>
 <attribute name="PARTNUM" value="ERJ-3EKF5101V" x="6.35" y="20.955" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C6" library="Modulo" package="0603" value="10uF" x="29.68625" y="7.3025" smashed="yes" rot="MR180">
+<element name="3-C6" library="Modulo" package="0603" value="10uF" x="29.68625" y="7.3025" smashed="yes" rot="MR180">
 <attribute name="NAME" x="30.76575" y="8.255" size="0.508" layer="26" ratio="10" rot="MR0"/>
 <attribute name="VALUE" value="10uF" x="28.956" y="6.35" size="0.508" layer="28" ratio="10" rot="MR180"/>
 <attribute name="PARTNUM" value="GRM188R61C106MA73D" x="29.68625" y="7.3025" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="LED2" library="Modulo" package="0805-LED" value="blue" x="12.7" y="24.13" smashed="yes" rot="R90">
-<attribute name="VALUE" value="blue" x="27.6225" y="24.4475" size="1.27" layer="27" rot="R180" display="off"/>
+<element name="3-LED2" library="Modulo" package="0805-LED" value="blue" x="12.7" y="24.13" smashed="yes" rot="R90">
 <attribute name="PARTNUM" value="LTST-C171TBKT" x="12.7" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="14.7701" y="23.2791" size="0.508" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="14.2748" y="25.6159" size="0.635" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="U2" library="Modulo" package="SOT23-5" value="VREG-MIC5205-3.3V" x="27.4955" y="12.2555" smashed="yes" rot="MR270">
+<element name="3-U2" library="Modulo" package="SOT23-5" value="VREG-MIC5205-3.3V" x="27.4955" y="12.2555" smashed="yes" rot="MR270">
 <attribute name="PARTNUM" value="MIC5205-3.3YM5 TR" x="27.4955" y="12.2555" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="26.2255" y="12.66825" size="0.508" layer="26" rot="MR270"/>
 </element>
-<element name="JP3" library="adafruit" package="1X06-BIGLOCK" value="" x="12.7" y="8.89" smashed="yes" rot="R180">
+<element name="3-JP3" library="adafruit" package="1X06-BIGLOCK" value="" x="12.7" y="8.89" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.32" y="12.065" size="1.27" layer="27" rot="R180"/>
 <attribute name="PARTNUM" value="M20-9990646" x="12.7" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="JP4" library="adafruit" package="1X06-BIGLOCK" value="" x="12.7" y="3.81" smashed="yes">
+<element name="3-JP4" library="adafruit" package="1X06-BIGLOCK" value="" x="12.7" y="3.81" smashed="yes">
 <attribute name="VALUE" x="5.08" y="0.635" size="1.27" layer="27"/>
 <attribute name="PARTNUM" value="M20-9990646" x="12.7" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP5" library="adafruit" package="1X06-BIGLOCK" value="" x="12.7" y="6.35" smashed="yes">
+<element name="3-JP5" library="adafruit" package="1X06-BIGLOCK" value="" x="12.7" y="6.35" smashed="yes">
 <attribute name="VALUE" x="5.08" y="3.175" size="1.27" layer="27"/>
 <attribute name="PARTNUM" value="M20-9990646" x="12.7" y="6.35" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LED1" library="Modulo" package="0805-LED" value="blue" x="12.7" y="20.8915" smashed="yes" rot="R90">
-<attribute name="VALUE" value="blue" x="27.6225" y="21.5265" size="1.27" layer="27" rot="R180" display="off"/>
+<element name="3-LED1" library="Modulo" package="0805-LED" value="blue" x="12.7" y="20.8915" smashed="yes" rot="R90">
 <attribute name="PARTNUM" value="LTST-C171KRKT" x="12.7" y="20.8915" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="14.92885" y="22.42185" size="0.508" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="14.2748" y="22.3774" size="0.635" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="R3" library="Modulo" package="0603" value="470Ω" x="18.415" y="11.7475" smashed="yes" rot="MR270">
+<element name="3-R3" library="Modulo" package="0603" value="470Ω" x="18.415" y="11.7475" smashed="yes" rot="MR270">
 <attribute name="PARTNUM" value="ERJ-3EKF4700V" x="18.415" y="11.7475" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="19.1135" y="14.097" size="0.635" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="19.6215" y="14.95425" size="0.635" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="17.74825" y="13.43025" size="0.508" layer="26" font="vector" rot="MR90"/>
 </element>
-<element name="R4" library="Modulo" package="0603" value="470Ω" x="15.1765" y="11.7475" smashed="yes" rot="MR270">
+<element name="3-R4" library="Modulo" package="0603" value="470Ω" x="15.1765" y="11.7475" smashed="yes" rot="MR270">
 <attribute name="PARTNUM" value="ERJ-3EKF4700V" x="15.1765" y="11.7475" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="15.71625" y="14.1605" size="0.635" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="16.0655" y="15.0495" size="0.635" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="14.95425" y="14.2875" size="0.508" layer="26" font="vector" rot="MR90"/>
 </element>
-<element name="R5" library="Modulo" package="0603" value="470Ω" x="11.7475" y="11.7475" smashed="yes" rot="MR270">
+<element name="3-R5" library="Modulo" package="0603" value="470Ω" x="11.7475" y="11.7475" smashed="yes" rot="MR270">
 <attribute name="PARTNUM" value="ERJ-3EKF4700V" x="11.7475" y="11.7475" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="12.22375" y="14.1605" size="0.635" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="12.79525" y="15.01775" size="0.635" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="11.6205" y="14.2875" size="0.508" layer="26" font="vector" rot="MR90"/>
 </element>
-<element name="R6" library="Modulo" package="0603" value="470Ω" x="10.16" y="11.7475" smashed="yes" rot="MR270">
+<element name="3-R6" library="Modulo" package="0603" value="470Ω" x="10.16" y="11.7475" smashed="yes" rot="MR270">
 <attribute name="PARTNUM" value="ERJ-3EKF4700V" x="10.16" y="11.7475" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="10.541" y="14.097" size="0.635" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="11.46175" y="15.9385" size="0.635" layer="28" font="vector" rot="MR0"/>
+<attribute name="NAME" x="10.287" y="14.224" size="0.508" layer="26" font="vector" rot="MR90"/>
 </element>
-<element name="R7" library="Modulo" package="0603" value="470Ω" x="6.38175" y="16.8275" smashed="yes" rot="MR270">
-<attribute name="NAME" x="6.63575" y="18.288" size="0.508" layer="26" ratio="10" rot="MR0"/>
-<attribute name="VALUE" value="470Ω" x="7.33425" y="18.9865" size="0.508" layer="28" ratio="10" rot="MR0"/>
+<element name="3-R7" library="Modulo" package="0603" value="470Ω" x="6.38175" y="16.8275" smashed="yes" rot="MR270">
+<attribute name="NAME" x="7.747" y="18.6055" size="0.508" layer="26" ratio="10" rot="MR0"/>
+<attribute name="VALUE" value="470Ω" x="7.33425" y="18.9865" size="0.508" layer="28" ratio="10" rot="MR0" display="off"/>
 <attribute name="PARTNUM" value="ERJ-3EKF4700V" x="6.38175" y="16.8275" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R8" library="Modulo" package="0603" value="470Ω" x="6.50875" y="11.7475" smashed="yes" rot="MR270">
-<attribute name="NAME" x="6.604" y="13.2715" size="0.508" layer="26" ratio="10" rot="MR0"/>
-<attribute name="VALUE" value="470Ω" x="7.6835" y="14.097" size="0.508" layer="28" ratio="10" rot="MR0"/>
+<element name="3-R8" library="Modulo" package="0603" value="470Ω" x="6.50875" y="11.7475" smashed="yes" rot="MR270">
+<attribute name="NAME" x="6.12775" y="13.3985" size="0.508" layer="26" ratio="10" rot="MR90"/>
+<attribute name="VALUE" value="470Ω" x="7.6835" y="14.097" size="0.508" layer="28" ratio="10" rot="MR0" display="off"/>
 <attribute name="PARTNUM" value="ERJ-3EKF4700V" x="6.50875" y="11.7475" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="C9" library="Modulo" package="0603" value="10uF" x="29.36875" y="17.145" smashed="yes" rot="MR180">
+<element name="3-C9" library="Modulo" package="0603" value="10uF" x="29.36875" y="17.145" smashed="yes" rot="MR180">
 <attribute name="PARTNUM" value="GRM188R61C106MA73D" x="29.36875" y="17.145" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" value="10uF" x="29.36875" y="17.145" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="27.7495" y="16.09725" size="0.508" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="30.63875" y="16.85925" size="0.508" layer="28" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="31.08325" y="16.1925" size="0.508" layer="28" font="vector" rot="MR90"/>
 </element>
-<element name="U1" library="Modulo" package="TQFP-32" value="ATSAMD21E18A-AU" x="24.4475" y="17.4625" smashed="yes">
+<element name="3-U1" library="Modulo" package="TQFP-32" value="ATSAMD21E18A-AU" x="24.4475" y="17.4625" smashed="yes">
 <attribute name="PARTNUM" value="ATSAMD21E18A-AUT" x="24.4475" y="17.4625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="19.685" y="21.2725" size="0.8128" layer="25"/>
+<attribute name="NAME" x="27.94" y="21.2725" size="0.8128" layer="25"/>
 </element>
-<element name="C7" library="Modulo" package="0603" value=".1uF" x="25.0825" y="23.97125" smashed="yes" rot="R270">
+<element name="3-C7" library="Modulo" package="0603" value=".1uF" x="25.0825" y="23.97125" smashed="yes" rot="R270">
 <attribute name="PARTNUM" value="C0603C104K5RACTU" x="25.0825" y="23.97125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="23.3045" y="22.76475" size="0.635" layer="25" font="vector"/>
+<attribute name="NAME" x="24.22525" y="22.6695" size="0.635" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="25.81275" y="24.003" size="0.635" layer="27" font="vector"/>
 </element>
-<element name="C8" library="Modulo" package="0603" value=".1uF" x="29.36875" y="15.24" smashed="yes" rot="MR180">
+<element name="3-C8" library="Modulo" package="0603" value=".1uF" x="29.36875" y="15.24" smashed="yes" rot="MR180">
 <attribute name="PARTNUM" value="C0603C104K5RACTU" x="29.36875" y="15.24" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="27.71775" y="14.986" size="0.635" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="29.464" y="14.4145" size="0.635" layer="28" font="vector" rot="MR180"/>
 </element>
-<element name="C1" library="Modulo" package="0603" value="10uF" x="29.36875" y="19.05" smashed="yes" rot="MR180">
+<element name="3-C1" library="Modulo" package="0603" value="10uF" x="29.36875" y="19.05" smashed="yes" rot="MR180">
 <attribute name="PARTNUM" value="GRM188R61C106MA73D" x="29.36875" y="19.05" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="26.70175" y="18.9865" size="0.635" layer="26" font="vector" rot="MR180"/>
+<attribute name="NAME" x="31.01975" y="18.288" size="0.635" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="27.8765" y="19.20875" size="0.635" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="C4" library="Modulo" package="0603" value=".1uF" x="29.36875" y="20.955" smashed="yes" rot="MR180">
+<element name="3-C4" library="Modulo" package="0603" value=".1uF" x="29.36875" y="20.955" smashed="yes" rot="MR180">
 <attribute name="PARTNUM" value="C0603C104K5RACTU" x="29.36875" y="20.955" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="26.57475" y="21.7805" size="0.635" layer="26" font="vector" rot="MR180"/>
+<attribute name="NAME" x="27.71775" y="21.082" size="0.635" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="27.65425" y="20.2565" size="0.635" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="L1" library="Modulo" package="0603" value="10uH" x="29.36875" y="22.86" smashed="yes" rot="MR0">
+<element name="3-L1" library="Modulo" package="0603" value="10uH" x="29.36875" y="22.86" smashed="yes" rot="MR0">
 <attribute name="PARTNUM" value="BLM18TG102TN1D" x="29.36875" y="22.86" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="27.78125" y="22.25675" size="0.635" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="30.4165" y="23.78075" size="0.635" layer="28" font="vector" rot="MR0"/>
 </element>
-<element name="X1" library="Modulo" package="CRYSTAL-AB26TRQ" value="CRYSTAL-AB26TRQ-32.768K" x="18.0975" y="22.5425" rot="R270">
+<element name="3-X1" library="Modulo" package="CRYSTAL-AB26TRQ" value="CRYSTAL-AB26TRQ-32.768K" x="18.0975" y="22.5425" smashed="yes" rot="R270">
 <attribute name="PARTNUM" value="AB26TRQ-32.768KHZ-T" x="18.0975" y="22.5425" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="19.20875" y="24.60625" size="0.508" layer="25" rot="R270"/>
 </element>
-<element name="C3" library="Modulo" package="0603" value="18pF" x="15.875" y="20.16125" smashed="yes" rot="R270">
+<element name="3-C3" library="Modulo" package="0603" value="18pF" x="15.875" y="20.16125" smashed="yes" rot="R270">
 <attribute name="PARTNUM" value="C0603C180J5GACTU" x="15.875" y="20.16125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="15.14475" y="19.558" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="15.14475" y="19.558" size="0.508" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="15.0495" y="17.87525" size="0.635" layer="27" font="vector"/>
 </element>
-<element name="C2" library="Modulo" package="0603" value="18pF" x="15.875" y="23.8125" smashed="yes" rot="R270">
+<element name="3-C2" library="Modulo" package="0603" value="18pF" x="15.875" y="23.8125" smashed="yes" rot="R270">
 <attribute name="PARTNUM" value="C0603C180J5GACTU" x="15.875" y="23.8125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="15.27175" y="25.36825" size="0.635" layer="25" font="vector"/>
+<attribute name="NAME" x="14.63675" y="25.36825" size="0.635" layer="25" font="vector"/>
 <attribute name="VALUE" x="14.95425" y="25.49525" size="0.635" layer="27" font="vector"/>
 </element>
-<element name="JP2" library="Modulo" package="AMPMODU-4P" value="HEADER-1X4-AMPMODU" x="17.78" y="20.955" smashed="yes" rot="MR0">
+<element name="3-JP2" library="Modulo" package="AMPMODU-4P" value="HEADER-1X4-AMPMODU" x="17.78" y="20.955" smashed="yes" rot="MR0">
 <attribute name="NAME" x="16.41475" y="26.38425" size="0.508" layer="26" rot="MR0"/>
 <attribute name="PARTNUM" value="147721-3" x="17.78" y="20.955" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="D2" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="20.0025" y="11.8745" smashed="yes" rot="MR270">
-<attribute name="NAME" x="19.56925" y="14.748" size="0.508" layer="26" rot="MR180"/>
+<element name="3-D2" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="20.0025" y="11.8745" smashed="yes" rot="MR270">
+<attribute name="NAME" x="20.177" y="14.48925" size="0.508" layer="26" rot="MR90"/>
 <attribute name="PARTNUM" value="RB751V40" x="20.0025" y="11.8745" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="D3" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="16.764" y="11.811" smashed="yes" rot="MR270">
-<attribute name="NAME" x="17.102" y="14.081" size="0.508" layer="26" rot="MR0"/>
+<element name="3-D3" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="16.764" y="11.811" smashed="yes" rot="MR270">
+<attribute name="NAME" x="15.986" y="13.6955" size="0.508" layer="26" rot="MR90"/>
 <attribute name="PARTNUM" value="RB751V40" x="16.764" y="11.811" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="D4" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="13.335" y="11.7475" smashed="yes" rot="MR270">
-<attribute name="NAME" x="13.673" y="14.11275" size="0.508" layer="26" rot="MR0"/>
+<element name="3-D4" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="13.335" y="11.7475" smashed="yes" rot="MR270">
+<attribute name="NAME" x="13.79525" y="13.47325" size="0.508" layer="26" rot="MR90"/>
 <attribute name="PARTNUM" value="RB751V40" x="13.335" y="11.7475" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="D5" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="8.255" y="11.7475" smashed="yes" rot="MR270">
-<attribute name="NAME" x="9.4185" y="13.47775" size="0.508" layer="26" rot="MR0"/>
+<element name="3-D5" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="8.255" y="11.7475" smashed="yes" rot="MR270">
+<attribute name="NAME" x="7.604" y="14.23525" size="0.508" layer="26" rot="MR90"/>
 <attribute name="PARTNUM" value="RB751V40" x="8.255" y="11.7475" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="D6" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="4.73075" y="16.66875" smashed="yes" rot="MR90">
-<attribute name="NAME" x="4.01175" y="18.90725" size="0.508" layer="26" rot="MR180"/>
+<element name="3-D6" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="4.73075" y="16.66875" smashed="yes" rot="MR90">
+<attribute name="NAME" x="5.51325" y="18.399" size="0.508" layer="26" rot="MR0"/>
 <attribute name="PARTNUM" value="RB751V40" x="4.73075" y="16.66875" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="D7" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="4.92125" y="11.90625" smashed="yes" rot="MR270">
-<attribute name="NAME" x="4.30675" y="13.22375" size="0.508" layer="26" rot="MR0"/>
+<element name="3-D7" library="Modulo" package="SOD-323" value="DIODE-SCHOTTKY-BAT60A" x="4.92125" y="11.90625" smashed="yes" rot="MR270">
+<attribute name="NAME" x="3.54" y="11.56825" size="0.508" layer="26" rot="MR90"/>
 <attribute name="PARTNUM" value="RB751V40" x="4.92125" y="11.90625" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="C5" library="Modulo" package="PANASONIC_D" value="56uF" x="28.09875" y="9.2075" smashed="yes">
+<element name="3-C5" library="Modulo" package="PANASONIC_D" value="56uF" x="28.09875" y="9.2075" smashed="yes">
 <attribute name="PARTNUM" value="EMVA250ADA560MF55G" x="28.09875" y="9.2075" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="27.93625" y="9.5725" size="0.508" layer="25"/>
+<attribute name="NAME" x="30.47625" y="6.23875" size="0.508" layer="25"/>
 <attribute name="VALUE" x="26.825" y="7.70875" size="0.508" layer="27"/>
 </element>
-<element name="SW1" library="Modulo" package="TACT-SWITCH-PTS-810" value="SWITCH-PTS-810" x="22.5425" y="27.305" rot="R180">
+<element name="3-SW1" library="Modulo" package="TACT-SWITCH-PTS-810" value="SWITCH-PTS-810" x="22.5425" y="27.305" smashed="yes" rot="R180">
 <attribute name="PARTNUM" value="PTS810 SJM 250 SMTR LFS" x="22.5425" y="27.305" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="25.24125" y="29.36875" size="0.508" layer="25" rot="R180"/>
 </element>
 <element name="F1" library="Modulo" package="FIDUCIAL_1MM" value="FIDUCIAL" x="10.795" y="27.305">
 <attribute name="BOM" value="EXCLUDE" x="10.795" y="27.305" size="1.778" layer="27" display="off"/>
@@ -882,52 +885,53 @@ einem neuen Namen ab.</description>
 <element name="F4" library="Modulo" package="FIDUCIAL_1MM" value="FIDUCIAL" x="26.035" y="2.54" rot="MR0">
 <attribute name="BOM" value="EXCLUDE" x="26.035" y="2.54" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="R9" library="Modulo" package="0603" value="1KΩ" x="10.4775" y="20.955" smashed="yes" rot="MR180">
+<element name="3-R9" library="Modulo" package="0603" value="1KΩ" x="10.4775" y="20.955" smashed="yes" rot="MR180">
 <attribute name="PARTNUM" value="ERJ-3EKF1001V" x="10.4775" y="20.955" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="9.7155" y="19.177" size="0.635" layer="26" font="vector" rot="MR180"/>
+<attribute name="NAME" x="11.938" y="20.35175" size="0.635" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="9.4615" y="22.352" size="0.635" layer="28" font="vector" rot="MR180"/>
 </element>
-<element name="R10" library="Modulo" package="0603" value="1KΩ" x="10.4775" y="24.13" smashed="yes" rot="MR180">
+<element name="3-R10" library="Modulo" package="0603" value="1KΩ" x="10.4775" y="24.13" smashed="yes" rot="MR180">
 <attribute name="PARTNUM" value="ERJ-3EKF1001V" x="10.4775" y="24.13" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="9.398" y="26.32075" size="0.635" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="9.4615" y="25.527" size="0.635" layer="28" font="vector" rot="MR180"/>
 </element>
-<element name="JP6" library="SparkFun-Connectors" package="1X02_LOCK" value="M02LOCK" x="11.27125" y="17.78" smashed="yes" rot="R180">
+<element name="3-JP6" library="SparkFun-Connectors" package="1X02_LOCK" value="M02LOCK" x="11.27125" y="17.78" smashed="yes" rot="R180">
 <attribute name="PARTNUM" value="M20-9990246" x="11.27125" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D1" library="Modulo" package="SMP" value="DIODE-SCHOTTKY" x="22.225" y="9.525" rot="R270">
+<element name="3-D1" library="Modulo" package="SMP" value="DIODE-SCHOTTKY" x="22.225" y="9.525" smashed="yes" rot="R270">
 <attribute name="PARTNUM" value="SS3P3-M3/84A" x="22.225" y="9.525" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.336" y="11.01725" size="0.4064" layer="25"/>
 </element>
 <element name="U$2" library="Modulo" package="LOGO-TINY" value="" x="8.41375" y="22.38375"/>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="JP1" pad="P5"/>
-<contactref element="PCB1" pad="GND"/>
-<contactref element="U2" pad="2"/>
-<contactref element="JP4" pad="4"/>
-<contactref element="JP4" pad="2"/>
-<contactref element="JP4" pad="6"/>
-<contactref element="JP4" pad="1"/>
-<contactref element="JP4" pad="5"/>
-<contactref element="JP4" pad="3"/>
-<contactref element="C9" pad="2"/>
-<contactref element="U1" pad="10"/>
-<contactref element="C4" pad="2"/>
-<contactref element="C1" pad="2"/>
-<contactref element="C8" pad="2"/>
-<contactref element="C7" pad="2"/>
-<contactref element="C3" pad="1"/>
-<contactref element="C2" pad="1"/>
-<contactref element="U1" pad="28"/>
-<contactref element="JP2" pad="P$1"/>
-<contactref element="JP2" pad="P$2"/>
-<contactref element="C6" pad="2"/>
-<contactref element="C5" pad="-"/>
-<contactref element="SW1" pad="P$4"/>
-<contactref element="SW1" pad="P$3"/>
-<contactref element="R9" pad="1"/>
-<contactref element="R10" pad="1"/>
+<contactref element="3-JP1" pad="P5"/>
+<contactref element="3-PCB1" pad="GND"/>
+<contactref element="3-U2" pad="2"/>
+<contactref element="3-JP4" pad="4"/>
+<contactref element="3-JP4" pad="2"/>
+<contactref element="3-JP4" pad="6"/>
+<contactref element="3-JP4" pad="1"/>
+<contactref element="3-JP4" pad="5"/>
+<contactref element="3-JP4" pad="3"/>
+<contactref element="3-C9" pad="2"/>
+<contactref element="3-U1" pad="10"/>
+<contactref element="3-C4" pad="2"/>
+<contactref element="3-C1" pad="2"/>
+<contactref element="3-C8" pad="2"/>
+<contactref element="3-C7" pad="2"/>
+<contactref element="3-C3" pad="1"/>
+<contactref element="3-C2" pad="1"/>
+<contactref element="3-U1" pad="28"/>
+<contactref element="3-JP2" pad="P$1"/>
+<contactref element="3-JP2" pad="P$2"/>
+<contactref element="3-C6" pad="2"/>
+<contactref element="3-C5" pad="-"/>
+<contactref element="3-SW1" pad="P$4"/>
+<contactref element="3-SW1" pad="P$3"/>
+<contactref element="3-R9" pad="1"/>
+<contactref element="3-R10" pad="1"/>
 <wire x1="15.875" y1="20.99945" x2="15.785" y2="21.045" width="0.254" layer="1"/>
 <wire x1="15.785" y1="21.045" x2="14.9225" y2="21.9075" width="0.254" layer="1"/>
 <wire x1="14.9225" y1="21.9075" x2="14.9225" y2="22.5425" width="0.254" layer="1"/>
@@ -991,7 +995,7 @@ einem neuen Namen ab.</description>
 <wire x1="26.035" y1="5.715" x2="29.845" y2="5.715" width="1.016" layer="16"/>
 <wire x1="29.845" y1="5.715" x2="30.1625" y2="5.715" width="1.016" layer="16"/>
 <wire x1="30.1625" y1="5.715" x2="30.1625" y2="5.08" width="1.016" layer="16"/>
-<contactref element="JP6" pad="2"/>
+<contactref element="3-JP6" pad="2"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="7.9375" width="1.016" layer="16"/>
 <wire x1="33.02" y1="7.9375" x2="30.1625" y2="5.08" width="1.016" layer="16"/>
 <wire x1="28.7956" y1="12.2555" x2="27.90825" y2="12.2555" width="0.254" layer="16"/>
@@ -1042,19 +1046,19 @@ einem neuen Namen ab.</description>
 <wire x1="25.48435625" y1="23.42060625" x2="24.92375" y2="22.86" width="0.2032" layer="16"/>
 </signal>
 <signal name="VCC">
-<contactref element="C6" pad="1"/>
-<contactref element="U2" pad="1"/>
-<contactref element="U2" pad="3"/>
-<contactref element="PCB1" pad="VCC"/>
-<contactref element="JP5" pad="6"/>
-<contactref element="JP5" pad="5"/>
-<contactref element="JP5" pad="4"/>
-<contactref element="JP5" pad="3"/>
-<contactref element="JP5" pad="2"/>
-<contactref element="JP5" pad="1"/>
-<contactref element="JP2" pad="P$5"/>
-<contactref element="JP2" pad="P$6"/>
-<contactref element="C5" pad="+"/>
+<contactref element="3-C6" pad="1"/>
+<contactref element="3-U2" pad="1"/>
+<contactref element="3-U2" pad="3"/>
+<contactref element="3-PCB1" pad="VCC"/>
+<contactref element="3-JP5" pad="6"/>
+<contactref element="3-JP5" pad="5"/>
+<contactref element="3-JP5" pad="4"/>
+<contactref element="3-JP5" pad="3"/>
+<contactref element="3-JP5" pad="2"/>
+<contactref element="3-JP5" pad="1"/>
+<contactref element="3-JP2" pad="P$5"/>
+<contactref element="3-JP2" pad="P$6"/>
+<contactref element="3-C5" pad="+"/>
 <wire x1="6.35" y1="6.477" x2="8.636" y2="6.477" width="1.016" layer="1"/>
 <wire x1="8.636" y1="6.477" x2="8.89" y2="6.223" width="1.016" layer="1"/>
 <wire x1="8.89" y1="6.223" x2="11.176" y2="6.223" width="1.016" layer="1"/>
@@ -1094,7 +1098,7 @@ einem neuen Namen ab.</description>
 <wire x1="31.4325" y1="10.795" x2="31.4325" y2="11.43" width="1.016" layer="16"/>
 <wire x1="28.84805" y1="7.3025" x2="28.92425" y2="8.85825" width="0.4064" layer="16"/>
 <wire x1="28.92425" y1="8.85825" x2="28.41625" y2="8.89" width="0.4064" layer="16"/>
-<contactref element="D1" pad="C"/>
+<contactref element="3-D1" pad="C"/>
 <wire x1="22.225" y1="9.525" x2="21.3995" y2="8.5725" width="1.016" layer="1"/>
 <wire x1="21.3995" y1="8.5725" x2="19.05" y2="6.223" width="1.016" layer="1"/>
 <wire x1="22.225" y1="9.525" x2="21.9075" y2="9.36625" width="0.4064" layer="1"/>
@@ -1109,8 +1113,8 @@ einem neuen Namen ab.</description>
 <wire x1="24.13" y1="7.46125" x2="24.13" y2="8.89" width="1.016" layer="16"/>
 </signal>
 <signal name="D-">
-<contactref element="JP1" pad="P2"/>
-<contactref element="U1" pad="23"/>
+<contactref element="3-JP1" pad="P2"/>
+<contactref element="3-U1" pad="23"/>
 <wire x1="28.7925" y1="19.3675" x2="28.6975" y2="19.4625" width="0.2032" layer="1" curve="-90"/>
 <wire x1="25.0675" y1="4.224" x2="25.0675" y2="5.753540625" width="0.2032" layer="1"/>
 <wire x1="25.0675" y1="5.753540625" x2="25.14189375" y2="5.93314375" width="0.2032" layer="1" curve="-44.999502"/>
@@ -1139,8 +1143,8 @@ einem neuen Namen ab.</description>
 <wire x1="28.76125" y1="19.52625" x2="28.6975" y2="19.4625" width="0.2032" layer="1"/>
 </signal>
 <signal name="D+">
-<contactref element="JP1" pad="P3"/>
-<contactref element="U1" pad="24"/>
+<contactref element="3-JP1" pad="P3"/>
+<contactref element="3-U1" pad="24"/>
 <wire x1="28.755" y1="20.32" x2="28.6975" y2="20.2625" width="0.2032" layer="1" curve="90"/>
 <wire x1="28.755" y1="20.32" x2="30.428328125" y2="20.32" width="0.2032" layer="1"/>
 <wire x1="30.428328125" y1="20.32" x2="30.787540625" y2="20.171209375" width="0.2032" layer="1" curve="-45.000249"/>
@@ -1161,11 +1165,11 @@ einem neuen Namen ab.</description>
 <wire x1="25.7175" y1="5.345828125" x2="25.7175" y2="4.224" width="0.2032" layer="1"/>
 </signal>
 <signal name="SDA">
-<contactref element="PCB1" pad="SDA"/>
-<contactref element="R2" pad="2"/>
-<contactref element="U1" pad="11"/>
-<contactref element="JP2" pad="P$3"/>
-<contactref element="JP2" pad="P$4"/>
+<contactref element="3-PCB1" pad="SDA"/>
+<contactref element="3-R2" pad="2"/>
+<contactref element="3-U1" pad="11"/>
+<contactref element="3-JP2" pad="P$3"/>
+<contactref element="3-JP2" pad="P$4"/>
 <wire x1="11.1125" y1="25.0825" x2="12.7" y2="26.67" width="0.2032" layer="16"/>
 <wire x1="12.7" y1="26.67" x2="18.7325" y2="26.67" width="0.2032" layer="16"/>
 <wire x1="18.7325" y1="26.67" x2="19.05" y2="26.3525" width="0.2032" layer="16"/>
@@ -1184,11 +1188,11 @@ einem neuen Namen ab.</description>
 <wire x1="23.2475" y1="18.345" x2="19.05" y2="17.145" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL">
-<contactref element="PCB1" pad="SCL"/>
-<contactref element="R1" pad="2"/>
-<contactref element="U1" pad="12"/>
-<contactref element="JP2" pad="P$8"/>
-<contactref element="JP2" pad="P$7"/>
+<contactref element="3-PCB1" pad="SCL"/>
+<contactref element="3-R1" pad="2"/>
+<contactref element="3-U1" pad="12"/>
+<contactref element="3-JP2" pad="P$8"/>
+<contactref element="3-JP2" pad="P$7"/>
 <wire x1="13.97" y1="17.145" x2="13.97" y2="21.59" width="0.2032" layer="16"/>
 <wire x1="13.97" y1="21.59" x2="13.6525" y2="21.9075" width="0.2032" layer="16"/>
 <wire x1="13.6525" y1="21.9075" x2="5.715" y2="21.9075" width="0.2032" layer="16"/>
@@ -1207,10 +1211,10 @@ einem neuen Namen ab.</description>
 <wire x1="4.5825" y1="22.86" x2="5.625" y2="21.8175" width="0.2032" layer="16"/>
 </signal>
 <signal name="RESET">
-<contactref element="PCB1" pad="RESET"/>
-<contactref element="U1" pad="26"/>
-<contactref element="SW1" pad="P$1"/>
-<contactref element="SW1" pad="P$2"/>
+<contactref element="3-PCB1" pad="RESET"/>
+<contactref element="3-U1" pad="26"/>
+<contactref element="3-SW1" pad="P$1"/>
+<contactref element="3-SW1" pad="P$2"/>
 <wire x1="20.4675" y1="26.255" x2="24.6175" y2="26.255" width="0.2032" layer="1"/>
 <wire x1="26.4475" y1="21.7125" x2="26.3525" y2="21.9075" width="0.2032" layer="1"/>
 <wire x1="26.3525" y1="21.9075" x2="26.3525" y2="22.225" width="0.2032" layer="1"/>
@@ -1224,14 +1228,14 @@ einem neuen Namen ab.</description>
 <wire x1="30.48" y1="22.86" x2="27.6225" y2="22.86" width="0.2032" layer="1"/>
 </signal>
 <signal name="IO0">
-<contactref element="R8" pad="1"/>
-<contactref element="U1" pad="3"/>
+<contactref element="3-R8" pad="1"/>
+<contactref element="3-U1" pad="3"/>
 <wire x1="20.1975" y1="18.6625" x2="17.075" y2="18.6625" width="0.2032" layer="1"/>
 <wire x1="17.075" y1="18.6625" x2="16.1925" y2="17.78" width="0.2032" layer="1"/>
 <wire x1="16.1925" y1="17.78" x2="14.2875" y2="17.78" width="0.2032" layer="1"/>
 <wire x1="14.2875" y1="17.78" x2="12.85875" y2="16.35125" width="0.2032" layer="1"/>
 <wire x1="12.85875" y1="16.35125" x2="8.255" y2="16.35125" width="0.2032" layer="1"/>
-<contactref element="D7" pad="A"/>
+<contactref element="3-D7" pad="A"/>
 <wire x1="4.92125" y1="10.75625" x2="4.92125" y2="10.922" width="0.2032" layer="16"/>
 <wire x1="4.92125" y1="10.922" x2="6.50875" y2="12.5857" width="0.2032" layer="16"/>
 <wire x1="6.50875" y1="12.5857" x2="6.50875" y2="13.17625" width="0.2032" layer="16"/>
@@ -1242,21 +1246,21 @@ einem neuen Namen ab.</description>
 <wire x1="7.14375" y1="15.24" x2="8.255" y2="16.35125" width="0.2032" layer="1"/>
 </signal>
 <signal name="+3.3V">
-<contactref element="U2" pad="5"/>
-<contactref element="R1" pad="1"/>
-<contactref element="R2" pad="1"/>
-<contactref element="C9" pad="1"/>
-<contactref element="L1" pad="1"/>
-<contactref element="U1" pad="30"/>
-<contactref element="C8" pad="1"/>
-<contactref element="PCB1" pad="VPROG"/>
-<contactref element="LED1" pad="A"/>
-<contactref element="D2" pad="C"/>
-<contactref element="D3" pad="C"/>
-<contactref element="D4" pad="C"/>
-<contactref element="D5" pad="C"/>
-<contactref element="D6" pad="C"/>
-<contactref element="D7" pad="C"/>
+<contactref element="3-U2" pad="5"/>
+<contactref element="3-R1" pad="1"/>
+<contactref element="3-R2" pad="1"/>
+<contactref element="3-C9" pad="1"/>
+<contactref element="3-L1" pad="1"/>
+<contactref element="3-U1" pad="30"/>
+<contactref element="3-C8" pad="1"/>
+<contactref element="3-PCB1" pad="VPROG"/>
+<contactref element="3-LED1" pad="A"/>
+<contactref element="3-D2" pad="C"/>
+<contactref element="3-D3" pad="C"/>
+<contactref element="3-D4" pad="C"/>
+<contactref element="3-D5" pad="C"/>
+<contactref element="3-D6" pad="C"/>
+<contactref element="3-D7" pad="C"/>
 <wire x1="20.0025" y1="13.0245" x2="20.0025" y2="12.065" width="0.254" layer="16"/>
 <wire x1="20.0025" y1="12.065" x2="20.16125" y2="11.90625" width="0.254" layer="16"/>
 <wire x1="6.985" y1="20.865" x2="7.1882" y2="20.955" width="0.2032" layer="16"/>
@@ -1295,7 +1299,7 @@ einem neuen Namen ab.</description>
 <wire x1="13.335" y1="12.8975" x2="13.335" y2="14.605" width="0.2032" layer="16"/>
 <wire x1="16.764" y1="12.961" x2="16.764" y2="14.5415" width="0.2032" layer="16"/>
 <wire x1="16.764" y1="14.5415" x2="16.8275" y2="14.605" width="0.2032" layer="16"/>
-<contactref element="JP6" pad="1"/>
+<contactref element="3-JP6" pad="1"/>
 <wire x1="12.85875" y1="14.76375" x2="12.85875" y2="19.52625" width="0.2032" layer="16"/>
 <wire x1="12.85875" y1="19.52625" x2="12.7" y2="19.685" width="0.2032" layer="16"/>
 <wire x1="28.53055" y1="15.24" x2="26.9875" y2="15.24" width="0.2032" layer="16"/>
@@ -1338,8 +1342,8 @@ einem neuen Namen ab.</description>
 <wire x1="8.255" y1="19.812" x2="8.255" y2="19.685" width="0.2032" layer="16"/>
 </signal>
 <signal name="LED">
-<contactref element="LED2" pad="A"/>
-<contactref element="U1" pad="17"/>
+<contactref element="3-LED2" pad="A"/>
+<contactref element="3-U1" pad="17"/>
 <wire x1="13.843" y1="24.13" x2="13.6" y2="25.03" width="0.2032" layer="1"/>
 <wire x1="13.6" y1="25.03" x2="16.1925" y2="27.6225" width="0.2032" layer="1"/>
 <wire x1="16.1925" y1="27.6225" x2="18.57375" y2="27.6225" width="0.2032" layer="1"/>
@@ -1362,37 +1366,37 @@ einem neuen Namen ab.</description>
 <signal name="G2">
 </signal>
 <signal name="N$2">
-<contactref element="R3" pad="2"/>
-<contactref element="JP3" pad="1"/>
+<contactref element="3-R3" pad="2"/>
+<contactref element="3-JP3" pad="1"/>
 <wire x1="19.05" y1="8.763" x2="19.05" y2="9.525" width="0.254" layer="16"/>
 <wire x1="19.05" y1="9.525" x2="18.415" y2="10.16" width="0.254" layer="16"/>
 <wire x1="18.415" y1="10.16" x2="18.415" y2="10.9093" width="0.254" layer="16"/>
 </signal>
 <signal name="N$13">
-<contactref element="R4" pad="2"/>
-<contactref element="JP3" pad="2"/>
+<contactref element="3-R4" pad="2"/>
+<contactref element="3-JP3" pad="2"/>
 <wire x1="16.51" y1="9.017" x2="16.383" y2="9.017" width="0.254" layer="16"/>
 <wire x1="16.383" y1="9.017" x2="15.24" y2="10.16" width="0.254" layer="16"/>
 <wire x1="15.24" y1="10.16" x2="15.24" y2="10.922" width="0.254" layer="16"/>
 <wire x1="15.24" y1="10.922" x2="15.1765" y2="10.9093" width="0.254" layer="16"/>
 </signal>
 <signal name="N$17">
-<contactref element="R5" pad="2"/>
-<contactref element="JP3" pad="3"/>
+<contactref element="3-R5" pad="2"/>
+<contactref element="3-JP3" pad="3"/>
 <wire x1="11.8375" y1="11.1125" x2="11.7475" y2="10.9093" width="0.254" layer="16"/>
 <wire x1="11.7475" y1="10.9093" x2="11.7475" y2="10.63625" width="0.254" layer="16"/>
 <wire x1="11.7475" y1="10.63625" x2="13.62075" y2="8.763" width="0.254" layer="16"/>
 <wire x1="13.62075" y1="8.763" x2="13.97" y2="8.763" width="0.254" layer="16"/>
 </signal>
 <signal name="N$18">
-<contactref element="R6" pad="2"/>
-<contactref element="JP3" pad="4"/>
+<contactref element="3-R6" pad="2"/>
+<contactref element="3-JP3" pad="4"/>
 <wire x1="10.16" y1="10.9093" x2="10.16" y2="10.287" width="0.254" layer="16"/>
 <wire x1="10.16" y1="10.287" x2="11.43" y2="9.017" width="0.254" layer="16"/>
 </signal>
 <signal name="N$19">
-<contactref element="R7" pad="2"/>
-<contactref element="JP3" pad="5"/>
+<contactref element="3-R7" pad="2"/>
+<contactref element="3-JP3" pad="5"/>
 <wire x1="6.38175" y1="15.9893" x2="6.477" y2="15.113" width="0.2032" layer="16"/>
 <wire x1="6.477" y1="15.113" x2="8.255" y2="15.08125" width="0.2032" layer="16"/>
 <wire x1="8.255" y1="15.08125" x2="8.73125" y2="14.605" width="0.2032" layer="16"/>
@@ -1401,16 +1405,16 @@ einem neuen Namen ab.</description>
 <wire x1="8.89" y1="14.44625" x2="8.89" y2="8.763" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$20">
-<contactref element="R8" pad="2"/>
-<contactref element="JP3" pad="6"/>
+<contactref element="3-R8" pad="2"/>
+<contactref element="3-JP3" pad="6"/>
 <wire x1="6.50875" y1="10.9093" x2="6.50875" y2="9.17575" width="0.2032" layer="16"/>
 <wire x1="6.50875" y1="9.17575" x2="6.35" y2="9.017" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$21">
-<contactref element="U1" pad="9"/>
-<contactref element="C4" pad="1"/>
-<contactref element="C1" pad="1"/>
-<contactref element="L1" pad="2"/>
+<contactref element="3-U1" pad="9"/>
+<contactref element="3-C4" pad="1"/>
+<contactref element="3-C1" pad="1"/>
+<contactref element="3-L1" pad="2"/>
 <wire x1="28.53055" y1="22.86" x2="28.53055" y2="20.955" width="0.2032" layer="16"/>
 <wire x1="28.53055" y1="20.955" x2="28.53055" y2="19.05" width="0.2032" layer="16"/>
 <wire x1="28.53055" y1="19.05" x2="27.94" y2="19.05" width="0.2032" layer="16"/>
@@ -1424,15 +1428,15 @@ einem neuen Namen ab.</description>
 <wire x1="22.225" y1="12.065" x2="24.4475" y2="12.065" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="U1" pad="29"/>
-<contactref element="C7" pad="1"/>
+<contactref element="3-U1" pad="29"/>
+<contactref element="3-C7" pad="1"/>
 <wire x1="24.0475" y1="21.7125" x2="24.0475" y2="23.77445" width="0.2032" layer="1"/>
 <wire x1="24.0475" y1="23.77445" x2="25.0825" y2="24.80945" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$6">
-<contactref element="U1" pad="1"/>
-<contactref element="X1" pad="XOUT"/>
-<contactref element="C2" pad="2"/>
+<contactref element="3-U1" pad="1"/>
+<contactref element="3-X1" pad="XOUT"/>
+<contactref element="3-C2" pad="2"/>
 <wire x1="17.5895" y1="20.1295" x2="17.5895" y2="20.828" width="0.2032" layer="1"/>
 <wire x1="17.5895" y1="20.955" x2="17.5895" y2="20.828" width="0.2032" layer="1"/>
 <wire x1="17.5895" y1="20.955" x2="17.5895" y2="21.463" width="0.2032" layer="1"/>
@@ -1448,9 +1452,9 @@ einem neuen Namen ab.</description>
 <wire x1="19.685" y1="20.955" x2="17.5895" y2="20.955" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="U1" pad="2"/>
-<contactref element="X1" pad="XIN"/>
-<contactref element="C3" pad="2"/>
+<contactref element="3-U1" pad="2"/>
+<contactref element="3-X1" pad="XIN"/>
+<contactref element="3-C3" pad="2"/>
 <wire x1="20.1975" y1="19.4625" x2="19.2725" y2="19.4625" width="0.2032" layer="1"/>
 <wire x1="19.2725" y1="19.4625" x2="18.6055" y2="20.1295" width="0.2032" layer="1"/>
 <wire x1="18.6055" y1="20.1295" x2="18.6055" y2="19.558" width="0.2032" layer="1"/>
@@ -1459,8 +1463,8 @@ einem neuen Namen ab.</description>
 <wire x1="15.6475" y1="19.05" x2="15.875" y2="19.32305" width="0.254" layer="1"/>
 </signal>
 <signal name="SWCLK">
-<contactref element="U1" pad="31"/>
-<contactref element="PCB1" pad="CLK"/>
+<contactref element="3-U1" pad="31"/>
+<contactref element="3-PCB1" pad="CLK"/>
 <wire x1="22.4475" y1="21.7125" x2="22.4475" y2="22.13" width="0.2032" layer="1"/>
 <wire x1="22.4475" y1="22.13" x2="22.86" y2="22.5425" width="0.2032" layer="1"/>
 <wire x1="22.86" y1="22.5425" x2="22.86" y2="23.1775" width="0.2032" layer="1"/>
@@ -1479,8 +1483,8 @@ einem neuen Namen ab.</description>
 <wire x1="4.28625" y1="22.06625" x2="2.54" y2="20.32" width="0.2032" layer="1"/>
 </signal>
 <signal name="SWDIO">
-<contactref element="U1" pad="32"/>
-<contactref element="PCB1" pad="SWDIO"/>
+<contactref element="3-U1" pad="32"/>
+<contactref element="3-PCB1" pad="SWDIO"/>
 <wire x1="30.7975" y1="25.0825" x2="27.14625" y2="25.0825" width="0.2032" layer="1"/>
 <wire x1="27.14625" y1="25.0825" x2="24.92375" y2="27.305" width="0.2032" layer="1"/>
 <wire x1="24.92375" y1="27.305" x2="23.1775" y2="27.305" width="0.2032" layer="1"/>
@@ -1494,14 +1498,14 @@ einem neuen Namen ab.</description>
 <wire x1="33.02" y1="22.86" x2="30.7975" y2="25.0825" width="0.2032" layer="1"/>
 </signal>
 <signal name="IO5">
-<contactref element="R3" pad="1"/>
-<contactref element="U1" pad="8"/>
+<contactref element="3-R3" pad="1"/>
+<contactref element="3-U1" pad="8"/>
 <wire x1="20.1975" y1="14.6625" x2="19.425" y2="14.6625" width="0.2032" layer="1"/>
 <wire x1="19.425" y1="14.6625" x2="18.7325" y2="13.6525" width="0.2032" layer="1"/>
 <via x="18.7325" y="13.6525" extent="1-16" drill="0.4064"/>
 <wire x1="18.7325" y1="13.6525" x2="18.7325" y2="12.8535" width="0.2032" layer="16"/>
 <wire x1="18.7325" y1="12.8535" x2="18.415" y2="12.5857" width="0.254" layer="16"/>
-<contactref element="D2" pad="A"/>
+<contactref element="3-D2" pad="A"/>
 <wire x1="20.0025" y1="10.7245" x2="20.0025" y2="11.1125" width="0.254" layer="16"/>
 <wire x1="20.0025" y1="11.1125" x2="19.3675" y2="11.7475" width="0.254" layer="16"/>
 <wire x1="19.3675" y1="11.7475" x2="18.7325" y2="11.7475" width="0.254" layer="16"/>
@@ -1509,15 +1513,15 @@ einem neuen Namen ab.</description>
 <wire x1="18.415" y1="12.065" x2="18.415" y2="12.5857" width="0.254" layer="16"/>
 </signal>
 <signal name="IO4">
-<contactref element="R4" pad="1"/>
-<contactref element="U1" pad="7"/>
+<contactref element="3-R4" pad="1"/>
+<contactref element="3-U1" pad="7"/>
 <wire x1="20.1975" y1="15.4625" x2="17.3675" y2="15.4625" width="0.2032" layer="1"/>
 <wire x1="17.3675" y1="15.4625" x2="15.5575" y2="13.6525" width="0.2032" layer="1"/>
 <wire x1="15.5575" y1="13.6525" x2="15.24" y2="13.6525" width="0.2032" layer="1"/>
 <via x="15.24" y="13.6525" extent="1-16" drill="0.4064"/>
 <wire x1="15.24" y1="13.6525" x2="15.0865" y2="12.7" width="0.2032" layer="16"/>
 <wire x1="15.0865" y1="12.7" x2="15.1765" y2="12.5857" width="0.2032" layer="16"/>
-<contactref element="D3" pad="A"/>
+<contactref element="3-D3" pad="A"/>
 <wire x1="16.764" y1="10.661" x2="16.60525" y2="10.76325" width="0.254" layer="16"/>
 <wire x1="16.60525" y1="10.76325" x2="16.66875" y2="10.795" width="0.254" layer="16"/>
 <wire x1="16.66875" y1="10.795" x2="16.66875" y2="11.43" width="0.254" layer="16"/>
@@ -1527,8 +1531,8 @@ einem neuen Namen ab.</description>
 <wire x1="15.1765" y1="12.1285" x2="15.1765" y2="12.5857" width="0.254" layer="16"/>
 </signal>
 <signal name="IO3">
-<contactref element="R5" pad="1"/>
-<contactref element="U1" pad="6"/>
+<contactref element="3-R5" pad="1"/>
+<contactref element="3-U1" pad="6"/>
 <wire x1="20.1975" y1="16.2625" x2="17.215" y2="16.2625" width="0.2032" layer="1"/>
 <wire x1="17.215" y1="16.2625" x2="15.875" y2="14.9225" width="0.2032" layer="1"/>
 <wire x1="15.875" y1="14.9225" x2="12.7" y2="14.9225" width="0.2032" layer="1"/>
@@ -1536,7 +1540,7 @@ einem neuen Namen ab.</description>
 <wire x1="11.7475" y1="13.97" x2="11.7475" y2="13.6525" width="0.2032" layer="1"/>
 <via x="11.7475" y="13.6525" extent="1-16" drill="0.4064"/>
 <wire x1="11.7475" y1="13.6525" x2="11.7475" y2="12.5857" width="0.2032" layer="16"/>
-<contactref element="D4" pad="A"/>
+<contactref element="3-D4" pad="A"/>
 <wire x1="13.335" y1="10.5975" x2="13.335" y2="10.922" width="0.254" layer="16"/>
 <wire x1="13.335" y1="10.922" x2="13.335" y2="11.43" width="0.254" layer="16"/>
 <wire x1="13.335" y1="11.43" x2="13.0175" y2="11.7475" width="0.254" layer="16"/>
@@ -1545,12 +1549,12 @@ einem neuen Namen ab.</description>
 <wire x1="11.7475" y1="12.22375" x2="11.7475" y2="12.5857" width="0.254" layer="16"/>
 </signal>
 <signal name="IO2">
-<contactref element="R6" pad="1"/>
-<contactref element="U1" pad="5"/>
+<contactref element="3-R6" pad="1"/>
+<contactref element="3-U1" pad="5"/>
 <wire x1="20.1975" y1="17.0625" x2="17.0625" y2="17.0625" width="0.2032" layer="1"/>
 <wire x1="17.0625" y1="17.0625" x2="15.39875" y2="15.39875" width="0.2032" layer="1"/>
 <wire x1="15.39875" y1="15.39875" x2="11.43" y2="15.39875" width="0.2032" layer="1"/>
-<contactref element="D5" pad="A"/>
+<contactref element="3-D5" pad="A"/>
 <wire x1="8.255" y1="10.5975" x2="8.255" y2="11.27125" width="0.254" layer="16"/>
 <wire x1="8.255" y1="11.27125" x2="8.89" y2="11.90625" width="0.254" layer="16"/>
 <wire x1="8.89" y1="11.90625" x2="9.68375" y2="11.90625" width="0.254" layer="16"/>
@@ -1562,12 +1566,12 @@ einem neuen Namen ab.</description>
 <wire x1="10.16" y1="14.12875" x2="11.43" y2="15.39875" width="0.2032" layer="1"/>
 </signal>
 <signal name="IO1">
-<contactref element="R7" pad="1"/>
-<contactref element="U1" pad="4"/>
+<contactref element="3-R7" pad="1"/>
+<contactref element="3-U1" pad="4"/>
 <wire x1="20.1975" y1="17.8625" x2="17.2275" y2="17.8625" width="0.2032" layer="1"/>
 <wire x1="17.2275" y1="17.8625" x2="15.24" y2="15.875" width="0.2032" layer="1"/>
 <wire x1="15.24" y1="15.875" x2="9.04875" y2="15.875" width="0.2032" layer="1"/>
-<contactref element="D6" pad="A"/>
+<contactref element="3-D6" pad="A"/>
 <wire x1="9.04875" y1="15.875" x2="8.89" y2="15.71625" width="0.2032" layer="1"/>
 <via x="8.89" y="15.71625" extent="1-16" drill="0.3556"/>
 <wire x1="8.89" y1="15.71625" x2="8.41375" y2="16.1925" width="0.2032" layer="16"/>
@@ -1578,8 +1582,8 @@ einem neuen Namen ab.</description>
 <wire x1="4.96" y1="16.9545" x2="4.73075" y2="17.81875" width="0.2032" layer="16"/>
 </signal>
 <signal name="N_HOST_ENABLE">
-<contactref element="JP1" pad="P4"/>
-<contactref element="U1" pad="27"/>
+<contactref element="3-JP1" pad="P4"/>
+<contactref element="3-U1" pad="27"/>
 <wire x1="26.3675" y1="4.224" x2="26.3675" y2="3.16" width="0.2032" layer="1"/>
 <wire x1="26.3675" y1="3.16" x2="26.67" y2="2.8575" width="0.2032" layer="1"/>
 <wire x1="26.67" y1="2.8575" x2="28.8925" y2="2.8575" width="0.2032" layer="1"/>
@@ -1596,8 +1600,8 @@ einem neuen Namen ab.</description>
 <wire x1="25.7175" y1="21.6425" x2="25.6475" y2="21.7125" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$1">
-<contactref element="LED1" pad="C"/>
-<contactref element="R9" pad="2"/>
+<contactref element="3-LED1" pad="C"/>
+<contactref element="3-R9" pad="2"/>
 <wire x1="11.557" y1="20.8915" x2="11.64125" y2="21.0075" width="0.2032" layer="1"/>
 <wire x1="11.64125" y1="21.0075" x2="11.397996875" y2="20.84875" width="0.2032" layer="1"/>
 <wire x1="11.397996875" y1="20.84875" x2="11.27125" y2="20.32" width="0.2032" layer="1" curve="45"/>
@@ -1608,8 +1612,8 @@ einem neuen Namen ab.</description>
 <wire x1="11.1125" y1="20.865" x2="11.3157" y2="20.955" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$4">
-<contactref element="R10" pad="2"/>
-<contactref element="LED2" pad="C"/>
+<contactref element="3-R10" pad="2"/>
+<contactref element="3-LED2" pad="C"/>
 <wire x1="11.557" y1="24.13" x2="11.8" y2="24.8175" width="0.254" layer="1"/>
 <wire x1="11.8" y1="24.8175" x2="12.3825" y2="25.4" width="0.254" layer="1"/>
 <via x="12.3825" y="25.4" extent="1-16" drill="0.3556"/>
@@ -1617,8 +1621,8 @@ einem neuen Namen ab.</description>
 <wire x1="12.3825" y1="25.273" x2="11.3157" y2="24.13" width="0.254" layer="16"/>
 </signal>
 <signal name="N$3">
-<contactref element="JP1" pad="P1"/>
-<contactref element="D1" pad="A"/>
+<contactref element="3-JP1" pad="P1"/>
+<contactref element="3-D1" pad="A"/>
 <wire x1="24.4175" y1="4.224" x2="24.4175" y2="5.26875" width="0.4064" layer="1"/>
 <wire x1="24.4175" y1="5.26875" x2="23.495" y2="6.19125" width="0.4064" layer="1"/>
 <wire x1="23.495" y1="6.19125" x2="22.4155" y2="7.3025" width="0.4064" layer="1"/>
