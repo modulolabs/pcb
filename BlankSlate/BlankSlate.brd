@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="4" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
@@ -468,10 +469,14 @@ einem neuen Namen ab.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -574,18 +579,18 @@ einem neuen Namen ab.</description>
 <elements>
 <element name="PCB1" library="Modulo" package="DEVICE-PCB" value="DEVICE-PCB" x="0" y="0">
 <attribute name="BOARD" value="BlankSlate" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VERSION" value="5" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="PARTNUM" value="Blank Slate PCB" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VERSION" value="5" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R1" library="Modulo" package="0603" value="1KΩ" x="5.3975" y="18.415" smashed="yes" rot="R90">
-<attribute name="PARTNUM" value="ERJ-3EKF1001V" x="5.3975" y="18.415" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="1KΩ" x="5.3975" y="18.415" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="6.1595" y="16.9545" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1001V" x="5.3975" y="18.415" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="6.223" y="23.876" size="0.635" layer="27" font="vector" rot="R270"/>
+<attribute name="VALUE" value="1KΩ" x="5.3975" y="18.415" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LED1" library="Modulo" package="0805-LED" value="blue" x="5.3975" y="22.86" smashed="yes" rot="R180">
-<attribute name="PARTNUM" value="LTST-C171TBKT" x="5.3975" y="22.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="6.1595" y="20.7645" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="LTST-C171TBKT" x="5.3975" y="22.86" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="JP8" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="8.89" y="12.7" smashed="yes" rot="MR270">
 <attribute name="PARTNUM" value="EXCLUDE" x="8.89" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -597,66 +602,66 @@ einem neuen Namen ab.</description>
 <attribute name="PARTNUM" value="EXCLUDE" x="13.97" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="JP3" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="29.21" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="32.385" y="13.97" size="1.27" layer="28" rot="MR270"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="29.21" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="32.385" y="13.97" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="JP6" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="24.13" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="27.305" y="13.97" size="1.27" layer="28" rot="MR270"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="24.13" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="27.305" y="13.97" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="JP9" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="21.59" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="24.765" y="13.97" size="1.27" layer="28" rot="MR270"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="21.59" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="24.765" y="13.97" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="JP4" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="6.35" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="9.525" y="13.97" size="1.27" layer="28" rot="MR270"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="6.35" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="9.525" y="13.97" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="JP5" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="26.67" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="29.845" y="13.97" size="1.27" layer="28" rot="MR270"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="26.67" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="29.845" y="13.97" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="JP10" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="16.51" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="19.685" y="13.97" size="1.27" layer="28" rot="MR270"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="16.51" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="19.685" y="13.97" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="JP11" library="SparkFun-Connectors" package="1X05_NO_SILK" value="" x="19.05" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="22.225" y="13.97" size="1.27" layer="28" rot="MR270"/>
 <attribute name="PARTNUM" value="EXCLUDE" x="19.05" y="12.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="22.225" y="13.97" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="C1" library="Modulo" package="0603" value=".1uF" x="17.4625" y="18.7325" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.2245" y="17.907" size="0.635" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" value=".1uF" x="20.3835" y="17.907" size="0.635" layer="27" font="vector" rot="R180"/>
 <attribute name="PARTNUM" value="C0603C104K5RACTU" x="17.4625" y="18.7325" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value=".1uF" x="20.3835" y="17.907" size="0.635" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="R4" library="Modulo" package="0603" value="150Ω" x="7.3025" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="7.3025" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="8.0645" y="16.9545" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="7.3025" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="6.2865" y="20.828" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="R5" library="Modulo" package="0603" value="150Ω" x="27.305" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="27.305" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="26.8605" y="19.8755" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="27.305" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="26.289" y="16.0655" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="R2" library="Modulo" package="0603" value="150Ω" x="11.1125" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="11.1125" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="11.8745" y="16.9545" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="11.1125" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="10.0965" y="20.828" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="R3" library="Modulo" package="0603" value="150Ω" x="29.21" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="29.21" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="28.7655" y="19.8755" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="29.21" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="28.194" y="16.0655" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="R6" library="Modulo" package="0603" value="150Ω" x="24.765" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="24.765" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.3205" y="19.8755" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="24.765" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="23.749" y="16.0655" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="R8" library="Modulo" package="0603" value="150Ω" x="9.2075" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="9.2075" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="9.9695" y="16.9545" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="9.2075" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="8.1915" y="19.8755" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="JP1" library="Modulo" package="AMPMODU-4P" value="HEADER-1X4-AMPMODU" x="17.78" y="20.955" smashed="yes" rot="MR0">
@@ -678,27 +683,27 @@ einem neuen Namen ab.</description>
 <attribute name="BOM" value="EXCLUDE" x="4.445" y="11.43" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U2" library="Modulo" package="SOIC-14" value="ATTINY841" x="17.145" y="20.955" smashed="yes" rot="R90">
-<attribute name="PARTNUM" value="ATTINY841-SSUR" x="17.145" y="20.955" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="15.875" y="20.0025" size="0.635" layer="25" rot="R180"/>
+<attribute name="PARTNUM" value="ATTINY841-SSUR" x="17.145" y="20.955" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R10" library="Modulo" package="0603" value="0Ω" x="11.43" y="26.67" smashed="yes" rot="R90">
-<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="6.985" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="12.5095" y="29.0195" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="6.985" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="0Ω" x="12.2555" y="27.686" size="0.635" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="R11" library="Modulo" package="0603" value="0Ω" x="24.13" y="27.6225" smashed="yes" rot="R90">
-<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="23.495" y="24.4475" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="25.2095" y="26.162" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="ERJ-3GEY0R00V" x="23.495" y="24.4475" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="0Ω" x="25.4635" y="29.972" size="0.635" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="R7" library="Modulo" package="0603" value="150Ω" x="13.0175" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="13.0175" y="18.415" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="13.7795" y="16.9545" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="13.0175" y="18.415" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="12.0015" y="19.8755" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="R9" library="Modulo" package="0603" value="150Ω" x="22.225" y="18.415" smashed="yes" rot="R270">
-<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="22.225" y="18.415" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="22.098" y="19.8755" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNUM" value="ERJ-3EKF1500V" x="22.225" y="18.415" size="1.27" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="21.209" y="16.0655" size="0.635" layer="27" font="vector"/>
 </element>
 <element name="U1" library="Modulo" package="SOT23-5" value="VREG-MIC5205-3.3V" x="28.575" y="19.685" smashed="yes" rot="MR270">
@@ -1030,6 +1035,13 @@ einem neuen Namen ab.</description>
 <wire x1="30.7975" y1="25.7175" x2="33.02" y2="27.94" width="0.254" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="18,30,1479475a07525471"/>
 <approved hash="18,30,ef75dc569c4eaf6d"/>

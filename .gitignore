@@ -1,5 +1,7 @@
 # Ignore list for Eagle, a PCB layout tool
 
+.DS_Store
+
 # Backup files
 *.s#?
 *.b#?
@@ -32,8 +34,3 @@
 *.drd.*
 
 *.info
-
-
-*.gpi
-*.ger
-*.xln
