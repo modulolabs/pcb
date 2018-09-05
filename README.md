@@ -19,6 +19,17 @@ Repository Contents
 * Programmer/ - Eagle files for a board that's used to program other modulo boards
 * TempProbe/ - Eagle files for the Modulo Temp Probe
 
+
+Export
+---
+
+To export data for manufacturing:
+
+* Load and run Eagle/Modulo.cam from the eagle cam processor. This will generate files in <Board>/Modulo<Board>RFQ/
+* Run the ulp moundsmd.ulp and save the mount files to the same RFQ directory
+* Run Eagle/integer-bom.ulp to generate the bom file and save it to the same RFQ directory.
+
+
 License Information
 -------------------
 These circuit board designs are release under  [Creative Commons ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

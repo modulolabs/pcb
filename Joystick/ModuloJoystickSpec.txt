@@ -1,0 +1,18 @@
+
+PCB: .062” (1.6mm) FR4 Lead Free RoHS compliant
+Layers: 2
+Copper: 1oz
+Soldermask: Purple
+Silkscreen: White
+ENIG
+SMD both sides
+PTH one side
+
+RoHS compliant assembly
+Program mcu using provided jig and atmel studio software
+Test board using provided jig and testing procedure
+
+Package board in static shielding bag
+Print provided label and apply to bag.
+Package in cartons of qty 50 with provided carton label.
+
